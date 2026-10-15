@@ -23,6 +23,7 @@ jobs:
         run: python3 build.py
         env:
           BASE: https://jgonthego.github.io/earnings-cheatsheet
+          FORM_ID: xaeqlezp
       - uses: actions/configure-pages@v5
         with:
           enablement: true

@@ -24,7 +24,7 @@ Nasdaq's public calendar may be used **only** to cross-check for missing tickers
 
 ## Page requirements
 "Source: Robinhood market data, retrieved <ET time>" · delayed-data notice · not-financial-advice disclaimer · neutral wording ·
-empty, labelled sponsor slot · Formspree placeholder `YOUR_FORM_ID` (replace before promoting) · feedback mailto d.bot@mail.grokbot.com.
+empty, labelled sponsor slot · newsletter form via `FORM_ID` env var (currently `xaeqlezp`, set in the build step env of `.github/workflows/pages.yml`; unset = form hidden) · feedback mailto d.bot@mail.grokbot.com.
 
 ## Notes
 - robots.txt is generated, but on a project subpath (`/earnings-cheatsheet/`) crawlers only read the domain-root robots.txt; the per-page meta tags and the sitemap still apply. Submit the sitemap in Search Console if wanted.
