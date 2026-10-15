@@ -5,7 +5,9 @@ from datetime import date, timedelta
 
 SITE_URL = os.environ.get("BASE", "https://jgonthego.github.io/earnings-cheatsheet").rstrip("/")
 SITE_NAME = "Earnings Week Cheat Sheet"
-FORMSPREE = "https://formspree.io/f/YOUR_FORM_ID"  # TODO placeholder
+FORM_ID = os.environ.get("FORM_ID", "").strip()  # newsletter flag: signup hidden until a real Formspree ID is set
+FORMSPREE = f"https://formspree.io/f/{FORM_ID}"
+SHOW_FORM = bool(FORM_ID) and FORM_ID != "YOUR_FORM_ID"
 FEEDBACK = "d.bot@mail.grokbot.com"
 # Publication gate: the site owner chose to publish the Robinhood market data and accepts the terms risk
 # (decision of Oct 15, 2026). True = indexable pages, robots Allow, no preview banner.
@@ -33,6 +35,10 @@ DISCLAIMER = ("<p class='disc'><strong>Not financial advice.</strong> This page 
   "does not recommend buying or selling any security. Data may be delayed, incomplete, or inaccurate, and earnings dates can change. "
   "Options-implied moves are a market-derived estimate, not a forecast. Verify all information independently.</p>")
 
+NEWS = f"""<section><h3>Get the weekly cheat sheet by email</h3>
+<form action="{FORMSPREE}" method="POST"><label>Email <input type="email" name="email" required></label>
+<button type="submit">Subscribe</button></form></section>"""
+
 def page(title, desc, path, body, depth):
     rel = "../" * depth
     url = SITE_URL + path
@@ -51,11 +57,8 @@ def page(title, desc, path, body, depth):
 <main>{body}</main>
 <footer>
 <!-- SPONSOR SLOT: intentionally empty. Replace with a real, clearly labeled sponsor only. -->
-<div class="sponsor">Sponsor slot — available</div>
-<section><h3>Get the weekly cheat sheet by email</h3>
-<!-- Formspree placeholder: replace YOUR_FORM_ID before launch -->
-<form action="{FORMSPREE}" method="POST"><label>Email <input type="email" name="email" required></label>
-<button type="submit">Subscribe</button></form></section>
+<p class="small" style="text-align:right"><a href="mailto:{FEEDBACK}?subject=Sponsor%20Earnings%20Cheat%20Sheet">Advertise / sponsor this page</a></p>
+{NEWS if SHOW_FORM else "<!-- NEWSLETTER HOOK: set FORM_ID env var to enable signup -->"}
 <p class="small">Feedback or corrections: <a href="mailto:{FEEDBACK}?subject=Earnings%20Cheat%20Sheet%20feedback">{FEEDBACK}</a></p>
 {DISCLAIMER}</footer><script>{SORT_JS}</script></body></html>"""
 
