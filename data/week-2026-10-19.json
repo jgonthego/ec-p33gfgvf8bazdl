@@ -24,7 +24,70 @@
       "move_pct": 12.31,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 5226000000.0,
+        "gross_profit": 132000000.0,
+        "net_income": -145000000.0,
+        "net_margin": -2.77,
+        "eps": -0.2,
+        "eps_estimate": -0.18,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 6929208334.985592,
+        "sector": "Non-Energy Minerals",
+        "industry": "Steel"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "STLD",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "NUE",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "RS",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "CMC",
+            "r": 0.53,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XME",
+            "r": 0.46,
+            "etf": true
+          },
+          {
+            "symbol": "XLB",
+            "r": 0.34,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.22,
+            "etf": true
+          }
+        ],
+        "candidates": 9
+      }
     },
     {
       "symbol": "FITB",
@@ -45,7 +108,70 @@
       "move_pct": 6.9,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3372000000.0,
+        "gross_profit": null,
+        "net_income": 801000000.0,
+        "net_margin": 23.75,
+        "eps": 1.02,
+        "eps_estimate": 0.88,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-17"
+      },
+      "profile": {
+        "market_cap": 45698338270.0,
+        "sector": "Finance",
+        "industry": "Regional Banks"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CFG",
+            "r": 0.93,
+            "etf": false
+          },
+          {
+            "symbol": "USB",
+            "r": 0.91,
+            "etf": false
+          },
+          {
+            "symbol": "RF",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "KEY",
+            "r": 0.86,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "KBE",
+            "r": 0.85,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.84,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.66,
+            "etf": true
+          }
+        ],
+        "candidates": 13
+      }
     },
     {
       "symbol": "STLD",
@@ -66,7 +192,70 @@
       "move_pct": 10.66,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 3.69,
+        "eps_estimate": 3.68,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-20"
+      },
+      "profile": {
+        "market_cap": 34473273132.47633,
+        "sector": "Non-Energy Minerals",
+        "industry": "Steel"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "NUE",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "RS",
+            "r": 0.84,
+            "etf": false
+          },
+          {
+            "symbol": "CMC",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "CLF",
+            "r": 0.62,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLB",
+            "r": 0.5,
+            "etf": true
+          },
+          {
+            "symbol": "XME",
+            "r": 0.4,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.32,
+            "etf": true
+          }
+        ],
+        "candidates": 9
+      }
     },
     {
       "symbol": "ZION",
@@ -87,7 +276,70 @@
       "move_pct": 7.93,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 32 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 3.05,
+        "eps_estimate": 1.56,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-20"
+      },
+      "profile": {
+        "market_cap": 9247604180.080654,
+        "sector": "Finance",
+        "industry": "Major Banks"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "KEY",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "RF",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "CFG",
+            "r": 0.83,
+            "etf": false
+          },
+          {
+            "symbol": "USB",
+            "r": 0.8,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "KBE",
+            "r": 0.8,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.78,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.58,
+            "etf": true
+          }
+        ],
+        "candidates": 13
+      }
     },
     {
       "symbol": "ALLY",
@@ -108,7 +360,70 @@
       "move_pct": 8.56,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 2286000000.0,
+        "gross_profit": null,
+        "net_income": 410000000.0,
+        "net_margin": 17.94,
+        "eps": 1.21,
+        "eps_estimate": 1.25,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 11465298000.0,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "COF",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "SYF",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "AXP",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "V",
+            "r": 0.41,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.68,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.65,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.52,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "GE",
@@ -129,7 +444,70 @@
       "move_pct": 6.16,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 13349000000.0,
+        "gross_profit": null,
+        "net_income": 2370000000.0,
+        "net_margin": 17.75,
+        "eps": 2.02,
+        "eps_estimate": 1.85,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-16"
+      },
+      "profile": {
+        "market_cap": 325732371250.0,
+        "sector": "Electronic Technology",
+        "industry": "Aerospace & Defense"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "TDG",
+            "r": 0.6,
+            "etf": false
+          },
+          {
+            "symbol": "RTX",
+            "r": 0.54,
+            "etf": false
+          },
+          {
+            "symbol": "HWM",
+            "r": 0.51,
+            "etf": false
+          },
+          {
+            "symbol": "BA",
+            "r": 0.46,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITA",
+            "r": 0.87,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.66,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.33,
+            "etf": true
+          }
+        ],
+        "candidates": 9
+      }
     },
     {
       "symbol": "GM",
@@ -150,7 +528,65 @@
       "move_pct": 6.3,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 48026000000.0,
+        "gross_profit": null,
+        "net_income": 1305000000.0,
+        "net_margin": 2.72,
+        "eps": 3.57,
+        "eps_estimate": 3.15,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 73670869920.0,
+        "sector": "Consumer Durables",
+        "industry": "Motor Vehicles"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "F",
+            "r": 0.67,
+            "etf": false
+          },
+          {
+            "symbol": "TM",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "STLA",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "TSLA",
+            "r": 0.17,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.41,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.3,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "HAL",
@@ -171,7 +607,70 @@
       "move_pct": 5.68,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 5714000000.0,
+        "gross_profit": null,
+        "net_income": 534000000.0,
+        "net_margin": 9.35,
+        "eps": 0.55,
+        "eps_estimate": 0.54,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 27926530342.491947,
+        "sector": "Industrial Services",
+        "industry": "Oilfield Services/Equipment"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "SLB",
+            "r": 0.66,
+            "etf": false
+          },
+          {
+            "symbol": "CVX",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "BKR",
+            "r": 0.41,
+            "etf": false
+          },
+          {
+            "symbol": "XOM",
+            "r": 0.37,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "OIH",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "XLE",
+            "r": 0.61,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.01,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "KEY",
@@ -192,7 +691,70 @@
       "move_pct": 7.0,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1964000000.0,
+        "gross_profit": null,
+        "net_income": 509000000.0,
+        "net_margin": 25.92,
+        "eps": 0.44,
+        "eps_estimate": 0.42,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 21331928700.0,
+        "sector": "Finance",
+        "industry": "Major Banks"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ZION",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "CFG",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "RF",
+            "r": 0.88,
+            "etf": false
+          },
+          {
+            "symbol": "FITB",
+            "r": 0.86,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "KBE",
+            "r": 0.8,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.77,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.66,
+            "etf": true
+          }
+        ],
+        "candidates": 13
+      }
     },
     {
       "symbol": "MMM",
@@ -213,7 +775,65 @@
       "move_pct": 6.06,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 6500000000.0,
+        "gross_profit": 2683000000.0,
+        "net_income": 933000000.0,
+        "net_margin": 14.35,
+        "eps": 2.4,
+        "eps_estimate": 2.24,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 84949799938.0028,
+        "sector": "Producer Manufacturing",
+        "industry": "Industrial Conglomerates"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ITW",
+            "r": 0.51,
+            "etf": false
+          },
+          {
+            "symbol": "EMR",
+            "r": 0.44,
+            "etf": false
+          },
+          {
+            "symbol": "HON",
+            "r": 0.31,
+            "etf": false
+          },
+          {
+            "symbol": "GE",
+            "r": 0.26,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLI",
+            "r": 0.4,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.3,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "NOC",
@@ -234,7 +854,70 @@
       "move_pct": 7.81,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 10876000000.0,
+        "gross_profit": null,
+        "net_income": 1094000000.0,
+        "net_margin": 10.06,
+        "eps": 7.68,
+        "eps_estimate": 6.81,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 73859272987.92134,
+        "sector": "Electronic Technology",
+        "industry": "Aerospace & Defense"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "GD",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "LMT",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "RTX",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "LHX",
+            "r": 0.53,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITA",
+            "r": 0.56,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.27,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.01,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "RTX",
@@ -255,7 +938,70 @@
       "move_pct": 5.14,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 24708000000.0,
+        "gross_profit": null,
+        "net_income": 2139000000.0,
+        "net_margin": 8.66,
+        "eps": 1.89,
+        "eps_estimate": 1.66,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 261330664000.0,
+        "sector": "Electronic Technology",
+        "industry": "Aerospace & Defense"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "LMT",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "GD",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "NOC",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "LHX",
+            "r": 0.53,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITA",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.42,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.09,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "SYF",
@@ -276,7 +1022,70 @@
       "move_pct": 9.1,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": 885000000.0,
+        "net_margin": null,
+        "eps": 2.59,
+        "eps_estimate": 2.09,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 23963574150.0,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "COF",
+            "r": 0.82,
+            "etf": false
+          },
+          {
+            "symbol": "ALLY",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "AXP",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "MA",
+            "r": 0.43,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.57,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.5,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "AMX",
@@ -297,7 +1106,65 @@
       "move_pct": 6.77,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 0.47,
+        "eps_estimate": 0.52,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 70215372519.49821,
+        "sector": "Communications",
+        "industry": "Wireless Telecommunications"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "T",
+            "r": 0.33,
+            "etf": false
+          },
+          {
+            "symbol": "VZ",
+            "r": 0.31,
+            "etf": false
+          },
+          {
+            "symbol": "TMUS",
+            "r": 0.23,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "EWW",
+            "r": 0.49,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.26,
+            "etf": true
+          },
+          {
+            "symbol": "XLC",
+            "r": 0.24,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "CB",
@@ -318,7 +1185,70 @@
       "move_pct": 5.45,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 31 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 7.26,
+        "eps_estimate": 6.67,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 138799266000.0,
+        "sector": "Finance",
+        "industry": "Property/Casualty Insurance"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "HIG",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "TRV",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "AIG",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "ALL",
+            "r": 0.63,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "KIE",
+            "r": 0.77,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.29,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.27,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "COF",
@@ -339,7 +1269,70 @@
       "move_pct": 5.48,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 15850000000.0,
+        "gross_profit": null,
+        "net_income": 3020000000.0,
+        "net_margin": 19.05,
+        "eps": 5.81,
+        "eps_estimate": 4.8,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 123765445476.0,
+        "sector": "Finance",
+        "industry": "Major Banks"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "SYF",
+            "r": 0.82,
+            "etf": false
+          },
+          {
+            "symbol": "ALLY",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "AXP",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "V",
+            "r": 0.45,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.78,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.66,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.57,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "ISRG",
@@ -360,7 +1353,70 @@
       "move_pct": 7.9,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 2892300000.0,
+        "gross_profit": 1960400000.0,
+        "net_income": 818100000.0,
+        "net_margin": 28.29,
+        "eps": 2.8,
+        "eps_estimate": 2.41,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-16"
+      },
+      "profile": {
+        "market_cap": 150761408238.4572,
+        "sector": "Health Technology",
+        "industry": "Medical Specialties"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "SYK",
+            "r": 0.55,
+            "etf": false
+          },
+          {
+            "symbol": "BSX",
+            "r": 0.44,
+            "etf": false
+          },
+          {
+            "symbol": "MDT",
+            "r": 0.36,
+            "etf": false
+          },
+          {
+            "symbol": "ABT",
+            "r": 0.25,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IHI",
+            "r": 0.72,
+            "etf": true
+          },
+          {
+            "symbol": "XLV",
+            "r": 0.39,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.3,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "NFLX",
@@ -381,7 +1437,70 @@
       "move_pct": 9.5,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 12559938000.0,
+        "gross_profit": 6522973000.0,
+        "net_income": 3401414000.0,
+        "net_margin": 27.08,
+        "eps": 0.8,
+        "eps_estimate": 0.79,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-16"
+      },
+      "profile": {
+        "market_cap": 293724327600.0,
+        "sector": "Technology Services",
+        "industry": "Internet Software/Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "SPOT",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "DIS",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "LYV",
+            "r": 0.45,
+            "etf": false
+          },
+          {
+            "symbol": "ROKU",
+            "r": 0.41,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.62,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.21,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.0,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "UAL",
@@ -402,7 +1521,65 @@
       "move_pct": 7.08,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 17672000000.0,
+        "gross_profit": null,
+        "net_income": 805000000.0,
+        "net_margin": 4.56,
+        "eps": 1.99,
+        "eps_estimate": 1.81,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-15"
+      },
+      "profile": {
+        "market_cap": 31189276560.0,
+        "sector": "Transportation",
+        "industry": "Airlines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "DAL",
+            "r": 0.92,
+            "etf": false
+          },
+          {
+            "symbol": "ALK",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "LUV",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "AAL",
+            "r": 0.82,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "JETS",
+            "r": 0.94,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.67,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "ABT",
@@ -423,7 +1600,70 @@
       "move_pct": 5.46,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 12593000000.0,
+        "gross_profit": 7268000000.0,
+        "net_income": 928000000.0,
+        "net_margin": 7.37,
+        "eps": 1.31,
+        "eps_estimate": 1.28,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-16"
+      },
+      "profile": {
+        "market_cap": 181499911757.85727,
+        "sector": "Health Technology",
+        "industry": "Medical Specialties"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "MDT",
+            "r": 0.58,
+            "etf": false
+          },
+          {
+            "symbol": "SYK",
+            "r": 0.56,
+            "etf": false
+          },
+          {
+            "symbol": "BSX",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "JNJ",
+            "r": 0.29,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IHI",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "XLV",
+            "r": 0.53,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.14,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "CME",
@@ -444,7 +1684,65 @@
       "move_pct": 3.84,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 2.99,
+        "eps_estimate": 2.99,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 105687530172.66974,
+        "sector": "Finance",
+        "industry": "Investment Banks/Brokers"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ICE",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "CBOE",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "MSCI",
+            "r": 0.5,
+            "etf": false
+          },
+          {
+            "symbol": "NDAQ",
+            "r": 0.46,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.25,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.2,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "DHR",
@@ -465,7 +1763,65 @@
       "move_pct": 6.88,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 1.94,
+        "eps_estimate": 1.84,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-21"
+      },
+      "profile": {
+        "market_cap": 161004905592.6026,
+        "sector": "Health Technology",
+        "industry": "Medical Specialties"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "TMO",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "A",
+            "r": 0.52,
+            "etf": false
+          },
+          {
+            "symbol": "IQV",
+            "r": 0.49,
+            "etf": false
+          },
+          {
+            "symbol": "MTD",
+            "r": 0.4,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.42,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.06,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "ELV",
@@ -486,7 +1842,65 @@
       "move_pct": 9.39,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 30 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 30 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 7.45,
+        "eps_estimate": 6.2,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-15"
+      },
+      "profile": {
+        "market_cap": 92822661134.25763,
+        "sector": "Health Services",
+        "industry": "Managed Health Care"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CNC",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "MOH",
+            "r": 0.68,
+            "etf": false
+          },
+          {
+            "symbol": "HUM",
+            "r": 0.56,
+            "etf": false
+          },
+          {
+            "symbol": "CI",
+            "r": 0.55,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SPY",
+            "r": 0.25,
+            "etf": true
+          },
+          {
+            "symbol": "XLV",
+            "r": 0.21,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "MCO",
@@ -507,7 +1921,65 @@
       "move_pct": 7.68,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 30 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 30 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ1 2026",
+        "period_end": "2026-03-31",
+        "revenue": 2079000000.0,
+        "gross_profit": 1548000000.0,
+        "net_income": 661000000.0,
+        "net_margin": 31.79,
+        "eps": 4.68,
+        "eps_estimate": 4.18,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 84027981379.15045,
+        "sector": "Commercial Services",
+        "industry": "Financial Publishing/Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "SPGI",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "MSCI",
+            "r": 0.68,
+            "etf": false
+          },
+          {
+            "symbol": "NDAQ",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "ICE",
+            "r": 0.64,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.55,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.24,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "NEE",
@@ -528,7 +2000,65 @@
       "move_pct": 3.97,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 6700000000.0,
+        "gross_profit": null,
+        "net_income": 3144000000.0,
+        "net_margin": 46.93,
+        "eps": 1.15,
+        "eps_estimate": 1.08,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-24"
+      },
+      "profile": {
+        "market_cap": 166440344200.0,
+        "sector": "Utilities",
+        "industry": "Electric Utilities"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "D",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "SO",
+            "r": 0.69,
+            "etf": false
+          },
+          {
+            "symbol": "AEP",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "DUK",
+            "r": 0.63,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLU",
+            "r": 0.78,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.18,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "PM",
@@ -549,7 +2079,65 @@
       "move_pct": 4.98,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 11192000000.0,
+        "gross_profit": 7659000000.0,
+        "net_income": 2817000000.0,
+        "net_margin": 25.17,
+        "eps": 2.2,
+        "eps_estimate": 2.05,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 319406637746.9985,
+        "sector": "Consumer Non-Durables",
+        "industry": "Tobacco"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "BTI",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "MO",
+            "r": 0.67,
+            "etf": false
+          },
+          {
+            "symbol": "KO",
+            "r": 0.51,
+            "etf": false
+          },
+          {
+            "symbol": "PG",
+            "r": 0.45,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLP",
+            "r": 0.67,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.31,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "T",
@@ -570,7 +2158,65 @@
       "move_pct": 4.97,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 31558000000.0,
+        "gross_profit": null,
+        "net_income": 4627000000.0,
+        "net_margin": 14.66,
+        "eps": 0.65,
+        "eps_estimate": 0.59,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 160551497700.0,
+        "sector": "Communications",
+        "industry": "Wireless Telecommunications"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "VZ",
+            "r": 0.92,
+            "etf": false
+          },
+          {
+            "symbol": "TMUS",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "CMCSA",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "CHTR",
+            "r": 0.38,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.44,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.07,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "TMO",
@@ -591,7 +2237,65 @@
       "move_pct": 6.21,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-27",
+        "revenue": 11994000000.0,
+        "gross_profit": null,
+        "net_income": 1736000000.0,
+        "net_margin": 14.47,
+        "eps": 6.03,
+        "eps_estimate": 5.71,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 255262427912.19202,
+        "sector": "Health Technology",
+        "industry": "Medical Specialties"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "DHR",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "A",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "IQV",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "WAT",
+            "r": 0.58,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.49,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.1,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "CSX",
@@ -612,7 +2316,70 @@
       "move_pct": 4.78,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 0.54,
+        "eps_estimate": 0.49,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 90197251200.0,
+        "sector": "Transportation",
+        "industry": "Railroads"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "UNP",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "NSC",
+            "r": 0.88,
+            "etf": false
+          },
+          {
+            "symbol": "CNI",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "CP",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IYT",
+            "r": 0.6,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.36,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.12,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "IBM",
@@ -633,7 +2400,70 @@
       "move_pct": 7.72,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ1 2026",
+        "period_end": "2026-03-31",
+        "revenue": 15917000000.0,
+        "gross_profit": 8950000000.0,
+        "net_income": 1216000000.0,
+        "net_margin": 7.64,
+        "eps": 2.93,
+        "eps_estimate": 3.02,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 218707073936.44278,
+        "sector": "Technology Services",
+        "industry": "Information Technology Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ACN",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "MSFT",
+            "r": 0.11,
+            "etf": false
+          },
+          {
+            "symbol": "CSCO",
+            "r": 0.09,
+            "etf": false
+          },
+          {
+            "symbol": "ORCL",
+            "r": 0.02,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SPY",
+            "r": 0.29,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.08,
+            "etf": true
+          },
+          {
+            "symbol": "XLK",
+            "r": 0.04,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "KMI",
@@ -654,7 +2484,70 @@
       "move_pct": 3.44,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 4477000000.0,
+        "gross_profit": null,
+        "net_income": 867000000.0,
+        "net_margin": 19.37,
+        "eps": 0.37,
+        "eps_estimate": 0.31,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 76145493332.47641,
+        "sector": "Industrial Services",
+        "industry": "Oil & Gas Pipelines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "WMB",
+            "r": 0.84,
+            "etf": false
+          },
+          {
+            "symbol": "OKE",
+            "r": 0.8,
+            "etf": false
+          },
+          {
+            "symbol": "ET",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "EPD",
+            "r": 0.53,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "AMLP",
+            "r": 0.65,
+            "etf": true
+          },
+          {
+            "symbol": "XLE",
+            "r": 0.52,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.08,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "LRCX",
@@ -675,7 +2568,70 @@
       "move_pct": 8.19,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ4 2026",
+        "period_end": "2026-06-28",
+        "revenue": 6722238000.0,
+        "gross_profit": 3478740000.0,
+        "net_income": 2277282000.0,
+        "net_margin": 33.88,
+        "eps": 1.82,
+        "eps_estimate": 1.68,
+        "eps_period": "Q4 2026",
+        "eps_report_date": "2026-07-29"
+      },
+      "profile": {
+        "market_cap": 330200816960.10223,
+        "sector": "Producer Manufacturing",
+        "industry": "Industrial Machinery"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "AMAT",
+            "r": 0.92,
+            "etf": false
+          },
+          {
+            "symbol": "KLAC",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "ASML",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "MU",
+            "r": 0.8,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.88,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.5,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "LUV",
@@ -696,7 +2652,65 @@
       "move_pct": 6.61,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 8432000000.0,
+        "gross_profit": null,
+        "net_income": 233000000.0,
+        "net_margin": 2.76,
+        "eps": 0.94,
+        "eps_estimate": 0.49,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 19326170219.65393,
+        "sector": "Transportation",
+        "industry": "Airlines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "DAL",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "UAL",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "AAL",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "ALK",
+            "r": 0.78,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "JETS",
+            "r": 0.9,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.65,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "LVS",
@@ -717,7 +2731,60 @@
       "move_pct": 6.63,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3154000000.0,
+        "gross_profit": null,
+        "net_income": 346000000.0,
+        "net_margin": 10.97,
+        "eps": 0.59,
+        "eps_estimate": 0.79,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 24619120845.40786,
+        "sector": "Consumer Services",
+        "industry": "Casinos/Gaming"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "WYNN",
+            "r": 0.67,
+            "etf": false
+          },
+          {
+            "symbol": "MGM",
+            "r": 0.27,
+            "etf": false
+          },
+          {
+            "symbol": "CZR",
+            "r": -0.21,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.21,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.02,
+            "etf": true
+          }
+        ],
+        "candidates": 5
+      }
     },
     {
       "symbol": "META",
@@ -738,7 +2805,70 @@
       "move_pct": 7.3,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 60801000000.0,
+        "gross_profit": 49471000000.0,
+        "net_income": 15848000000.0,
+        "net_margin": 26.07,
+        "eps": 6.18,
+        "eps_estimate": 7.18,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-29"
+      },
+      "profile": {
+        "market_cap": 1807049123267.4402,
+        "sector": "Technology Services",
+        "industry": "Internet Software/Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "GOOGL",
+            "r": 0.34,
+            "etf": false
+          },
+          {
+            "symbol": "SNAP",
+            "r": 0.31,
+            "etf": false
+          },
+          {
+            "symbol": "AMZN",
+            "r": 0.22,
+            "etf": false
+          },
+          {
+            "symbol": "PINS",
+            "r": 0.11,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.7,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.29,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.25,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "SAP",
@@ -759,7 +2889,70 @@
       "move_pct": 7.23,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 1.85,
+        "eps_estimate": 2.01,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 275944944315.264,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "NOW",
+            "r": 0.79,
+            "etf": false
+          },
+          {
+            "symbol": "CRM",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "MSFT",
+            "r": 0.16,
+            "etf": false
+          },
+          {
+            "symbol": "ORCL",
+            "r": 0.01,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.63,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.14,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.07,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "TSLA",
@@ -780,7 +2973,70 @@
       "move_pct": 7.41,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 28236000000.0,
+        "gross_profit": 4751000000.0,
+        "net_income": 1114000000.0,
+        "net_margin": 3.95,
+        "eps": 0.33,
+        "eps_estimate": 0.44,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 1400786898500.0,
+        "sector": "Consumer Durables",
+        "industry": "Motor Vehicles"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "RIVN",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "NVDA",
+            "r": 0.35,
+            "etf": false
+          },
+          {
+            "symbol": "F",
+            "r": 0.18,
+            "etf": false
+          },
+          {
+            "symbol": "GM",
+            "r": 0.17,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ARKK",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "XLY",
+            "r": 0.62,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.62,
+            "etf": true
+          }
+        ],
+        "candidates": 9
+      }
     },
     {
       "symbol": "TXN",
@@ -801,7 +3057,70 @@
       "move_pct": 8.4,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 5463000000.0,
+        "gross_profit": 3352000000.0,
+        "net_income": 1980000000.0,
+        "net_margin": 36.24,
+        "eps": 2.14,
+        "eps_estimate": 1.92,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 252558734400.0,
+        "sector": "Electronic Technology",
+        "industry": "Semiconductors"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ADI",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "MCHP",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "ON",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "NXPI",
+            "r": 0.67,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.73,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.63,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.49,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "URI",
@@ -822,7 +3141,65 @@
       "move_pct": 8.14,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 4410000000.0,
+        "gross_profit": 1732000000.0,
+        "net_income": 753000000.0,
+        "net_margin": 17.07,
+        "eps": 12.76,
+        "eps_estimate": 11.57,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 64119422587.5,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CAT",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "ETN",
+            "r": 0.44,
+            "etf": false
+          },
+          {
+            "symbol": "PWR",
+            "r": 0.35,
+            "etf": false
+          },
+          {
+            "symbol": "DE",
+            "r": 0.18,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLI",
+            "r": 0.67,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.23,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "AAL",
@@ -843,7 +3220,65 @@
       "move_pct": 6.99,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 16735000000.0,
+        "gross_profit": null,
+        "net_income": 71000000.0,
+        "net_margin": 0.42,
+        "eps": 0.15,
+        "eps_estimate": 0.04,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 7860893750.0,
+        "sector": "Transportation",
+        "industry": "Airlines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "DAL",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "LUV",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "UAL",
+            "r": 0.82,
+            "etf": false
+          },
+          {
+            "symbol": "ALK",
+            "r": 0.76,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "JETS",
+            "r": 0.91,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.63,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "BCS",
@@ -864,7 +3299,70 @@
       "move_pct": 9.1,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 29 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 29 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 0.896,
+        "eps_estimate": 0.89,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-28"
+      },
+      "profile": {
+        "market_cap": 76469282717.91322,
+        "sector": "Finance",
+        "industry": "Investment Banks/Brokers"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ING",
+            "r": 0.81,
+            "etf": false
+          },
+          {
+            "symbol": "SAN",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "DB",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "HSBC",
+            "r": 0.67,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "EUFN",
+            "r": 0.83,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.6,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.43,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "BX",
@@ -885,7 +3383,65 @@
       "move_pct": 6.29,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 5043978000.0,
+        "gross_profit": null,
+        "net_income": 1229189000.0,
+        "net_margin": 24.37,
+        "eps": 1.52,
+        "eps_estimate": 1.35,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 132404643004.99283,
+        "sector": "Finance",
+        "industry": "Investment Managers"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "KKR",
+            "r": 0.85,
+            "etf": false
+          },
+          {
+            "symbol": "ARES",
+            "r": 0.84,
+            "etf": false
+          },
+          {
+            "symbol": "CG",
+            "r": 0.75,
+            "etf": false
+          },
+          {
+            "symbol": "APO",
+            "r": 0.74,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.6,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.53,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "CMCSA",
@@ -906,7 +3462,65 @@
       "move_pct": 6.66,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 29940000000.0,
+        "gross_profit": null,
+        "net_income": 3526000000.0,
+        "net_margin": 11.78,
+        "eps": 1.04,
+        "eps_estimate": 0.97,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 77750624086.59486,
+        "sector": "Consumer Services",
+        "industry": "Cable/Satellite TV"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CHTR",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "TMUS",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "DIS",
+            "r": 0.56,
+            "etf": false
+          },
+          {
+            "symbol": "VZ",
+            "r": 0.51,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.63,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.11,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "HON",
@@ -927,7 +3541,65 @@
       "move_pct": 5.08,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 9719000000.0,
+        "gross_profit": 3653000000.0,
+        "net_income": 5682000000.0,
+        "net_margin": 58.46,
+        "eps": 4.52,
+        "eps_estimate": 2.42,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 67020132400.0,
+        "sector": "Producer Manufacturing",
+        "industry": "Industrial Machinery"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "EMR",
+            "r": 0.4,
+            "etf": false
+          },
+          {
+            "symbol": "ITW",
+            "r": 0.37,
+            "etf": false
+          },
+          {
+            "symbol": "GE",
+            "r": 0.36,
+            "etf": false
+          },
+          {
+            "symbol": "MMM",
+            "r": 0.31,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLI",
+            "r": 0.51,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.16,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "LMT",
@@ -948,7 +3620,70 @@
       "move_pct": 4.87,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-28",
+        "revenue": 20063000000.0,
+        "gross_profit": 2446000000.0,
+        "net_income": 1836000000.0,
+        "net_margin": 9.15,
+        "eps": 7.94,
+        "eps_estimate": 7.23,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 127334318430.0,
+        "sector": "Electronic Technology",
+        "industry": "Aerospace & Defense"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "RTX",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "GD",
+            "r": 0.67,
+            "etf": false
+          },
+          {
+            "symbol": "NOC",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "LHX",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITA",
+            "r": 0.57,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.34,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.08,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "NDAQ",
@@ -969,7 +3704,65 @@
       "move_pct": 4.6,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 2532000000.0,
+        "gross_profit": 1500000000.0,
+        "net_income": 507000000.0,
+        "net_margin": 20.02,
+        "eps": 1.07,
+        "eps_estimate": 0.95,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 52521512396.89282,
+        "sector": "Finance",
+        "industry": "Investment Banks/Brokers"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ICE",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "MCO",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "SPGI",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "MSCI",
+            "r": 0.61,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.46,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.24,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "NOK",
@@ -990,7 +3783,65 @@
       "move_pct": 10.28,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 0.081,
+        "eps_estimate": 0.07,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 51722674336.22,
+        "sector": "Electronic Technology",
+        "industry": "Telecommunications Equipment"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CIEN",
+            "r": 0.79,
+            "etf": false
+          },
+          {
+            "symbol": "ERIC",
+            "r": 0.4,
+            "etf": false
+          },
+          {
+            "symbol": "CSCO",
+            "r": 0.39,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLK",
+            "r": 0.72,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.68,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.53,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "NSC",
@@ -1011,7 +3862,70 @@
       "move_pct": 5.74,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": true,
-      "note": "Nearest expiry 2026-11-20 is 29 days after report (no weekly listed); figure includes non-earnings time value."
+      "note": "Nearest expiry 2026-11-20 is 29 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 3.52,
+        "eps_estimate": 3.2,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 73387410162.14236,
+        "sector": "Transportation",
+        "industry": "Railroads"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "UNP",
+            "r": 0.93,
+            "etf": false
+          },
+          {
+            "symbol": "CSX",
+            "r": 0.88,
+            "etf": false
+          },
+          {
+            "symbol": "CNI",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "CP",
+            "r": 0.56,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IYT",
+            "r": 0.55,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.36,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.12,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "PG",
@@ -1032,7 +3946,65 @@
       "move_pct": 3.67,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ4 2026",
+        "period_end": "2026-06-30",
+        "revenue": 21203000000.0,
+        "gross_profit": 10284000000.0,
+        "net_income": 3045000000.0,
+        "net_margin": 14.36,
+        "eps": 1.43,
+        "eps_estimate": 1.42,
+        "eps_period": "Q4 2026",
+        "eps_report_date": "2026-07-29"
+      },
+      "profile": {
+        "market_cap": 370071387819.9006,
+        "sector": "Consumer Non-Durables",
+        "industry": "Household/Personal Care"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "CL",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "KMB",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "PEP",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "CLX",
+            "r": 0.43,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLP",
+            "r": 0.75,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.12,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "PHM",
@@ -1053,7 +4025,70 @@
       "move_pct": 5.42,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3982957000.0,
+        "gross_profit": 1058194000.0,
+        "net_income": 472003000.0,
+        "net_margin": 11.85,
+        "eps": 2.48,
+        "eps_estimate": 2.36,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-22"
+      },
+      "profile": {
+        "market_cap": 21279664560.0,
+        "sector": "Consumer Durables",
+        "industry": "Homebuilding"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "TOL",
+            "r": 0.93,
+            "etf": false
+          },
+          {
+            "symbol": "DHI",
+            "r": 0.92,
+            "etf": false
+          },
+          {
+            "symbol": "KBH",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "LEN",
+            "r": 0.84,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITB",
+            "r": 0.95,
+            "etf": true
+          },
+          {
+            "symbol": "XHB",
+            "r": 0.88,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.37,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "SPOT",
@@ -1074,7 +4109,70 @@
       "move_pct": 9.47,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 3.03,
+        "eps_estimate": 3.29,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 109274108044.04602,
+        "sector": "Technology Services",
+        "industry": "Internet Software/Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "NFLX",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "DIS",
+            "r": 0.38,
+            "etf": false
+          },
+          {
+            "symbol": "ROKU",
+            "r": 0.37,
+            "etf": false
+          },
+          {
+            "symbol": "LYV",
+            "r": 0.34,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.4,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.1,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.25,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "UNP",
@@ -1095,7 +4193,70 @@
       "move_pct": 4.34,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 6864000000.0,
+        "gross_profit": null,
+        "net_income": 1993000000.0,
+        "net_margin": 29.04,
+        "eps": 3.41,
+        "eps_estimate": 3.16,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 171690934380.0,
+        "sector": "Transportation",
+        "industry": "Railroads"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "NSC",
+            "r": 0.93,
+            "etf": false
+          },
+          {
+            "symbol": "CSX",
+            "r": 0.9,
+            "etf": false
+          },
+          {
+            "symbol": "CNI",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "CP",
+            "r": 0.64,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IYT",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.3,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.14,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "VLO",
@@ -1116,7 +4277,65 @@
       "move_pct": 6.51,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 44476000000.0,
+        "gross_profit": 5469000000.0,
+        "net_income": 3720000000.0,
+        "net_margin": 8.36,
+        "eps": 12.54,
+        "eps_estimate": 9.77,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-30"
+      },
+      "profile": {
+        "market_cap": 128052860989.5143,
+        "sector": "Energy Minerals",
+        "industry": "Oil Refining/Marketing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "MPC",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "PSX",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "PBF",
+            "r": 0.82,
+            "etf": false
+          },
+          {
+            "symbol": "DK",
+            "r": 0.65,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLE",
+            "r": 0.66,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.09,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      }
     },
     {
       "symbol": "BE",
@@ -1137,7 +4356,70 @@
       "move_pct": 12.27,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1065365000.0,
+        "gross_profit": 355572000.0,
+        "net_income": 198856000.0,
+        "net_margin": 18.67,
+        "eps": 0.78,
+        "eps_estimate": 0.36,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-28"
+      },
+      "profile": {
+        "market_cap": 65190683363.30937,
+        "sector": "Electronic Technology",
+        "industry": "Electronic Production Equipment"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "FCEL",
+            "r": 0.68,
+            "etf": false
+          },
+          {
+            "symbol": "PLUG",
+            "r": 0.67,
+            "etf": false
+          },
+          {
+            "symbol": "GEV",
+            "r": 0.6,
+            "etf": false
+          },
+          {
+            "symbol": "ENPH",
+            "r": 0.51,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ICLN",
+            "r": 0.83,
+            "etf": true
+          },
+          {
+            "symbol": "TAN",
+            "r": 0.62,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.46,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "NEM",
@@ -1158,7 +4440,70 @@
       "move_pct": 5.56,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 6118000000.0,
+        "gross_profit": null,
+        "net_income": 2202000000.0,
+        "net_margin": 35.99,
+        "eps": 2.1,
+        "eps_estimate": 2.18,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-23"
+      },
+      "profile": {
+        "market_cap": 124946832762.9761,
+        "sector": "Non-Energy Minerals",
+        "industry": "Precious Metals"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "AEM",
+            "r": 0.93,
+            "etf": false
+          },
+          {
+            "symbol": "WPM",
+            "r": 0.91,
+            "etf": false
+          },
+          {
+            "symbol": "FNV",
+            "r": 0.88,
+            "etf": false
+          },
+          {
+            "symbol": "KGC",
+            "r": 0.85,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "GDX",
+            "r": 0.96,
+            "etf": true
+          },
+          {
+            "symbol": "GLD",
+            "r": 0.88,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.42,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "WDC",
@@ -1179,7 +4524,70 @@
       "move_pct": 10.74,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ4 2026",
+        "period_end": "2026-07-03",
+        "revenue": 3747000000.0,
+        "gross_profit": 2028000000.0,
+        "net_income": 3195000000.0,
+        "net_margin": 85.27,
+        "eps": 3.56,
+        "eps_estimate": 3.27,
+        "eps_period": "Q4 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 124211692228.04726,
+        "sector": "Electronic Technology",
+        "industry": "Computer Peripherals"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "STX",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "SNDK",
+            "r": 0.8,
+            "etf": false
+          },
+          {
+            "symbol": "MU",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "NTAP",
+            "r": 0.1,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.58,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.48,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.23,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     },
     {
       "symbol": "AXP",
@@ -1200,7 +4608,70 @@
       "move_pct": 4.75,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 11212000000.0,
+        "gross_profit": null,
+        "net_income": 3110000000.0,
+        "net_margin": 27.74,
+        "eps": 4.53,
+        "eps_estimate": 4.4,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-24"
+      },
+      "profile": {
+        "market_cap": 211777216000.00003,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "ALLY",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "COF",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "SYF",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "V",
+            "r": 0.45,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.62,
+            "etf": true
+          },
+          {
+            "symbol": "KRE",
+            "r": 0.47,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.45,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      }
     },
     {
       "symbol": "SLB",
@@ -1221,7 +4692,70 @@
       "move_pct": 5.5,
       "quote_ts": "2026-10-16 03:59 PM ET",
       "long_dated": false,
-      "note": ""
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 8972000000.0,
+        "gross_profit": null,
+        "net_income": 786000000.0,
+        "net_margin": 8.76,
+        "eps": 0.55,
+        "eps_estimate": 0.52,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-24"
+      },
+      "profile": {
+        "market_cap": 73472510373.83844,
+        "sector": "Industrial Services",
+        "industry": "Contract Drilling"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-16",
+        "end": "2026-10-15",
+        "base": "2026-07-15",
+        "stocks": [
+          {
+            "symbol": "HAL",
+            "r": 0.66,
+            "etf": false
+          },
+          {
+            "symbol": "BKR",
+            "r": 0.54,
+            "etf": false
+          },
+          {
+            "symbol": "CVX",
+            "r": 0.32,
+            "etf": false
+          },
+          {
+            "symbol": "XOM",
+            "r": 0.23,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "OIH",
+            "r": 0.77,
+            "etf": true
+          },
+          {
+            "symbol": "XLE",
+            "r": 0.4,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.19,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      }
     }
   ],
   "gaps": [
@@ -1232,5 +4766,11 @@
   ],
   "calendar_notes": [
     "Also checked: FIX and ITW; Robinhood lists their next reports on Oct 30 and Oct 27, outside this week."
-  ]
+  ],
+  "featured": [
+    "META",
+    "TSLA"
+  ],
+  "featured_basis": "two largest reporters by Robinhood market cap",
+  "cards_method": "Latest quarter: Robinhood quarterly financials (revenue, net income, net margin) and the most recent reported 'actual' EPS from Robinhood earnings results (may be an adjusted, non-GAAP figure). Correlated stocks: Pearson correlation of 65 daily close-to-close returns (split-adjusted regular-session closes from Robinhood) against a hand-picked candidate list of same-sector stocks and ETFs; top 4 stocks and top 3 ETFs shown. Correlation is not causation and says nothing about the earnings reaction."
 }

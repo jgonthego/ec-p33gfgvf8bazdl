@@ -49,6 +49,36 @@ tbody tr:hover{background:color-mix(in srgb,var(--acc) 6%,transparent)}td.n{text
 .small{font-size:12px;color:var(--muted)}h2.sec{font-size:20px;margin:26px 0 12px}
 footer{margin-top:30px;padding:20px 0 40px;border-top:1px solid var(--line)}
 form{display:flex;gap:8px;flex-wrap:wrap}form input{padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);min-width:240px}form button{padding:9px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer}
+.ew{--c:#4f8dff;position:relative;color:#eef2ff;background:radial-gradient(120% 60% at 50% 0%,color-mix(in srgb,var(--c) 22%,#0a0d1c) 0%,#080b17 70%);border:1px solid color-mix(in srgb,var(--c) 70%,transparent);border-radius:18px;padding:18px;box-shadow:0 0 0 1px color-mix(in srgb,var(--c) 25%,transparent),0 0 28px color-mix(in srgb,var(--c) 35%,transparent),inset 0 0 30px color-mix(in srgb,var(--c) 10%,transparent);margin-bottom:16px}
+.ew a{color:inherit}.ew-h{display:flex;gap:12px;align-items:center}.ew-n{margin:0;font-size:clamp(22px,4.4vw,32px);line-height:1.1;font-weight:900;letter-spacing:.01em;text-transform:uppercase;color:var(--c);text-shadow:0 0 14px color-mix(in srgb,var(--c) 70%,transparent)}
+.ew-n small{font-size:.6em;color:#e6ebff;text-shadow:none}.ew-s{margin:2px 0 0;font-size:12px;color:#aab3cf}
+.tk{--c:#4f8dff;flex:none;display:inline-grid;place-items:center;min-width:52px;height:52px;padding:0 6px;border-radius:13px;font-weight:900;font-size:15px;letter-spacing:.02em;color:#fff;background:linear-gradient(140deg,var(--c),color-mix(in srgb,var(--c) 45%,#000));box-shadow:0 0 14px color-mix(in srgb,var(--c) 55%,transparent);text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.tk.sm{min-width:40px;height:40px;font-size:12px;border-radius:10px}.tk.xs{min-width:42px;height:24px;font-size:10px;border-radius:6px;box-shadow:none}
+.ew-when{text-align:center;margin:12px 0;font-size:15px;color:#d5dbf0}.ew-when b{color:#fff;letter-spacing:.03em}
+.ew-box{background:rgba(255,255,255,.035);border:1px solid color-mix(in srgb,var(--c) 40%,rgba(255,255,255,.08));border-radius:14px;padding:12px 14px;margin-top:12px}
+.ew-box h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;text-align:center;color:#e8ecff}
+.ew-move{text-align:center}.ew-move .big{font-size:clamp(46px,11vw,72px);font-weight:900;line-height:1;color:var(--c);text-shadow:0 0 22px color-mix(in srgb,var(--c) 80%,transparent)}
+.ew-move .usd{font-size:clamp(22px,5vw,30px);font-weight:800;margin:4px 0 6px}.ew-move p{margin:2px 0}.ew-move .ref span{color:#9aa4c4;font-size:12px}
+.ew-note{font-size:11px;color:#9aa4c4;margin:8px 0 0;text-align:center}.ew-flag{font-size:12px;color:#fbbf24;margin:6px 0 0}.ew-na{color:#9aa4c4;text-align:center;margin:4px 0}
+.q4{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.q4 div{text-align:center;padding:4px 6px;border-left:1px solid rgba(255,255,255,.1)}.q4 div:first-child{border-left:0}
+.q4 span{display:block;font-size:11px;color:#aab3cf}.q4 b{font-size:clamp(15px,3.6vw,19px)}.q4 b.na{color:#7f89a8;font-weight:600}
+.ew-sub{margin:-2px 0 8px;text-align:center;font-size:12px;color:#aab3cf}.corr{list-style:none;margin:0;padding:0}
+.corr li{display:grid;grid-template-columns:auto 46px 1fr 48px;align-items:center;gap:8px;padding:5px 0}.corr b{font-size:14px}.corr em{font-style:normal;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.cb{height:12px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}.cb i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,color-mix(in srgb,var(--c) 55%,#fff0),var(--c));box-shadow:0 0 10px var(--c)}
+.etfp{margin:8px 0 0;text-align:center;font-size:12px;color:#d5dbf0;border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:10px;padding:5px 8px}
+.ew-f{margin-top:12px;font-size:11px;color:#9aa4c4;text-align:center}
+.vs-t{text-align:center;font-weight:900;font-size:clamp(22px,4.5vw,40px);letter-spacing:.02em;margin:4px 0 12px}.vs-t i{font-style:normal;font-size:.55em;color:var(--muted)}.vs-t span{text-shadow:0 0 18px currentColor}
+.vs-t small{display:block;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}@media(max-width:860px){.vs{grid-template-columns:1fr}}
+.ew-one{max-width:620px;margin:0 auto}
+.ewg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-bottom:16px}
+.ewc{--c:#4f8dff;display:block;text-decoration:none;color:#e9edff;background:linear-gradient(160deg,color-mix(in srgb,var(--c) 16%,#0a0d1c),#080b17 75%);border:1px solid color-mix(in srgb,var(--c) 55%,transparent);border-radius:14px;padding:12px;box-shadow:0 0 14px color-mix(in srgb,var(--c) 22%,transparent);transition:transform .12s,box-shadow .12s}
+a.ewc:hover{transform:translateY(-2px);box-shadow:0 0 22px color-mix(in srgb,var(--c) 45%,transparent)}
+.ewc-h{display:flex;gap:10px;align-items:center}.ewc-h b{display:block;font-size:14px;line-height:1.2}.ewc-h span{font-size:12px;color:#aab3cf}
+.ewc-m{font-size:30px;font-weight:900;color:var(--c);text-shadow:0 0 12px color-mix(in srgb,var(--c) 70%,transparent);margin:8px 0 2px}.ewc-m small{font-size:14px;color:#e9edff;margin-left:8px;text-shadow:none;font-weight:700}
+.ewc-l{font-size:12px;color:#c3cae2}
+a.chip{text-decoration:none;color:var(--fg)}td a{color:inherit;text-decoration:none}td a:hover{color:var(--acc)}
+@media(max-width:480px){.ew{padding:14px}.q4{grid-template-columns:repeat(2,1fr);row-gap:8px}.q4 div:nth-child(3){border-left:0}.corr li{grid-template-columns:auto 40px 1fr 44px;gap:6px}}
 @media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}"""
 
 SORT_JS = """document.querySelectorAll('table.sortable th').forEach((th,i)=>{th.addEventListener('click',()=>{
@@ -149,13 +179,117 @@ def calendar(w):
         cards.append(f"<div class='day'><h4>{dow(d)}<span>{len(dr)} report{'s' if len(dr)!=1 else ''}</span></h4>{body or '<p class=small>No selected reports.</p>'}</div>")
     return "<div class='days'>" + "".join(cards) + "</div>"
 
-def week_body(w):
+# ---------- earnings-watch cards ----------
+BRAND = {"NFLX":"#ff2a3d","TSLA":"#ff3344","META":"#2f7bff","SPOT":"#1ed760","T":"#19b5fe","IBM":"#4f8dff","GM":"#4d8bff",
+         "AAL":"#9aa9c0","UAL":"#4a7dff","LUV":"#ffbf00","COF":"#e0393e","AXP":"#3c8cff","PG":"#3d7bff","GE":"#5aa0ff",
+         "CMCSA":"#a06bff","NEE":"#2fd38a","TXN":"#ff3b3b","LMT":"#5b8cff","NEM":"#ffc23d","PM":"#c9a24b","VLO":"#3fa9f5"}
+NEON = ["#ff3d7f","#36c5ff","#a46bff","#2ee6a6","#ffb020","#ff6b3d","#4d8bff","#e04dff","#26d9d9","#9bff3d"]
+def bcolor(s): return BRAND.get(s) or NEON[sum(map(ord, s)) % len(NEON)]
+def money(v, sign=False):
+    if v is None: return "n/a"
+    a = abs(v); neg = "-" if v < 0 else ""
+    for d, u in ((1e12, "T"), (1e9, "B"), (1e6, "M")):
+        if a >= d: return f"{neg}${a/d:,.2f}{u}"
+    return f"{neg}${a:,.0f}"
+def eps_s(v): return "n/a" if v is None else (f"-${abs(v):,.2f}" if v < 0 else f"${v:,.2f}")
+def pct_s(v): return "n/a" if v is None else f"{v:.1f}%"
+def r_s(r): return f"{'+' if r > 0 else ('−' if r < 0 else '')}{abs(r):.2f}"
+def shortd(d): return date.fromisoformat(d).strftime("%b %-d") if d else ""
+def when(r): return f"{date.fromisoformat(r['report_date']).strftime('%a %b %-d')} · {r['timing']}"
+def tbadge(s, cls="tk"): return f"<span class='{cls}' style='--c:{bcolor(s)}' aria-hidden='true'>{e(s)}</span>"
+
+def quarter_block(r):
+    f = r.get("fundamentals")
+    if not f: return "<section class='ew-box'><h3>Latest quarter</h3><p class='ew-na'>n/a — no Robinhood fundamentals for this ticker.</p></section>"
+    per, eper = f.get("period"), f.get("eps_period")
+    same = per and eper and per.replace("FQ", "Q") == eper
+    head = per or (f"EPS {eper}" if eper else "")
+    end = f" · ended {nice(f['period_end'])}" if f.get("period_end") else ""
+    cells = [("Revenue", money(f.get("revenue"))), ("Net income", money(f.get("net_income"))),
+             ("Net margin", pct_s(f.get("net_margin"))),
+             ("EPS" + ("" if same or not eper else f" ({eper})"), eps_s(f.get("eps")))]
+    cell = "".join(f"<div><span>{e(k)}</span><b class='{'na' if v=='n/a' else ''}'>{e(v)}</b></div>" for k, v in cells)
+    return (f"<section class='ew-box'><h3>Latest quarter ({e(head)})</h3><div class='q4'>{cell}</div>"
+            f"<p class='ew-note'>Revenue / net income / net margin: Robinhood quarterly financials{e(end)}. "
+            f"EPS: Robinhood earnings results 'actual'{(' (reported ' + nice(f['eps_report_date']) + ')') if f.get('eps_report_date') else ''}; may be adjusted (non-GAAP).</p></section>")
+
+def corr_block(r, n=4):
+    c = r.get("correlations")
+    if not c or not (c["stocks"] or c["etfs"]):
+        return "<section class='ew-box'><h3>Correlated stocks</h3><p class='ew-na'>n/a — not enough price history.</p></section>"
+    rows = "".join(f"<li>{tbadge(x['symbol'],'tk xs')}<b>{e(x['symbol'])}</b><span class='cb'><i style='width:{max(x['r'],0)*100:.0f}%'></i></span><em>{r_s(x['r'])}</em></li>"
+                   for x in c["stocks"][:n]) or "<li class='ew-na'>No stock peers with full history.</li>"
+    etf = (" · ".join(f"{e(x['symbol'])} {r_s(x['r'])}" for x in c["etfs"])) if c["etfs"] else ""
+    return (f"<section class='ew-box'><h3>Correlated stocks</h3><p class='ew-sub'>{c['n_returns']} daily returns · {shortd(c['start'])} – {nice(c['end'])}</p>"
+            f"<ul class='corr'>{rows}</ul>{f'<p class=etfp>ETF proxies: {etf}</p>' if etf else ''}"
+            f"<p class='ew-note'>Pearson correlation of daily close-to-close returns vs. {c['candidates']} hand-picked same-sector candidates. Not causation.</p></section>")
+
+def big_card(r, w, h="h2"):
+    p = r.get("profile") or {}
+    sub = " · ".join(x for x in (p.get("sector"), p.get("industry")) if x)
+    lo, hi = r["price"] - r["move_usd"], r["price"] + r["move_usd"]
+    flag = f"<p class='ew-flag'>⚑ {e(r['note'])}</p>" if r["note"] else ""
+    return f"""<article class="ew" style="--c:{bcolor(r['symbol'])}">
+<header class="ew-h">{tbadge(r['symbol'])}<div><{h} class="ew-n">{e(r['name'])} <small>({e(r['symbol'])})</small></{h}>{f'<p class=ew-s>{e(sub)}</p>' if sub else ''}</div></header>
+<p class="ew-when">Earnings: <b>{e(when(r).upper())}</b></p>
+<section class="ew-box ew-move"><h3>Option-implied price move</h3><div class="big">±{r['move_pct']:.1f}%</div><div class="usd">±${r['move_usd']:,.2f}</div>
+<p>Implied range: <b>${lo:,.2f} – ${hi:,.2f}</b></p><p class="ref">Reference stock price: ${r['price']:,.2f} <span>(last trade {e(r['price_ts'])})</span></p>
+<p class="ew-note">ATM straddle, {e(r['expiration'])} expiry @ {r['strike']:g}; option quotes {e(r['quote_ts'])}. Non-directional.</p>{flag}</section>
+{quarter_block(r)}{corr_block(r)}
+<footer class="ew-f">Source: {e(w['source'])}, retrieved {e(w['retrieved'])}. Implied moves are non-directional estimates, not forecasts. Correlation is not earnings-event causation.</footer></article>"""
+
+def mini_card(r, href):
+    f = r.get("fundamentals") or {}; c = r.get("correlations") or {}
+    lo, hi = r["price"] - r["move_usd"], r["price"] + r["move_usd"]
+    per, eper = f.get("period"), f.get("eps_period")
+    rev = f"Rev {money(f['revenue'])}" if f.get("revenue") is not None else ""
+    ep = f"EPS {eps_s(f['eps'])}" if f.get("eps") is not None else ""
+    if rev and ep and per and eper and per.replace("FQ", "Q") != eper: rev, ep = f"{rev} ({per})", f"{ep} ({eper})"
+    lab = (per if rev else eper) if (rev or ep) else ""
+    q = (f"{lab}: " if lab and "(" not in rev else "") + " · ".join(x for x in (rev, ep) if x) if (rev or ep) else "Latest quarter n/a"
+    top = c.get("stocks") or c.get("etfs") or []
+    tc = f"Top corr: {e(top[0]['symbol'])} {r_s(top[0]['r'])}" if top else "Correlation n/a"
+    inner = (f"<div class='ewc-h'>{tbadge(r['symbol'],'tk sm')}<div><b>{e(r['name'])}</b><span>{e(when(r))}</span></div></div>"
+             f"<div class='ewc-m'>±{r['move_pct']:.1f}%<small>±${r['move_usd']:,.2f}{' ⚑' if r['note'] else ''}</small></div>"
+             f"<div class='ewc-l'>Range ${lo:,.2f} – ${hi:,.2f}</div><div class='ewc-l'>{e(q)}</div><div class='ewc-l'>{tc}</div>")
+    return f"<a class='ewc' style='--c:{bcolor(r['symbol'])}' href='{href}'>{inner}</a>" if href else f"<div class='ewc' style='--c:{bcolor(r['symbol'])}'>{inner}</div>"
+
+def has_cards(w): return any("fundamentals" in r or "correlations" in r for r in w["rows"])
+
+def cards_section(w, tref):
+    """tref: relative prefix to docs/t/ or None (older weeks: no ticker pages)."""
+    if not has_cards(w): return ""
+    by = {r["symbol"]: r for r in w["rows"]}
+    feat = [by[s] for s in w.get("featured", []) if s in by][:2]
+    out = ""
+    if len(feat) == 2:
+        a, b = feat
+        out += (f"<h2 class='sec'>Featured matchup</h2><div class='vs-t'><span style='color:{bcolor(a['symbol'])}'>{e(a['name'].upper())}</span> <i>vs</i> "
+                f"<span style='color:{bcolor(b['symbol'])}'>{e(b['name'].upper())}</span><small>Earnings watch · {e(w.get('featured_basis',''))}</small></div>"
+                f"<div class='vs'>{big_card(a, w, 'h3')}{big_card(b, w, 'h3')}</div>")
+    out += ("<h2 class='sec'>Earnings watch cards</h2><p class='small'>One card per company, in report order. "
+            + ("Tap a card for the full view with latest-quarter figures and correlated stocks." if tref else "") + "</p>"
+            + "<div class='ewg'>" + "".join(mini_card(r, f"{tref}{r['symbol']}.html" if tref else None) for r in w["rows"]) + "</div>")
+    return out
+
+def ticker_body(r, w):
+    same = [x for x in w["rows"] if x["report_date"] == r["report_date"] and x["symbol"] != r["symbol"]]
+    chips = "".join(f"<a class='chip' href='{e(x['symbol'])}.html'><b>{e(x['symbol'])}</b><i>±{x['move_pct']:.1f}%</i></a>" for x in same)
+    return (f"<p class='small' style='margin-top:18px'><a href='../index.html'>← All reporters, week of {nice(w['week_of'])}</a></p>"
+            f"<div class='ew-one'>{big_card(r, w, 'h1')}</div>"
+            f"<div class='card'><h3>Also reporting {e(dow(r['report_date']))}</h3><div class='chips'>{chips or '<span class=small>None among the selected tickers.</span>'}</div></div>"
+            f"<div class='card'><h3>Method</h3><p class='small'>{e(w['method'])}</p><p class='small'>{e(w.get('cards_method',''))}</p>"
+            f"<p class='small'>n/a = not available from Robinhood for this ticker; nothing is estimated or filled in.</p></div>")
+
+def week_body(w, tref=None):
     rs = w["rows"]
     mx = max((r["move_pct"] for r in rs), default=1) or 1
     rows = []
+    link = bool(tref) and has_cards(w)
     for r in rs:
         flag = f"<div class='flag'>⚑ {e(r['note'])}</div>" if r["note"] else ""
-        rows.append(f"<tr><td><strong>{r['symbol']}</strong>{' <span class=flag>⚑</span>' if r['note'] else ''}</td><td class='hide-sm'>{e(r['name'])}</td>"
+        tk = f"<a href='{tref}{r['symbol']}.html'>{r['symbol']}</a>" if link else r["symbol"]
+        rows.append(f"<tr><td><strong>{tk}</strong>{' <span class=flag>⚑</span>' if r['note'] else ''}</td><td class='hide-sm'>{e(r['name'])}</td>"
           f"<td data-v='{r['report_date']}{'0' if r['timing']=='Before open' else '1'}'>{dow(r['report_date'])}</td><td><span class='pill {TCLS.get(r['timing'],'')}'>{r['timing']}</span></td>"
           f"<td class='n' data-v='{r['price']}'>${r['price']:,.2f}</td>"
           f"<td class='n' data-v='{r['move_usd']}'>±${r['move_usd']:,.2f}</td><td class='n' data-v='{r['move_pct']}'><div class='bar'><span class='t'><i style='width:{100*r['move_pct']/mx:.0f}%'></i></span>±{r['move_pct']:.2f}%</div></td>"
@@ -179,13 +313,14 @@ def week_body(w):
 <p class="small"><strong>Source: {w['source']}, retrieved {w['retrieved']}.</strong> Stock prices are last regular-session trades ({e(rs[0]['price_ts'] if rs else '')}); option bid/ask times are shown per row. Selection: {e(w['selection'])}</p>
 <div class="grid2"><div class="card"><h3>Top {min(15,len(rs))} expected moves (%)</h3>{svg_movers(rs) if rs else ''}<p class="small">⚑ = monthly expiry used; likely overstates the earnings-only move.</p></div>
 <div class="card"><h3>Reports by day</h3>{svg_days(rs) if rs else ''}</div></div>
+{cards_section(w, tref)}
 <h2 class="sec">Calendar</h2>{calendar(w)}
 <h2 class="sec">Full table</h2><p class="small">Click any column header to sort (e.g. by date or expected move %).</p>
 <div class="tw"><table class="sortable"><thead><tr><th>Ticker</th><th class='hide-sm'>Company</th><th>Report date</th><th>Timing</th><th>Price</th><th>Exp. move $</th><th>Exp. move %</th><th class='hide-sm'>Expiry @ ATM strike</th><th class='hide-sm'>Quote time</th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
 <p class="small">Method: {e(w['method'])} ⚑ = no weekly expiration was listed, so the nearest monthly was used and the figure likely overstates the earnings-only move.</p>
 <div class="card"><h3>Data notes</h3><ul>{''.join(f'<li>{e(c)}</li>' for c in w.get('calendar_notes',[]))}{gaps}</ul>
-<p class="small">Raw data: <a href="data.json">data.json</a></p></div>"""
+<p class="small">Raw data: <a href="data.json">data.json</a></p>{f'<p class="small">{e(w["cards_method"])}</p>' if w.get("cards_method") else ''}</div>"""
 
 def main():
     weeks = sorted((json.load(open(f)) for f in glob.glob(f"{ROOT}/data/week-*.json")), key=lambda w: w["week_of"])
@@ -196,13 +331,22 @@ def main():
         d = os.path.join(DOCS, "weeks", w["week_of"]); os.makedirs(d)
         t = f"Earnings Week of {nice(w['week_of'])}: Dates, Timing & Expected Moves | {SITE_NAME}"
         desc = f"{len(w['rows'])} earnings reports for the week of {nice(w['week_of'])} with report timing and options-implied expected moves. Free, updated weekly."
-        open(f"{d}/index.html","w").write(page(t, desc, f"/weeks/{w['week_of']}/", week_body(w), 2))
+        cur_w = w is weeks[-1]
+        open(f"{d}/index.html","w").write(page(t, desc, f"/weeks/{w['week_of']}/", week_body(w, "../../t/" if cur_w else None), 2))
         json.dump(w, open(f"{d}/data.json","w"), indent=1)
         urls.append(f"/weeks/{w['week_of']}/")
     cur = weeks[-1]
     open(f"{DOCS}/index.html","w").write(page(f"{SITE_NAME} — Earnings This Week & Expected Moves",
         f"Free weekly earnings calendar: this week's notable reports, before/after market timing and options-implied expected moves.",
-        "/", week_body(cur).replace('href="data.json"', f'href="weeks/{cur["week_of"]}/data.json"'), 0))
+        "/", week_body(cur, "t/").replace('href="data.json"', f'href="weeks/{cur["week_of"]}/data.json"'), 0))
+    if has_cards(cur):   # per-ticker earnings-watch pages for the current week
+        os.makedirs(f"{DOCS}/t")
+        for r in cur["rows"]:
+            t = f"{r['name']} ({r['symbol']}) Earnings Watch: Implied Move, Latest Quarter & Correlated Stocks | {SITE_NAME}"
+            desc = (f"{r['name']} reports {dow(r['report_date'])} ({r['timing'].lower()}). Options imply a ±{r['move_pct']:.1f}% move "
+                    f"(±${r['move_usd']:,.2f}); latest-quarter figures and most-correlated stocks.")
+            open(f"{DOCS}/t/{r['symbol']}.html","w").write(page(t, desc, f"/t/{r['symbol']}.html", ticker_body(r, cur), 1))
+            urls.append(f"/t/{r['symbol']}.html")
     os.makedirs(f"{DOCS}/archive")
     items = "".join(f"<li><a href='../weeks/{w['week_of']}/index.html'>Week of {nice(w['week_of'])}</a> — {len(w['rows'])} companies</li>" for w in reversed(weeks))
     open(f"{DOCS}/archive/index.html","w").write(page(f"Archive | {SITE_NAME}", "Past weekly earnings cheat sheets with expected moves.", "/archive/", f"<div class='card'><h2>Archive</h2><ul>{items}</ul></div>", 1))
