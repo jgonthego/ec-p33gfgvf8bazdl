@@ -12,6 +12,8 @@ FEEDBACK = "d.bot@mail.grokbot.com"
 # Publication gate: the site owner chose to publish the Robinhood market data and accepts the terms risk
 # (decision of Oct 15, 2026). True = indexable pages, robots Allow, no preview banner.
 LICENSE_CLEARED = True
+# Hidden site (owner decision, Oct 17, 2026): noindex/nofollow/noarchive on every page, robots.txt Disallow, no sitemap, no canonical.
+HIDDEN = False
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(ROOT, "docs")
 e = html.escape
@@ -28,7 +30,7 @@ CSS = """:root{--bg:#f6f7fb;--fg:#0f172a;--muted:#5b6475;--card:#fff;--line:#e4e
 nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px}nav a:hover{background:var(--card);color:var(--fg)}
 #theme{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:5px 9px;cursor:pointer}
 .hero{margin:22px 0 18px;padding:26px;border-radius:18px;color:#fff;background:linear-gradient(135deg,#4f46e5,#0891b2);box-shadow:var(--shadow)}
-.hero h2{margin:0 0 4px;font-size:clamp(22px,4vw,32px)}.hero p{margin:0;opacity:.9}
+.hero h2,.hero h1{margin:0 0 6px;font-size:clamp(22px,4vw,32px)}.hero .small{color:#eef2ff;margin-top:6px}.hero p{margin:0;opacity:.9}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
 .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:12px}.stat b{display:block;font-size:22px}.stat span{font-size:12px;opacity:.85}
 .grid2{display:grid;grid-template-columns:3fr 2fr;gap:16px}@media(max-width:860px){.grid2{grid-template-columns:1fr}}
@@ -77,7 +79,22 @@ a.ewc:hover{transform:translateY(-2px);box-shadow:0 0 22px color-mix(in srgb,var
 .ewc-h{display:flex;gap:10px;align-items:center}.ewc-h b{display:block;font-size:14px;line-height:1.2}.ewc-h span{font-size:12px;color:#aab3cf}
 .ewc-m{font-size:30px;font-weight:900;color:var(--c);text-shadow:0 0 12px color-mix(in srgb,var(--c) 70%,transparent);margin:8px 0 2px}.ewc-m small{font-size:14px;color:#e9edff;margin-left:8px;text-shadow:none;font-weight:700}
 .ewc-l{font-size:12px;color:#c3cae2}
-a.chip{text-decoration:none;color:var(--fg)}td a{color:inherit;text-decoration:none}td a:hover{color:var(--acc)}
+a.chip{text-decoration:none;color:var(--fg)}
+.ew-act{text-align:center;margin:-4px 0 4px;font-size:12px;color:#c3cae2}.ew-act b{color:#fff}
+.past{list-style:none;margin:0;padding:0}.past li{display:grid;grid-template-columns:118px 1fr 58px;gap:8px;align-items:center;padding:3px 0;font-size:13px}
+.past li i{font-style:normal}.past li span i{font-size:10px;color:#9aa4c4;margin-left:3px}.past em{font-style:normal;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.pb{height:10px;border-radius:5px;background:rgba(255,255,255,.07);overflow:hidden}.pb i{display:block;height:100%;border-radius:5px}
+.pb i.up{background:#22c55e}.pb i.dn{background:#f43f5e}.pb i.im{background:var(--c);box-shadow:0 0 10px var(--c)}
+.past li.impl{border-top:1px dashed rgba(255,255,255,.18);margin-top:4px;padding-top:6px}.past li.impl span:first-child{font-weight:700;color:#fff}
+.verdict{margin-top:8px;text-align:center;border:1px solid color-mix(in srgb,var(--c) 50%,transparent);border-radius:10px;padding:6px 8px;font-size:14px}
+.verdict b{font-size:18px;color:var(--c);margin-right:6px}.pre{text-align:center;font-size:13px;margin:8px 0 0;color:#d5dbf0}
+b.up{color:#4ade80}b.dn{color:#fb7185}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:-4px 0 6px}.tabs button,.tabs a{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;text-decoration:none}
+.tabs button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.ewc{position:relative}.rk{position:absolute;top:8px;right:10px;font-weight:900;font-size:13px;color:var(--c);text-shadow:0 0 8px var(--c)}
+.ewg.big .ewc{padding:16px}.ewg.big .ewc-m{font-size:36px}
+.sech{display:flex;align-items:baseline;gap:10px;margin:26px 0 10px}.sech h2{margin:0;font-size:20px}.sech span{color:var(--muted);font-size:13px}
+@media(max-width:480px){.past li{grid-template-columns:96px 1fr 50px;font-size:12px}}td a{color:inherit;text-decoration:none}td a:hover{color:var(--acc)}
 @media(max-width:480px){.ew{padding:14px}.q4{grid-template-columns:repeat(2,1fr);row-gap:8px}.q4 div:nth-child(3){border-left:0}.corr li{grid-template-columns:44px 54px 1fr 44px;gap:6px}}
 @media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}"""
 
@@ -86,6 +103,9 @@ const t=th.closest('table'),b=t.tBodies[0],rows=[...b.rows],asc=th.dataset.asc!=
 rows.sort((a,c)=>{const x=a.cells[i].dataset.v??a.cells[i].innerText,y=c.cells[i].dataset.v??c.cells[i].innerText;
 const nx=parseFloat(x),ny=parseFloat(y);const r=(!isNaN(nx)&&!isNaN(ny))?nx-ny:x.localeCompare(y);return asc?r:-r});
 rows.forEach(r=>b.appendChild(r))})});
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{const g=document.getElementById('ewg');if(!g)return;
+const k=b.dataset.sort;[...g.children].sort((x,y)=>(+x.dataset[k])-(+y.dataset[k])).forEach(c=>g.appendChild(c));
+b.parentNode.querySelectorAll('button').forEach(o=>o.classList.toggle('on',o===b));g.classList.toggle('ranked',k==='rank')}));
 (function(){const k='ewcs-theme',r=document.documentElement,b=document.getElementById('theme');let s=null;try{s=localStorage.getItem(k)}catch(_){}
 if(s)r.dataset.theme=s;const dark=()=>r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
 const lab=()=>{if(b)b.textContent=dark()?'☀':'☾'};lab();if(b)b.addEventListener('click',()=>{r.dataset.theme=dark()?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(_){}lab()})})();"""
@@ -105,14 +125,14 @@ def page(title, desc, path, body, depth):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">
-{"" if LICENSE_CLEARED else '<meta name="robots" content="noindex,nofollow">'}
-<link rel="canonical" href="{url}">
+{'<meta name="robots" content="noindex,nofollow,noarchive">' if HIDDEN or not LICENSE_CLEARED else ''}
+{"" if HIDDEN else f'<link rel="canonical" href="{url}">'}
 <meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
-<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">{"" if HIDDEN else f'<meta property="og:url" content="{url}">'}
 <meta name="twitter:card" content="summary">
 <meta name="color-scheme" content="light dark"><style>{CSS}</style></head><body>
 <header class="top"><div class="wrap"><a class="brand" href="{rel}index.html"><span class="logo" aria-hidden="true"></span>{SITE_NAME}</a>
-<nav><a href="{rel}index.html">This week</a><a href="{rel}archive/index.html">Archive</a><a href="{rel}about/index.html">Method &amp; disclaimer</a></nav>
+<nav><a href="{rel}index.html">This week</a><a href="{rel}anticipated.html">Most anticipated</a><a href="{rel}sectors.html">By sector</a><a href="{rel}archive/index.html">Archive</a><a href="{rel}about/index.html">Method &amp; disclaimer</a></nav>
 <button id="theme" type="button" aria-label="Toggle dark/light theme">☾</button></div></header><div class="wrap">
 {"" if LICENSE_CLEARED else "<p class='disc'><strong>Internal preview — not for publication.</strong> Data-source terms do not yet permit public display.</p>"}
 <main>{body}</main>
@@ -224,6 +244,36 @@ def corr_block(r, n=4):
             f"<ul class='corr'>{rows}</ul>{f'<p class=etfp>ETF proxies: {etf}</p>' if etf else ''}"
             f"<p class='ew-note'>Pearson correlation of daily close-to-close returns vs. {c['candidates']} hand-picked same-sector candidates. Not causation.</p></section>")
 
+def big_num(v):
+    if v is None: return "n/a"
+    return f"{v/1e6:.2f}M" if v >= 1e6 else (f"{v/1e3:.0f}K" if v >= 1e3 else f"{v:,.0f}")
+def sgn(v): return "n/a" if v is None else f"{'+' if v > 0 else ('−' if v < 0 else '')}{abs(v):.1f}%"
+
+def past_block(r):
+    p = r.get("past_moves")
+    if not p: return "<section class='ew-box'><h3>Implied vs. past earnings moves</h3><p class='ew-na'>n/a — no Robinhood earnings history or price data.</p></section>"
+    mv = p.get("moves") or []
+    mx = max([abs(m["move_pct"]) for m in mv] + [r["move_pct"]]) or 1
+    rows = "".join(f"<li><span>{e(date.fromisoformat(m['report_date']).strftime('%b %-d, %Y'))} <i>{'BMO' if m['timing']=='am' else 'AMC'}</i></span>"
+                   f"<span class='pb'><i class='{'up' if m['move_pct']>=0 else 'dn'}' style='width:{abs(m['move_pct'])/mx*100:.0f}%'></i></span><em>{sgn(m['move_pct'])}</em></li>" for m in reversed(mv))
+    rows += f"<li class='impl'><span>This week (implied)</span><span class='pb'><i class='im' style='width:{r['move_pct']/mx*100:.0f}%'></i></span><em>±{r['move_pct']:.1f}%</em></li>"
+    ratio = p.get("ratio")
+    verdict = (f"<div class='verdict'><b>{ratio:.2f}×</b> {e(p['label'])}</div>" if ratio is not None else "<div class='verdict'><b>n/a</b> Not enough past reports for a comparison</div>")
+    caveat = "<p class='ew-flag'>⚑ Monthly expiry used, so the implied figure includes extra non-earnings time value and overstates the comparison.</p>" if r["note"] else ""
+    pre = p.get("pre_change")
+    pre_s = (f"<p class='pre'>Stock change, last {pre['sessions']} sessions ({shortd(pre['start'])} – {nice(pre['end'])} close): <b class='{'up' if pre['change_pct']>=0 else 'dn'}'>{sgn(pre['change_pct'])}</b></p>"
+             if pre else "<p class='pre'>30-session change: n/a</p>")
+    avg = f"±{p['avg_abs']:.1f}%" if p.get("avg_abs") is not None else "n/a"
+    return (f"<section class='ew-box'><h3>Implied vs. past earnings moves</h3><p class='ew-sub'>Last {len(mv)} reports · close before → close after · avg absolute move <b>{avg}</b></p>"
+            f"<ul class='past'>{rows}</ul>{verdict}{caveat}{pre_s}"
+            "<p class='ew-note'>Past moves: Robinhood earnings dates/timing + daily closes. Ratio = implied ÷ average absolute past move. Non-directional; not a prediction or advice.</p></section>")
+
+def act_line(r):
+    a = r.get("options_activity") or {}
+    if not a.get("total"): return "<p class='ew-act'>Options activity: n/a</p>"
+    return (f"<p class='ew-act'>Most-anticipated rank <b>#{r['anticipated_rank']}</b> · options OI {big_num(a['open_interest'])} + volume {big_num(a['volume'])} = "
+            f"<b>{big_num(a['total'])}</b> contracts</p>")
+
 def big_card(r, w, h="h2"):
     p = r.get("profile") or {}
     sub = " · ".join(x for x in (p.get("sector"), p.get("industry")) if x)
@@ -231,14 +281,14 @@ def big_card(r, w, h="h2"):
     flag = f"<p class='ew-flag'>⚑ {e(r['note'])}</p>" if r["note"] else ""
     return f"""<article class="ew" style="--c:{bcolor(r['symbol'])}">
 <header class="ew-h">{tbadge(r['symbol'])}<div><{h} class="ew-n">{e(r['name'])} <small>({e(r['symbol'])})</small></{h}>{f'<p class=ew-s>{e(sub)}</p>' if sub else ''}</div></header>
-<p class="ew-when">Earnings: <b>{e(when(r).upper())}</b></p>
+<p class="ew-when">Earnings: <b>{e(when(r).upper())}</b></p>{act_line(r)}
 <section class="ew-box ew-move"><h3>Option-implied price move</h3><div class="big">±{r['move_pct']:.1f}%</div><div class="usd">±${r['move_usd']:,.2f}</div>
 <p>Implied range: <b>${lo:,.2f} – ${hi:,.2f}</b></p><p class="ref">Reference stock price: ${r['price']:,.2f} <span>(last trade {e(r['price_ts'])})</span></p>
 <p class="ew-note">ATM straddle, {e(r['expiration'])} expiry @ {r['strike']:g}; option quotes {e(r['quote_ts'])}. Non-directional.</p>{flag}</section>
-{quarter_block(r)}{corr_block(r)}
+{past_block(r)}{quarter_block(r)}{corr_block(r)}
 <footer class="ew-f">Source: {e(w['source'])}, retrieved {e(w['retrieved'])}. Implied moves are non-directional estimates, not forecasts. Correlation is not earnings-event causation.</footer></article>"""
 
-def mini_card(r, href):
+def mini_card(r, href, show_rank=False):
     f = r.get("fundamentals") or {}; c = r.get("correlations") or {}
     lo, hi = r["price"] - r["move_usd"], r["price"] + r["move_usd"]
     per, eper = f.get("period"), f.get("eps_period")
@@ -249,10 +299,16 @@ def mini_card(r, href):
     q = (f"{lab}: " if lab and "(" not in rev else "") + " · ".join(x for x in (rev, ep) if x) if (rev or ep) else "Latest quarter n/a"
     top = c.get("stocks") or c.get("etfs") or []
     tc = f"Top corr: {e(top[0]['symbol'])} {r_s(top[0]['r'])}" if top else "Correlation n/a"
-    inner = (f"<div class='ewc-h'>{tbadge(r['symbol'],'tk sm')}<div><b>{e(r['name'])}</b><span>{e(when(r))}</span></div></div>"
+    a = r.get("options_activity") or {}; pm = r.get("past_moves") or {}
+    rk = (f"<span class='rk'>#{r['anticipated_rank']}</span>" if show_rank and r.get("anticipated_rank") else "")
+    al = f"<div class='ewc-l'>Options activity {big_num(a.get('total'))}{' · #' + str(r['anticipated_rank']) if r.get('anticipated_rank') else ''}</div>"
+    pl = f"<div class='ewc-l'>Implied vs. past avg: {pm['ratio']:.2f}×</div>" if pm.get("ratio") is not None else ""
+    inner = rk + (f"<div class='ewc-h'>{tbadge(r['symbol'],'tk sm')}<div><b>{e(r['name'])}</b><span>{e(when(r))}</span></div></div>"
              f"<div class='ewc-m'>±{r['move_pct']:.1f}%<small>±${r['move_usd']:,.2f}{' ⚑' if r['note'] else ''}</small></div>"
-             f"<div class='ewc-l'>Range ${lo:,.2f} – ${hi:,.2f}</div><div class='ewc-l'>{e(q)}</div><div class='ewc-l'>{tc}</div>")
-    return f"<a class='ewc' style='--c:{bcolor(r['symbol'])}' href='{href}'>{inner}</a>" if href else f"<div class='ewc' style='--c:{bcolor(r['symbol'])}'>{inner}</div>"
+             f"<div class='ewc-l'>Range ${lo:,.2f} – ${hi:,.2f}</div><div class='ewc-l'>{e(q)}</div><div class='ewc-l'>{tc}</div>{al}{pl}")
+    da = f"data-i='{r.get('_i',0)}' data-rank='{r.get('anticipated_rank') or 999}'"
+    return (f"<a class='ewc' {da} style='--c:{bcolor(r['symbol'])}' href='{href}'>{inner}</a>" if href
+            else f"<div class='ewc' {da} style='--c:{bcolor(r['symbol'])}'>{inner}</div>")
 
 def has_cards(w): return any("fundamentals" in r or "correlations" in r for r in w["rows"])
 
@@ -267,9 +323,16 @@ def cards_section(w, tref):
         out += (f"<h2 class='sec'>Featured matchup</h2><div class='vs-t'><span style='color:{bcolor(a['symbol'])}'>{e(a['name'].upper())}</span> <i>vs</i> "
                 f"<span style='color:{bcolor(b['symbol'])}'>{e(b['name'].upper())}</span><small>Earnings watch · {e(w.get('featured_basis',''))}</small></div>"
                 f"<div class='vs'>{big_card(a, w, 'h3')}{big_card(b, w, 'h3')}</div>")
-    out += ("<h2 class='sec'>Earnings watch cards</h2><p class='small'>One card per company, in report order. "
-            + ("Tap a card for the full view with latest-quarter figures and correlated stocks." if tref else "") + "</p>"
-            + "<div class='ewg'>" + "".join(mini_card(r, f"{tref}{r['symbol']}.html" if tref else None) for r in w["rows"]) + "</div>")
+    for i, r in enumerate(w["rows"]): r["_i"] = i
+    root = tref[:-2] if tref else None   # "t/" -> "", "../../t/" -> "../../"
+    tabs = ""
+    if tref and any(r.get("anticipated_rank") for r in w["rows"]):
+        tabs = ("<div class='tabs' role='group' aria-label='Sort cards'><button type='button' class='on' data-sort='i'>Report date</button>"
+                "<button type='button' data-sort='rank'>Most anticipated</button>"
+                f"<a href='{root}anticipated.html'>Ranked page →</a><a href='{root}sectors.html'>By sector →</a></div>")
+    out += ("<h2 class='sec'>Earnings watch cards</h2>" + tabs + "<p class='small'>One card per company. "
+            + ("Tap a card for the full view with past earnings moves, latest-quarter figures and correlated stocks." if tref else "") + "</p>"
+            + "<div class='ewg' id='ewg'>" + "".join(mini_card(r, f"{tref}{r['symbol']}.html" if tref else None) for r in w["rows"]) + "</div>")
     return out
 
 def ticker_body(r, w):
@@ -280,6 +343,55 @@ def ticker_body(r, w):
             f"<div class='card'><h3>Also reporting {e(dow(r['report_date']))}</h3><div class='chips'>{chips or '<span class=small>None among the selected tickers.</span>'}</div></div>"
             f"<div class='card'><h3>Method</h3><p class='small'>{e(w['method'])}</p><p class='small'>{e(w.get('cards_method',''))}</p>"
             f"<p class='small'>n/a = not available from Robinhood for this ticker; nothing is estimated or filled in.</p></div>")
+
+def _ensure_i(w):
+    for i, r in enumerate(w["rows"]): r.setdefault("_i", i)
+
+def anticipated_body(w):
+    _ensure_i(w)
+    rk = [r for r in w["rows"] if r.get("anticipated_rank")]
+    if not rk:
+        return "<div class='card'><h2>Most anticipated</h2><p>n/a — options-activity data was not available this week, so no ranking is shown.</p></div>"
+    rk.sort(key=lambda r: r["anticipated_rank"])
+    top, rest = rk[:15], rk[15:]
+    miss = [r["symbol"] for r in w["rows"] if not (r.get("options_activity") or {}).get("total")]
+    return (f"<div class='hero'><h1>Most anticipated earnings — week of {nice(w['week_of'])}</h1>"
+            f"<p class='small'><b>How it is ranked:</b> {e(w.get('anticipated_method',''))}</p>"
+            + (f"<p class='small'>No options-activity data: {e(', '.join(miss))} (listed last).</p>" if miss else "") + "</div>"
+            "<h2 class='sec'>Top 15</h2><div class='ewg big'>" + "".join(mini_card(r, f"t/{r['symbol']}.html", True) for r in top) + "</div>"
+            + (f"<h2 class='sec'>The rest ({len(rest)})</h2><div class='ewg'>" + "".join(mini_card(r, f"t/{r['symbol']}.html", True) for r in rest) + "</div>" if rest else "")
+            + f"<p class='small'>Options activity counts contracts across all listed expirations, not only the earnings expiry. It reflects how actively a stock's options trade overall — large, popular stocks rank high every week. Not advice.</p>")
+
+def _median(v):
+    v = sorted(v); n = len(v)
+    return None if not n else (v[n//2] if n % 2 else (v[n//2-1] + v[n//2]) / 2)
+
+def sector_svg(groups):
+    rowh, lw, bw, W = 30, 190, 300, 600
+    mc = max(len(g) for _, g in groups)
+    H = rowh * len(groups) + 34
+    out = [f"<svg viewBox='0 0 {W} {H}' role='img' aria-label='Reporters per sector and median implied move'>",
+           f"<text x='{lw+6}' y='16' class='mut' font-size='11'>Companies reporting</text><text x='{W-4}' y='16' text-anchor='end' class='mut' font-size='11'>Median implied move</text>"]
+    for i, (sec, g) in enumerate(groups):
+        y = 28 + i * rowh; w_ = max(4, len(g) / mc * bw); med = _median([r["move_pct"] for r in g])
+        out.append(f"<text x='{lw}' y='{y+15}' text-anchor='end' font-size='12'>{e(sec)}</text>"
+                   f"<rect x='{lw+6}' y='{y+3}' width='{w_:.0f}' height='16' rx='4' fill='var(--acc)'/>"
+                   f"<text x='{lw+12+w_:.0f}' y='{y+15}' font-size='12' font-weight='700'>{len(g)}</text>"
+                   f"<text x='{W-4}' y='{y+15}' text-anchor='end' font-size='12' font-weight='700'>±{med:.1f}%</text>")
+    return "".join(out) + "</svg>"
+
+def sectors_body(w):
+    _ensure_i(w)
+    g = {}
+    for r in w["rows"]: g.setdefault((r.get("profile") or {}).get("sector") or "Sector n/a", []).append(r)
+    key = lambda r: (r.get("anticipated_rank") or 999, -r["move_pct"])
+    groups = sorted(((k, sorted(v, key=key)) for k, v in g.items()), key=lambda kv: (kv[0] == "Sector n/a", -len(kv[1]), kv[0]))
+    nav = "".join(f"<a class='chip' href='#s{i}'><b>{e(k)}</b><i>{len(v)}</i></a>" for i, (k, v) in enumerate(groups))
+    secs = "".join(f"<div class='sech' id='s{i}'><h2>{e(k)}</h2><span>{len(v)} {'company' if len(v)==1 else 'companies'} · median implied move ±{_median([r['move_pct'] for r in v]):.1f}%</span></div>"
+                   "<div class='ewg'>" + "".join(mini_card(r, f"t/{r['symbol']}.html", True) for r in v) + "</div>" for i, (k, v) in enumerate(groups))
+    return (f"<div class='hero'><h1>Earnings by sector — week of {nice(w['week_of'])}</h1>"
+            f"<p class='small'>{len(w['rows'])} companies grouped by Robinhood's sector classification. Within each sector, cards are ordered by most-anticipated rank (options activity; #n on each card).</p></div>"
+            f"<div class='card'><h3>Sector summary</h3>{sector_svg(groups)}</div><div class='chips'>{nav}</div>{secs}")
 
 def week_body(w, tref=None):
     rs = w["rows"]
@@ -351,6 +463,12 @@ def main():
                     f"(±${r['move_usd']:,.2f}); latest-quarter figures and most-correlated stocks.")
             open(f"{DOCS}/t/{r['symbol']}.html","w").write(page(t, desc, f"/t/{r['symbol']}.html", ticker_body(r, cur), 1))
             urls.append(f"/t/{r['symbol']}.html")
+    if has_cards(cur):
+        open(f"{DOCS}/anticipated.html","w").write(page(f"Most Anticipated Earnings This Week (Options Activity) | {SITE_NAME}",
+            f"This week's earnings reporters ranked by options open interest plus volume.", "/anticipated.html", anticipated_body(cur), 0))
+        open(f"{DOCS}/sectors.html","w").write(page(f"Earnings This Week by Sector | {SITE_NAME}",
+            f"This week's earnings reporters grouped by sector, with counts and median implied moves.", "/sectors.html", sectors_body(cur), 0))
+        urls += ["/anticipated.html", "/sectors.html"]
     os.makedirs(f"{DOCS}/archive")
     items = "".join(f"<li><a href='../weeks/{w['week_of']}/index.html'>Week of {nice(w['week_of'])}</a> — {len(w['rows'])} companies</li>" for w in reversed(weeks))
     open(f"{DOCS}/archive/index.html","w").write(page(f"Archive | {SITE_NAME}", "Past weekly earnings cheat sheets with expected moves.", "/archive/", f"<div class='card'><h2>Archive</h2><ul>{items}</ul></div>", 1))
@@ -358,9 +476,9 @@ def main():
     about = f"<div class='card'><h2>Method &amp; disclaimer</h2><p>{e(cur['method'])}</p><p>Source: Robinhood market data (earnings calendar, stock quotes, option chains and quotes). Data may be delayed; dates may change. Tickers without a usable option chain are skipped.</p></div>{DISCLAIMER}"
     open(f"{DOCS}/about/index.html","w").write(page(f"Method & Disclaimer | {SITE_NAME}", "How expected moves are calculated, data sources and disclaimer.", "/about/", about, 1))
     urls += ["/archive/", "/about/"]
-    open(f"{DOCS}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    if not HIDDEN: open(f"{DOCS}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{cur['week_of'] if u=='/' else ''}</lastmod></url>\n".replace("<lastmod></lastmod>","") for u in urls) + "</urlset>\n")
-    open(f"{DOCS}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n" if LICENSE_CLEARED else "User-agent: *\nDisallow: /\n")
+    open(f"{DOCS}/robots.txt","w").write("User-agent: *\nDisallow: /\n" if HIDDEN or not LICENSE_CLEARED else f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     open(f"{DOCS}/.nojekyll","w").write("")
     # newsletter draft
     os.makedirs(f"{ROOT}/newsletter", exist_ok=True)

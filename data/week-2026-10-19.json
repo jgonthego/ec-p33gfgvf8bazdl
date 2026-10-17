@@ -87,6 +87,73 @@
           }
         ],
         "candidates": 9
+      },
+      "options_activity": {
+        "open_interest": 813636.0,
+        "volume": 109379.0,
+        "total": 923015.0
+      },
+      "anticipated_rank": 7,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-07",
+            "after": "2025-05-08",
+            "move_pct": -15.78
+          },
+          {
+            "report_date": "2025-07-21",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-18",
+            "after": "2025-07-21",
+            "move_pct": 12.45
+          },
+          {
+            "report_date": "2025-10-20",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-17",
+            "after": "2025-10-20",
+            "move_pct": 21.47
+          },
+          {
+            "report_date": "2026-02-09",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-06",
+            "after": "2026-02-09",
+            "move_pct": -16.43
+          },
+          {
+            "report_date": "2026-04-20",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-17",
+            "after": "2026-04-20",
+            "move_pct": -2.11
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 15.98
+          }
+        ],
+        "avg_abs": 14.04,
+        "ratio": 0.88,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -2.17
+        }
       }
     },
     {
@@ -171,6 +238,73 @@
           }
         ],
         "candidates": 13
+      },
+      "options_activity": {
+        "open_interest": 34892.0,
+        "volume": 2624.0,
+        "total": 37516.0
+      },
+      "anticipated_rank": 44,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": -0.73
+          },
+          {
+            "report_date": "2025-07-17",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": -1.02
+          },
+          {
+            "report_date": "2025-10-17",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-16",
+            "after": "2025-10-17",
+            "move_pct": 1.31
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-16",
+            "after": "2026-01-20",
+            "move_pct": 1.95
+          },
+          {
+            "report_date": "2026-04-17",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-16",
+            "after": "2026-04-17",
+            "move_pct": 1.66
+          },
+          {
+            "report_date": "2026-07-17",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-16",
+            "after": "2026-07-17",
+            "move_pct": -2.29
+          }
+        ],
+        "avg_abs": 1.49,
+        "ratio": 4.63,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -7.44
+        }
       }
     },
     {
@@ -255,6 +389,73 @@
           }
         ],
         "candidates": 9
+      },
+      "options_activity": {
+        "open_interest": 22987.0,
+        "volume": 1041.0,
+        "total": 24028.0
+      },
+      "anticipated_rank": 48,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 4.34
+          },
+          {
+            "report_date": "2025-07-21",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": -1.7
+          },
+          {
+            "report_date": "2025-10-20",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 5.15
+          },
+          {
+            "report_date": "2026-01-26",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-23",
+            "after": "2026-01-26",
+            "move_pct": -4.41
+          },
+          {
+            "report_date": "2026-04-20",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": 5.19
+          },
+          {
+            "report_date": "2026-07-20",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": 1.31
+          }
+        ],
+        "avg_abs": 3.68,
+        "ratio": 2.9,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -2.78
+        }
       }
     },
     {
@@ -339,6 +540,73 @@
           }
         ],
         "candidates": 13
+      },
+      "options_activity": {
+        "open_interest": 38506.0,
+        "volume": 727.0,
+        "total": 39233.0
+      },
+      "anticipated_rank": 43,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-21",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": -1.12
+          },
+          {
+            "report_date": "2025-07-21",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 0.46
+          },
+          {
+            "report_date": "2025-10-20",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 1.39
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-20",
+            "after": "2026-01-21",
+            "move_pct": 4.21
+          },
+          {
+            "report_date": "2026-04-20",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -1.63
+          },
+          {
+            "report_date": "2026-07-20",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -3.95
+          }
+        ],
+        "avg_abs": 2.13,
+        "ratio": 3.72,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -7.37
+        }
       }
     },
     {
@@ -423,6 +691,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 79755.0,
+        "volume": 27170.0,
+        "total": 106925.0
+      },
+      "anticipated_rank": 34,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": -1.71
+          },
+          {
+            "report_date": "2025-07-18",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-17",
+            "after": "2025-07-18",
+            "move_pct": -0.89
+          },
+          {
+            "report_date": "2025-10-17",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-16",
+            "after": "2025-10-17",
+            "move_pct": 3.56
+          },
+          {
+            "report_date": "2026-01-21",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-20",
+            "after": "2026-01-21",
+            "move_pct": 0.02
+          },
+          {
+            "report_date": "2026-04-17",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-16",
+            "after": "2026-04-17",
+            "move_pct": 8.1
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -2.39
+          }
+        ],
+        "avg_abs": 2.78,
+        "ratio": 3.08,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -11.56
+        }
       }
     },
     {
@@ -507,6 +842,73 @@
           }
         ],
         "candidates": 9
+      },
+      "options_activity": {
+        "open_interest": 227578.0,
+        "volume": 13012.0,
+        "total": 240590.0
+      },
+      "anticipated_rank": 23,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 6.07
+          },
+          {
+            "report_date": "2025-07-17",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": -2.22
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 1.31
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-21",
+            "after": "2026-01-22",
+            "move_pct": -7.38
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -5.56
+          },
+          {
+            "report_date": "2026-07-16",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-15",
+            "after": "2026-07-16",
+            "move_pct": -4.06
+          }
+        ],
+        "avg_abs": 4.43,
+        "ratio": 1.39,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -5.31
+        }
       }
     },
     {
@@ -586,6 +988,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 271025.0,
+        "volume": 20343.0,
+        "total": 291368.0
+      },
+      "anticipated_rank": 20,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-28",
+            "after": "2025-04-29",
+            "move_pct": -0.64
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": -8.12
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 14.86
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": 8.75
+          },
+          {
+            "report_date": "2026-04-28",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-27",
+            "after": "2026-04-28",
+            "move_pct": 1.27
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": 4.91
+          }
+        ],
+        "avg_abs": 6.42,
+        "ratio": 0.98,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -1.43
+        }
       }
     },
     {
@@ -670,6 +1139,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 403503.0,
+        "volume": 12654.0,
+        "total": 416157.0
+      },
+      "anticipated_rank": 16,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": -5.57
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 0.99
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 11.58
+          },
+          {
+            "report_date": "2026-01-21",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-20",
+            "after": "2026-01-21",
+            "move_pct": 4.05
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": 4.01
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -5.47
+          }
+        ],
+        "avg_abs": 5.28,
+        "ratio": 1.08,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -12.6
+        }
       }
     },
     {
@@ -754,6 +1290,73 @@
           }
         ],
         "candidates": 13
+      },
+      "options_activity": {
+        "open_interest": 96440.0,
+        "volume": 7537.0,
+        "total": 103977.0
+      },
+      "anticipated_rank": 35,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": 1.42
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 2.35
+          },
+          {
+            "report_date": "2025-10-16",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-15",
+            "after": "2025-10-16",
+            "move_pct": -5.36
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-16",
+            "after": "2026-01-20",
+            "move_pct": -0.38
+          },
+          {
+            "report_date": "2026-04-16",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-15",
+            "after": "2026-04-16",
+            "move_pct": 0.46
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -1.59
+          }
+        ],
+        "avg_abs": 1.93,
+        "ratio": 3.63,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -8.53
+        }
       }
     },
     {
@@ -833,6 +1436,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 110177.0,
+        "volume": 7210.0,
+        "total": 117387.0
+      },
+      "anticipated_rank": 33,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 8.12
+          },
+          {
+            "report_date": "2025-07-18",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-17",
+            "after": "2025-07-18",
+            "move_pct": -3.65
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 7.66
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-16",
+            "after": "2026-01-20",
+            "move_pct": -6.96
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -1.94
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": 7.32
+          }
+        ],
+        "avg_abs": 5.94,
+        "ratio": 1.02,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -2.03
+        }
       }
     },
     {
@@ -917,6 +1587,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 29369.0,
+        "volume": 1552.0,
+        "total": 30921.0
+      },
+      "anticipated_rank": 45,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": -12.66
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 9.41
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": -0.44
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": 2.69
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -6.98
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -2.23
+          }
+        ],
+        "avg_abs": 5.74,
+        "ratio": 1.36,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -4.62
+        }
       }
     },
     {
@@ -1001,6 +1738,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 195824.0,
+        "volume": 14326.0,
+        "total": 210150.0
+      },
+      "anticipated_rank": 26,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": -9.81
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": -1.58
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 7.67
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": 3.68
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -4.4
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 7.33
+          }
+        ],
+        "avg_abs": 5.75,
+        "ratio": 0.89,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -6.89
+        }
       }
     },
     {
@@ -1085,6 +1889,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 43195.0,
+        "volume": 1473.0,
+        "total": 44668.0
+      },
+      "anticipated_rank": 42,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 2.82
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 1.76
+          },
+          {
+            "report_date": "2025-10-15",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-14",
+            "after": "2025-10-15",
+            "move_pct": -0.71
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": -5.82
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -1.21
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -1.63
+          }
+        ],
+        "avg_abs": 2.32,
+        "ratio": 3.92,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -5.55
+        }
       }
     },
     {
@@ -1169,6 +2040,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 147085.0,
+        "volume": 9509.0,
+        "total": 156594.0
+      },
+      "anticipated_rank": 30,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 3.68
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": 0.94
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": 1.53
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-22",
+            "after": "2026-01-23",
+            "move_pct": -7.56
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": -1.52
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": -2.36
+          }
+        ],
+        "avg_abs": 2.93,
+        "ratio": 1.87,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -8.19
+        }
       }
     },
     {
@@ -1253,6 +2191,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 116044.0,
+        "volume": 6371.0,
+        "total": 122415.0
+      },
+      "anticipated_rank": 32,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 1.92
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": -1.77
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": 13.89
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-22",
+            "after": "2026-01-23",
+            "move_pct": -0.35
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 7.16
+          },
+          {
+            "report_date": "2026-07-16",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-16",
+            "after": "2026-07-17",
+            "move_pct": -14.15
+          }
+        ],
+        "avg_abs": 6.54,
+        "ratio": 1.21,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 15.05
+        }
       }
     },
     {
@@ -1337,6 +2342,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 4905095.0,
+        "volume": 375769.0,
+        "total": 5280864.0
+      },
+      "anticipated_rank": 2,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-17",
+            "after": "2025-04-21",
+            "move_pct": 1.53
+          },
+          {
+            "report_date": "2025-07-17",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-17",
+            "after": "2025-07-18",
+            "move_pct": -5.1
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": -10.07
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-20",
+            "after": "2026-01-21",
+            "move_pct": -2.18
+          },
+          {
+            "report_date": "2026-04-16",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-16",
+            "after": "2026-04-17",
+            "move_pct": -9.72
+          },
+          {
+            "report_date": "2026-07-16",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-16",
+            "after": "2026-07-17",
+            "move_pct": -7.26
+          }
+        ],
+        "avg_abs": 5.98,
+        "ratio": 1.59,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -12.23
+        }
       }
     },
     {
@@ -1416,6 +2488,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 335723.0,
+        "volume": 17350.0,
+        "total": 353073.0
+      },
+      "anticipated_rank": 18,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-15",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-15",
+            "after": "2025-04-16",
+            "move_pct": -0.01
+          },
+          {
+            "report_date": "2025-07-16",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": 3.11
+          },
+          {
+            "report_date": "2025-10-15",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-15",
+            "after": "2025-10-16",
+            "move_pct": -5.63
+          },
+          {
+            "report_date": "2026-01-20",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-20",
+            "after": "2026-01-21",
+            "move_pct": 2.2
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": -5.58
+          },
+          {
+            "report_date": "2026-07-15",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-15",
+            "after": "2026-07-16",
+            "move_pct": -1.79
+          }
+        ],
+        "avg_abs": 3.05,
+        "ratio": 2.32,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -6.5
+        }
       }
     },
     {
@@ -1500,6 +2639,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 221255.0,
+        "volume": 10257.0,
+        "total": 231512.0
+      },
+      "anticipated_rank": 24,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-16",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-15",
+            "after": "2025-04-16",
+            "move_pct": 2.76
+          },
+          {
+            "report_date": "2025-07-17",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": -8.52
+          },
+          {
+            "report_date": "2025-10-15",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-14",
+            "after": "2025-10-15",
+            "move_pct": -2.87
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-21",
+            "after": "2026-01-22",
+            "move_pct": -10.04
+          },
+          {
+            "report_date": "2026-04-16",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-15",
+            "after": "2026-04-16",
+            "move_pct": -6.0
+          },
+          {
+            "report_date": "2026-07-16",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-15",
+            "after": "2026-07-16",
+            "move_pct": 10.71
+          }
+        ],
+        "avg_abs": 6.82,
+        "ratio": 0.8,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -5.24
+        }
       }
     },
     {
@@ -1579,6 +2785,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 49720.0,
+        "volume": 3675.0,
+        "total": 53395.0
+      },
+      "anticipated_rank": 41,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": -1.54
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": 0.67
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": -0.3
+          },
+          {
+            "report_date": "2026-02-04",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-03",
+            "after": "2026-02-04",
+            "move_pct": 0.53
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 0.46
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": 5.0
+          }
+        ],
+        "avg_abs": 1.42,
+        "ratio": 2.7,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 4.21
+        }
       }
     },
     {
@@ -1658,6 +2931,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 70403.0,
+        "volume": 6263.0,
+        "total": 76666.0
+      },
+      "anticipated_rank": 38,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 3.84
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 0.98
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 5.94
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-27",
+            "after": "2026-01-28",
+            "move_pct": -4.76
+          },
+          {
+            "report_date": "2026-04-21",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-20",
+            "after": "2026-04-21",
+            "move_pct": -0.49
+          },
+          {
+            "report_date": "2026-07-21",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-20",
+            "after": "2026-07-21",
+            "move_pct": -10.99
+          }
+        ],
+        "avg_abs": 4.5,
+        "ratio": 1.53,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 10.29
+        }
       }
     },
     {
@@ -1737,6 +3077,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 26749.0,
+        "volume": 1108.0,
+        "total": 27857.0
+      },
+      "anticipated_rank": 46,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 2.26
+          },
+          {
+            "report_date": "2025-07-17",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": -12.22
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": -1.22
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-27",
+            "after": "2026-01-28",
+            "move_pct": 5.86
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 0.03
+          },
+          {
+            "report_date": "2026-07-15",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-14",
+            "after": "2026-07-15",
+            "move_pct": -8.54
+          }
+        ],
+        "avg_abs": 5.02,
+        "ratio": 1.87,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 5.57
+        }
       }
     },
     {
@@ -1816,6 +3223,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 11405.0,
+        "volume": 4763.0,
+        "total": 16168.0
+      },
+      "anticipated_rank": 51,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 4.01
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": 1.76
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": -2.5
+          },
+          {
+            "report_date": "2026-02-18",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-17",
+            "after": "2026-02-18",
+            "move_pct": 6.51
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 1.55
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": -0.22
+          }
+        ],
+        "avg_abs": 2.76,
+        "ratio": 2.78,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -1.29
+        }
       }
     },
     {
@@ -1895,6 +3369,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 507220.0,
+        "volume": 28362.0,
+        "total": 535582.0
+      },
+      "anticipated_rank": 14,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 0.95
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": -6.09
+          },
+          {
+            "report_date": "2025-10-28",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-27",
+            "after": "2025-10-28",
+            "move_pct": -2.86
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": 1.97
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 6.94
+          },
+          {
+            "report_date": "2026-07-24",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-23",
+            "after": "2026-07-24",
+            "move_pct": -0.01
+          }
+        ],
+        "avg_abs": 3.14,
+        "ratio": 1.26,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -4.98
+        }
       }
     },
     {
@@ -1969,6 +3510,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 153162.0,
+        "volume": 7318.0,
+        "total": 160480.0
+      },
+      "anticipated_rank": 29,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 2.44
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": -8.43
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": -3.83
+          },
+          {
+            "report_date": "2026-02-06",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-05",
+            "after": "2026-02-06",
+            "move_pct": 0.45
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 6.98
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": 3.33
+          }
+        ],
+        "avg_abs": 4.24,
+        "ratio": 1.17,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 6.36
+        }
       }
     },
     {
@@ -2048,6 +3656,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 1187618.0,
+        "volume": 44853.0,
+        "total": 1232471.0
+      },
+      "anticipated_rank": 5,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 0.85
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": 1.2
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": -1.92
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-27",
+            "after": "2026-01-28",
+            "move_pct": 4.65
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-21",
+            "after": "2026-04-22",
+            "move_pct": 0.39
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": 3.5
+          }
+        ],
+        "avg_abs": 2.08,
+        "ratio": 2.39,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -9.44
+        }
       }
     },
     {
@@ -2127,6 +3802,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 60871.0,
+        "volume": 2663.0,
+        "total": 63534.0
+      },
+      "anticipated_rank": 39,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": -0.71
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": 9.14
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": 1.65
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -2.61
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -9.2
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 8.71
+          }
+        ],
+        "avg_abs": 5.34,
+        "ratio": 1.16,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 14.45
+        }
       }
     },
     {
@@ -2201,6 +3943,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 126054.0,
+        "volume": 4246.0,
+        "total": 130300.0
+      },
+      "anticipated_rank": 31,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-16",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": 1.21
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": 0.09
+          },
+          {
+            "report_date": "2025-10-16",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-16",
+            "after": "2025-10-17",
+            "move_pct": 1.69
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-22",
+            "after": "2026-01-23",
+            "move_pct": 2.4
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 6.95
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 5.77
+          }
+        ],
+        "avg_abs": 3.02,
+        "ratio": 1.58,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 0.08
+        }
       }
     },
     {
@@ -2285,6 +4094,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 602140.0,
+        "volume": 47555.0,
+        "total": 649695.0
+      },
+      "anticipated_rank": 9,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": -6.58
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -7.62
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -0.87
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 5.13
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -8.25
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 0.43
+          }
+        ],
+        "avg_abs": 4.81,
+        "ratio": 1.6,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 1.04
+        }
       }
     },
     {
@@ -2369,6 +4245,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 265023.0,
+        "volume": 37469.0,
+        "total": 302492.0
+      },
+      "anticipated_rank": 19,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-16",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": 0.56
+          },
+          {
+            "report_date": "2025-07-16",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-16",
+            "after": "2025-07-17",
+            "move_pct": -1.5
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -4.75
+          },
+          {
+            "report_date": "2026-01-21",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-21",
+            "after": "2026-01-22",
+            "move_pct": 3.88
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -0.25
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 0.86
+          }
+        ],
+        "avg_abs": 1.97,
+        "ratio": 1.75,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 2.66
+        }
       }
     },
     {
@@ -2448,6 +4391,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 536030.0,
+        "volume": 47810.0,
+        "total": 583840.0
+      },
+      "anticipated_rank": 11,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 6.25
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": -4.29
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 4.45
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 3.59
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -2.63
+          },
+          {
+            "report_date": "2026-07-29",
+            "timing": "pm",
+            "quarter": "Q4 2026",
+            "base": "2026-07-29",
+            "after": "2026-07-30",
+            "move_pct": 17.98
+          }
+        ],
+        "avg_abs": 6.53,
+        "ratio": 1.25,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -3.77
+        }
       }
     },
     {
@@ -2527,6 +4537,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 200311.0,
+        "volume": 10088.0,
+        "total": 210399.0
+      },
+      "anticipated_rank": 25,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 3.68
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -11.16
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -6.25
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 18.7
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -4.07
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -6.19
+          }
+        ],
+        "avg_abs": 8.34,
+        "ratio": 0.79,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 5.75
+        }
       }
     },
     {
@@ -2601,6 +4678,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 181690.0,
+        "volume": 13591.0,
+        "total": 195281.0
+      },
+      "anticipated_rank": 27,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 6.49
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": 4.31
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 12.39
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -13.96
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -8.62
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 1.72
+          }
+        ],
+        "avg_abs": 7.92,
+        "ratio": 0.84,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -13.96
+        }
       }
     },
     {
@@ -2685,6 +4829,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 3380104.0,
+        "volume": 900085.0,
+        "total": 4280189.0
+      },
+      "anticipated_rank": 3,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-30",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": 4.23
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": 11.25
+          },
+          {
+            "report_date": "2025-10-29",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-29",
+            "after": "2025-10-30",
+            "move_pct": -11.33
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 10.4
+          },
+          {
+            "report_date": "2026-04-29",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-29",
+            "after": "2026-04-30",
+            "move_pct": -8.55
+          },
+          {
+            "report_date": "2026-07-29",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-29",
+            "after": "2026-07-30",
+            "move_pct": -7.95
+          }
+        ],
+        "avg_abs": 8.95,
+        "ratio": 0.82,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 24.27
+        }
       }
     },
     {
@@ -2769,6 +4980,73 @@
           }
         ],
         "candidates": 9
+      },
+      "options_activity": {
+        "open_interest": 5704036.0,
+        "volume": 3612422.0,
+        "total": 9316458.0
+      },
+      "anticipated_rank": 1,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 5.37
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -8.2
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 2.28
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -3.45
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -3.56
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -14.52
+          }
+        ],
+        "avg_abs": 6.23,
+        "ratio": 1.19,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 1.52
+        }
       }
     },
     {
@@ -2853,6 +5131,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 236131.0,
+        "volume": 18397.0,
+        "total": 254528.0
+      },
+      "anticipated_rank": 22,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 6.56
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-22",
+            "after": "2025-07-23",
+            "move_pct": -13.34
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-21",
+            "after": "2025-10-22",
+            "move_pct": -5.6
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-27",
+            "after": "2026-01-28",
+            "move_pct": 9.94
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 19.43
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -3.13
+          }
+        ],
+        "avg_abs": 9.67,
+        "ratio": 0.87,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 9.54
+        }
       }
     },
     {
@@ -2927,6 +5272,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 23373.0,
+        "volume": 3357.0,
+        "total": 26730.0
+      },
+      "anticipated_rank": 47,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 9.87
+          },
+          {
+            "report_date": "2025-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": 8.96
+          },
+          {
+            "report_date": "2025-10-22",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -7.79
+          },
+          {
+            "report_date": "2026-01-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -12.86
+          },
+          {
+            "report_date": "2026-04-22",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 22.92
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 10.11
+          }
+        ],
+        "avg_abs": 12.09,
+        "ratio": 0.67,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 6.92
+        }
       }
     },
     {
@@ -3006,6 +5418,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 1994096.0,
+        "volume": 70326.0,
+        "total": 2064422.0
+      },
+      "anticipated_rank": 4,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 3.11
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -9.62
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 5.62
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": -7.0
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 2.43
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -8.35
+          }
+        ],
+        "avg_abs": 6.02,
+        "ratio": 1.16,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -6.33
+        }
       }
     },
     {
@@ -3085,6 +5564,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 499974.0,
+        "volume": 40982.0,
+        "total": 540956.0
+      },
+      "anticipated_rank": 13,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": 0.78
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": 3.58
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -4.17
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -2.62
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -5.7
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 1.37
+          }
+        ],
+        "avg_abs": 3.04,
+        "ratio": 2.07,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -20.19
+        }
       }
     },
     {
@@ -3164,6 +5710,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 859372.0,
+        "volume": 33722.0,
+        "total": 893094.0
+      },
+      "anticipated_rank": 8,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": -3.71
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": 2.25
+          },
+          {
+            "report_date": "2025-10-30",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-29",
+            "after": "2025-10-30",
+            "move_pct": -4.24
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 2.92
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 7.73
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -6.8
+          }
+        ],
+        "avg_abs": 4.61,
+        "ratio": 1.44,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -18.8
+        }
       }
     },
     {
@@ -3243,6 +5856,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 55988.0,
+        "volume": 3267.0,
+        "total": 59255.0
+      },
+      "anticipated_rank": 40,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-28",
+            "after": "2025-04-29",
+            "move_pct": 5.4
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -6.18
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 6.81
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 4.89
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -2.56
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 5.7
+          }
+        ],
+        "avg_abs": 5.26,
+        "ratio": 0.97,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 2.15
+        }
       }
     },
     {
@@ -3327,6 +6007,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 85678.0,
+        "volume": 10221.0,
+        "total": 95899.0
+      },
+      "anticipated_rank": 36,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 0.82
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": -10.81
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": -3.24
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 4.23
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -4.62
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 10.54
+          }
+        ],
+        "avg_abs": 5.71,
+        "ratio": 0.85,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 0.21
+        }
       }
     },
     {
@@ -3406,6 +6153,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 20842.0,
+        "volume": 1767.0,
+        "total": 22609.0
+      },
+      "anticipated_rank": 49,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 1.69
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": 5.91
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 1.65
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -0.63
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 0.78
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": -0.53
+          }
+        ],
+        "avg_abs": 1.86,
+        "ratio": 2.47,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -2.32
+        }
       }
     },
     {
@@ -3480,6 +6294,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 10758.0,
+        "volume": 134.0,
+        "total": 10892.0
+      },
+      "anticipated_rank": 52,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-22",
+            "after": "2025-04-23",
+            "move_pct": 0.89
+          },
+          {
+            "report_date": "2025-07-29",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-28",
+            "after": "2025-07-29",
+            "move_pct": -3.04
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-23",
+            "after": "2025-10-24",
+            "move_pct": -1.17
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 2.0
+          },
+          {
+            "report_date": "2026-04-24",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-23",
+            "after": "2026-04-24",
+            "move_pct": -0.54
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 5.32
+          }
+        ],
+        "avg_abs": 2.16,
+        "ratio": 2.66,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -1.58
+        }
       }
     },
     {
@@ -3559,6 +6440,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 374471.0,
+        "volume": 36040.0,
+        "total": 410511.0
+      },
+      "anticipated_rank": 17,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": -3.74
+          },
+          {
+            "report_date": "2025-07-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2025-07-28",
+            "after": "2025-07-29",
+            "move_pct": -0.32
+          },
+          {
+            "report_date": "2025-10-24",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2025-10-23",
+            "after": "2025-10-24",
+            "move_pct": 0.18
+          },
+          {
+            "report_date": "2026-01-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-01-21",
+            "after": "2026-01-22",
+            "move_pct": 2.65
+          },
+          {
+            "report_date": "2026-04-24",
+            "timing": "am",
+            "quarter": "Q3 2026",
+            "base": "2026-04-23",
+            "after": "2026-04-24",
+            "move_pct": 1.7
+          },
+          {
+            "report_date": "2026-07-29",
+            "timing": "am",
+            "quarter": "Q4 2026",
+            "base": "2026-07-28",
+            "after": "2026-07-29",
+            "move_pct": -1.87
+          }
+        ],
+        "avg_abs": 1.74,
+        "ratio": 2.11,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 6.39
+        }
       }
     },
     {
@@ -3643,6 +6591,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 19544.0,
+        "volume": 617.0,
+        "total": 20161.0
+      },
+      "anticipated_rank": 50,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-22",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-21",
+            "after": "2025-04-22",
+            "move_pct": 8.36
+          },
+          {
+            "report_date": "2025-07-22",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-21",
+            "after": "2025-07-22",
+            "move_pct": 11.52
+          },
+          {
+            "report_date": "2025-10-21",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-20",
+            "after": "2025-10-21",
+            "move_pct": 0.0
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": 3.24
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 2.41
+          },
+          {
+            "report_date": "2026-07-22",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-21",
+            "after": "2026-07-22",
+            "move_pct": 2.0
+          }
+        ],
+        "avg_abs": 4.59,
+        "ratio": 1.18,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -8.66
+        }
       }
     },
     {
@@ -3717,6 +6732,73 @@
           }
         ],
         "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 76492.0,
+        "volume": 2749.0,
+        "total": 79241.0
+      },
+      "anticipated_rank": 37,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": -1.97
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -4.54
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": -2.31
+          },
+          {
+            "report_date": "2026-01-27",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-26",
+            "after": "2026-01-27",
+            "move_pct": 0.72
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": 8.77
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-22",
+            "after": "2026-07-23",
+            "move_pct": 4.02
+          }
+        ],
+        "avg_abs": 3.72,
+        "ratio": 1.17,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -0.35
+        }
       }
     },
     {
@@ -3796,6 +6878,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 179755.0,
+        "volume": 11533.0,
+        "total": 191288.0
+      },
+      "anticipated_rank": 28,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-24",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": -1.0
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-23",
+            "after": "2025-07-24",
+            "move_pct": -4.88
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-22",
+            "after": "2025-10-23",
+            "move_pct": 6.96
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-28",
+            "after": "2026-01-29",
+            "move_pct": -0.83
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-29",
+            "after": "2026-04-30",
+            "move_pct": 0.51
+          },
+          {
+            "report_date": "2026-07-30",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-29",
+            "after": "2026-07-30",
+            "move_pct": 3.45
+          }
+        ],
+        "avg_abs": 2.94,
+        "ratio": 2.21,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 21.3
+        }
       }
     },
     {
@@ -3880,6 +7029,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 1038665.0,
+        "volume": 172596.0,
+        "total": 1211261.0
+      },
+      "anticipated_rank": 6,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-30",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": -8.24
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-31",
+            "after": "2025-08-01",
+            "move_pct": -1.79
+          },
+          {
+            "report_date": "2025-10-28",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-28",
+            "after": "2025-10-29",
+            "move_pct": 18.03
+          },
+          {
+            "report_date": "2026-02-05",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-05",
+            "after": "2026-02-06",
+            "move_pct": 4.71
+          },
+          {
+            "report_date": "2026-04-28",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-28",
+            "after": "2026-04-29",
+            "move_pct": 27.21
+          },
+          {
+            "report_date": "2026-07-28",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-28",
+            "after": "2026-07-29",
+            "move_pct": -1.85
+          }
+        ],
+        "avg_abs": 10.31,
+        "ratio": 1.19,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": 8.75
+        }
       }
     },
     {
@@ -3959,6 +7175,73 @@
           }
         ],
         "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 475301.0,
+        "volume": 16167.0,
+        "total": 491468.0
+      },
+      "anticipated_rank": 15,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-23",
+            "after": "2025-04-24",
+            "move_pct": 4.8
+          },
+          {
+            "report_date": "2025-07-24",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-24",
+            "after": "2025-07-25",
+            "move_pct": 6.89
+          },
+          {
+            "report_date": "2025-10-23",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-23",
+            "after": "2025-10-24",
+            "move_pct": -6.23
+          },
+          {
+            "report_date": "2026-02-19",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-19",
+            "after": "2026-02-20",
+            "move_pct": -2.61
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-23",
+            "after": "2026-04-24",
+            "move_pct": 8.68
+          },
+          {
+            "report_date": "2026-07-23",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-07-23",
+            "after": "2026-07-24",
+            "move_pct": -1.62
+          }
+        ],
+        "avg_abs": 5.14,
+        "ratio": 1.08,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -7.49
+        }
       }
     },
     {
@@ -4043,6 +7326,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 567939.0,
+        "volume": 63449.0,
+        "total": 631388.0
+      },
+      "anticipated_rank": 10,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-30",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-04-29",
+            "after": "2025-04-30",
+            "move_pct": 7.98
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": 10.16
+          },
+          {
+            "report_date": "2025-10-30",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2025-10-30",
+            "after": "2025-10-31",
+            "move_pct": 8.75
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-01-29",
+            "after": "2026-01-30",
+            "move_pct": -10.12
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-04-30",
+            "after": "2026-05-01",
+            "move_pct": -0.69
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q4 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -13.03
+          }
+        ],
+        "avg_abs": 8.46,
+        "ratio": 1.27,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -20.59
+        }
       }
     },
     {
@@ -4127,6 +7477,73 @@
           }
         ],
         "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 233342.0,
+        "volume": 24420.0,
+        "total": 257762.0
+      },
+      "anticipated_rank": 21,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-17",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-16",
+            "after": "2025-04-17",
+            "move_pct": -0.64
+          },
+          {
+            "report_date": "2025-07-18",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-17",
+            "after": "2025-07-18",
+            "move_pct": -2.35
+          },
+          {
+            "report_date": "2025-10-17",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-16",
+            "after": "2025-10-17",
+            "move_pct": 7.27
+          },
+          {
+            "report_date": "2026-01-30",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-29",
+            "after": "2026-01-30",
+            "move_pct": -1.77
+          },
+          {
+            "report_date": "2026-04-23",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-22",
+            "after": "2026-04-23",
+            "move_pct": -4.31
+          },
+          {
+            "report_date": "2026-07-24",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-23",
+            "after": "2026-07-24",
+            "move_pct": -4.3
+          }
+        ],
+        "avg_abs": 3.44,
+        "ratio": 1.38,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -4.88
+        }
       }
     },
     {
@@ -4211,6 +7628,73 @@
           }
         ],
         "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 566677.0,
+        "volume": 11234.0,
+        "total": 577911.0
+      },
+      "anticipated_rank": 12,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-25",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-24",
+            "after": "2025-04-25",
+            "move_pct": -1.17
+          },
+          {
+            "report_date": "2025-07-18",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-17",
+            "after": "2025-07-18",
+            "move_pct": -3.89
+          },
+          {
+            "report_date": "2025-10-17",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-16",
+            "after": "2025-10-17",
+            "move_pct": -0.88
+          },
+          {
+            "report_date": "2026-01-23",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-22",
+            "after": "2026-01-23",
+            "move_pct": -0.34
+          },
+          {
+            "report_date": "2026-04-24",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-23",
+            "after": "2026-04-24",
+            "move_pct": 2.58
+          },
+          {
+            "report_date": "2026-07-24",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-23",
+            "after": "2026-07-24",
+            "move_pct": 11.01
+          }
+        ],
+        "avg_abs": 3.31,
+        "ratio": 1.66,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-02",
+          "end": "2026-10-15",
+          "sessions": 30,
+          "change_pct": -16.79
+        }
       }
     }
   ],
@@ -4260,5 +7744,7 @@
     "TSLA"
   ],
   "featured_basis": "two largest reporters by Robinhood market cap",
-  "cards_method": "Latest quarter: Robinhood quarterly financials (revenue, net income, net margin) and the most recent reported 'actual' EPS from Robinhood earnings results (may be an adjusted, non-GAAP figure). Correlated stocks: Pearson correlation of 65 daily close-to-close returns (split-adjusted regular-session closes from Robinhood) against a hand-picked candidate list of same-sector stocks and ETFs; top 4 stocks and top 3 ETFs shown. Correlation is not causation and says nothing about the earnings reaction."
+  "cards_method": "Latest quarter: Robinhood quarterly financials (revenue, net income, net margin) and the most recent reported 'actual' EPS from Robinhood earnings results (may be an adjusted, non-GAAP figure). Correlated stocks: Pearson correlation of 65 daily close-to-close returns (split-adjusted regular-session closes from Robinhood) against a hand-picked candidate list of same-sector stocks and ETFs; top 4 stocks and top 3 ETFs shown. Correlation is not causation and says nothing about the earnings reaction.",
+  "anticipated_method": "Ranked by options activity: total open interest across all listed expirations plus the latest session's total options volume (contracts), from Robinhood market data retrieved Oct 17, 2026, 1:29 AM ET. A proxy for trader attention, not a forecast; names with missing data are listed last.",
+  "past_moves_method": "Past earnings moves: close of the last session before the report to the close of the first session after it (before-open reports: prior close -> report-day close; after-close reports: report-day close -> next close), using Robinhood earnings-results dates/timing and split-adjusted daily closes; up to the last 8 reported quarters. Ratio = this week's implied move / average absolute past move (shown when at least 4 past reports are available; >=1.15 bigger, <=0.85 smaller than usual). Non-directional; not a prediction or advice."
 }

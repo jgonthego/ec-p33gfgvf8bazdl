@@ -21,6 +21,9 @@ Earnings-watch cards (per-ticker fundamentals + correlations). Extra raw folders
   er/    get_earnings_results (one symbol per call; also used above for calendar gaps)
   fund/  get_equity_fundamentals (<=10 symbols per call) for EVERY reporter AND peer in --universe:
          headquarters_state drives the US-only rule (see US_ONLY), plus market cap, sector, industry
+  scan/  preview_scan (read-only, nothing saved): symbol ANY_OF <reporters>, columns optionsTotalOpenInterest
+         ("Options OI") and optionsTotalDayVolume ("Options volume") -> most-anticipated ranking
+  hist_long/ get_equity_historicals interval=day from ~19 months back (<=10 reporters per call) -> past earnings moves
   hist/  get_equity_historicals interval=day, ~4 months back (<=10 symbols per call) for every
          reporter and every symbol in PEERS (print the list with: python3 fetch.py --universe)
 main() merges these automatically when present. To add cards to an existing week JSON without
@@ -164,7 +167,7 @@ def main():
         selection="Notable, widely held, or high-volume companies reporting this week, curated by hand.",
         rows=rows, gaps=[dict(symbol=s, reason=r) for s, r in gaps], calendar_notes=notes)
     apply_us_only(out)
-    add_cards(out)
+    add_cards(out); add_activity(out); add_history(out)
     os.makedirs(f"{ROOT}/data", exist_ok=True)
     p = f"{ROOT}/data/week-{week}.json"; json.dump(out, open(p, "w"), indent=2)
     print(f"{len(rows)} rows, {len(gaps)} gaps -> {p}")
@@ -288,8 +291,85 @@ def add_cards(out):
         f"and says nothing about the earnings reaction.")
     print("cards:", cov, "featured:", out["featured"])
 
+# ---------- most-anticipated ranking (options activity) ----------
+def add_activity(out):
+    """Rank reporters by total options open interest + latest-session options volume (all expirations), from a
+    Robinhood preview_scan saved under data/raw/scan/. Missing values stay None; such names are ranked after the rest."""
+    files = sorted(glob.glob(f"{RAW}/scan/*.txt"))
+    if not files: return
+    act = {}
+    for f in files:
+        for j in blobs(f):
+            for r in ((j.get("data") or {}).get("result") or {}).get("results") or []:
+                c = r.get("columns") or {}
+                act[r["ticker"]] = (num(c.get("Options OI")), num(c.get("Options volume")))
+    as_of = datetime.fromtimestamp(max(os.path.getmtime(f) for f in files), ET).strftime("%b %-d, %Y, %-I:%M %p ET")
+    for r in out["rows"]:
+        oi, vol = act.get(r["symbol"], (None, None))
+        tot = oi + vol if oi is not None and vol is not None else None
+        r["options_activity"] = dict(open_interest=oi, volume=vol, total=tot) if (oi is not None or vol is not None) else None
+    ranked = sorted(out["rows"], key=lambda r: (-(r["options_activity"] or {}).get("total") if (r["options_activity"] or {}).get("total") is not None else 1, r["symbol"]))
+    for i, r in enumerate(ranked, 1): r["anticipated_rank"] = i
+    out["anticipated_method"] = ("Ranked by options activity: total open interest across all listed expirations plus the latest "
+        f"session's total options volume (contracts), from Robinhood market data retrieved {as_of}. A proxy for trader attention, "
+        "not a forecast; names with missing data are listed last.")
+    miss = [r["symbol"] for r in out["rows"] if not (r["options_activity"] or {}).get("total")]
+    print("activity ranked:", len(out["rows"]) - len(miss), "missing:", miss)
+
+# ---------- implied vs. past earnings moves ----------
+PAST_MAX, PAST_MIN_FOR_RATIO, PRE_SESSIONS = 8, 4, 30
+def add_history(out):
+    """Past earnings-day moves (close before report -> close after, by am/pm timing) from Robinhood earnings results
+    (raw/er) + daily closes (raw/hist_long); plus the % change over the last PRE_SESSIONS sessions."""
+    closes = {}
+    for j in blobs(f"{RAW}/hist_long/*.txt"):
+        for r in (j.get("data") or {}).get("results") or []:
+            if r: closes[r["symbol"]] = {b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
+                                         if not b.get("interpolated") and b.get("close_price")}
+    if not closes: return
+    cnt = {}
+    for c in closes.values():
+        for d in c: cnt[d] = cnt.get(d, 0) + 1
+    cal = sorted(d for d, k in cnt.items() if k >= 0.9 * len(closes))
+    hist = {}
+    for j in blobs(f"{RAW}/er/*.txt"):
+        res = [q for q in (j.get("data") or {}).get("results") or [] if q]
+        if res: hist[res[0]["symbol"]] = res
+    for row in out["rows"]:
+        s = row["symbol"]; c = closes.get(s); moves = []
+        if c:
+            days = sorted(c)
+            for q in hist.get(s, []):
+                d, t = (q.get("report") or {}).get("date"), (q.get("report") or {}).get("timing")
+                if (q.get("eps") or {}).get("actual") is None or not d or t not in ("am", "pm") or d >= row["report_date"]: continue
+                before = [x for x in days if (x < d if t == "am" else x <= d)]
+                after = [x for x in days if (x >= d if t == "am" else x > d)]
+                if not before or not after: continue
+                b, a = before[-1], after[0]
+                moves.append(dict(report_date=d, timing=t, quarter=f"Q{q['quarter']} {q['year']}", base=b, after=a,
+                                  move_pct=round(100 * (c[a] / c[b] - 1), 2)))
+            moves = sorted(moves, key=lambda m: m["report_date"])[-PAST_MAX:]
+        avg = round(sum(abs(m["move_pct"]) for m in moves) / len(moves), 2) if moves else None
+        ratio = round(row["move_pct"] / avg, 2) if avg and len(moves) >= PAST_MIN_FOR_RATIO else None
+        label = None
+        if ratio is not None:
+            label = ("Options pricing a bigger move than usual" if ratio >= 1.15 else
+                     "Options pricing a smaller move than usual" if ratio <= 0.85 else "Options pricing a move in line with recent reports")
+        pre = None
+        win = [d for d in cal if d < row["report_date"]][-(PRE_SESSIONS + 1):]
+        if c and len(win) == PRE_SESSIONS + 1 and all(d in c for d in (win[0], win[-1])):
+            pre = dict(start=win[0], end=win[-1], sessions=PRE_SESSIONS, change_pct=round(100 * (c[win[-1]] / c[win[0]] - 1), 2))
+        row["past_moves"] = dict(moves=moves, avg_abs=avg, ratio=ratio, label=label, pre_change=pre) if (moves or pre) else None
+    out["past_moves_method"] = ("Past earnings moves: close of the last session before the report to the close of the first session "
+        "after it (before-open reports: prior close -> report-day close; after-close reports: report-day close -> next close), using "
+        "Robinhood earnings-results dates/timing and split-adjusted daily closes; up to the last 8 reported quarters. Ratio = this week's "
+        f"implied move / average absolute past move (shown when at least {PAST_MIN_FOR_RATIO} past reports are available; >=1.15 bigger, "
+        "<=0.85 smaller than usual). Non-directional; not a prediction or advice.")
+    n = sum(1 for r in out["rows"] if (r.get("past_moves") or {}).get("ratio") is not None)
+    print("past moves: ratio for", n, "of", len(out["rows"]))
+
 def cards_only(path):
-    out = json.load(open(path)); apply_us_only(out); add_cards(out); json.dump(out, open(path, "w"), indent=2); print("updated", path)
+    out = json.load(open(path)); apply_us_only(out); add_cards(out); add_activity(out); add_history(out); json.dump(out, open(path, "w"), indent=2); print("updated", path)
 
 def universe():
     w = sorted(glob.glob(f"{ROOT}/data/week-*.json"))
