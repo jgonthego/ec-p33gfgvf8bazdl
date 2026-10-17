@@ -39,12 +39,25 @@ Nasdaq's public calendar may be used **only** to cross-check for missing tickers
 "Source: Robinhood market data, retrieved <ET time>" · delayed-data notice · not-financial-advice disclaimer · neutral wording ·
 empty, labelled sponsor slot · newsletter form via `FORM_ID` env var (currently `xaeqlezp`, set in the build step env of `.github/workflows/pages.yml`; unset = form hidden) · feedback mailto d.bot@mail.grokbot.com.
 
+## US-only rule (owner decision, Oct 17, 2026)
+- Publish **US-domiciled companies only**. `US_ONLY = True` in fetch.py; `apply_us_only()` runs on every `fetch.py` run
+  (and on `--cards`) before the cards are added, removes non-US reporters from rows/gaps and lists them in the JSON
+  `excluded` field (shown under "Data notes").
+- Test = Robinhood company profile (`get_equity_fundamentals` → `headquarters_state`) is a US state or DC. **No profile → not
+  verified → excluded**; never assume. Therefore `data/raw/fund/` must cover every reporter *and* every peer from
+  `python3 fetch.py --universe` (~20 calls of ≤10 symbols).
+- Correlation peers: single stocks must pass the same test; US-listed ETFs in `ETFS` are always allowed.
+- Known edge cases: Chubb (CB) files US 10-Ks but Robinhood lists HQ Zurich → excluded. SLB (incorporated in Curaçao) and
+  similar names with a US HQ in Robinhood's profile are kept. Irish-domiciled US-run names (ACN, ETN, MDT) are excluded as
+  peers. For a verified exception set `DOMICILE_OVERRIDES = {"SYM": (True/False, "reason + source")}`.
+- Foreign issuers were also removed from `TICKERS`/`PEERS`; when adding names, still fetch their profiles—the filter is the backstop.
+
 ## Earnings-watch cards
 - `docs/t/<TICKER>.html`: full dark-neon card per reporter (current week only). Homepage + current week page: "Featured matchup"
   (two big cards) and a grid of compact cards linking to the ticker pages; table tickers link there too.
 - Latest quarter = Robinhood quarterly revenue / net income / net margin + latest "actual" EPS (may be adjusted). Operating
-  margin and free cash flow are not offered by `get_financials`, so they are not shown. Foreign (20-F) filers usually have no
-  quarterly financials on Robinhood → EPS only or n/a.
+  margin and free cash flow are not offered by `get_financials`, so they are not shown. Some companies have no quarterly
+  financials on Robinhood → EPS only or n/a.
 - No "Watch:" line (no factual source for it). No logos: tickers are drawn as coloured badges (`BRAND`/`NEON` in build.py).
 
 ## Notes

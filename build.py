@@ -53,7 +53,7 @@ form{display:flex;gap:8px;flex-wrap:wrap}form input{padding:9px 12px;border:1px 
 .ew a{color:inherit}.ew-h{display:flex;gap:12px;align-items:center}.ew-n{margin:0;font-size:clamp(22px,4.4vw,32px);line-height:1.1;font-weight:900;letter-spacing:.01em;text-transform:uppercase;color:var(--c);text-shadow:0 0 14px color-mix(in srgb,var(--c) 70%,transparent)}
 .ew-n small{font-size:.6em;color:#e6ebff;text-shadow:none}.ew-s{margin:2px 0 0;font-size:12px;color:#aab3cf}
 .tk{--c:#4f8dff;flex:none;display:inline-grid;place-items:center;min-width:52px;height:52px;padding:0 6px;border-radius:13px;font-weight:900;font-size:15px;letter-spacing:.02em;color:#fff;background:linear-gradient(140deg,var(--c),color-mix(in srgb,var(--c) 45%,#000));box-shadow:0 0 14px color-mix(in srgb,var(--c) 55%,transparent);text-shadow:0 1px 2px rgba(0,0,0,.5)}
-.tk.sm{min-width:40px;height:40px;font-size:12px;border-radius:10px}.tk.xs{min-width:42px;height:24px;font-size:10px;border-radius:6px;box-shadow:none}
+.tk.sm{min-width:40px;height:40px;font-size:12px;border-radius:10px}.tk.xs{min-width:0;width:100%;height:24px;font-size:9px;padding:0 2px;border-radius:6px;box-shadow:none}
 .ew-when{text-align:center;margin:12px 0;font-size:15px;color:#d5dbf0}.ew-when b{color:#fff;letter-spacing:.03em}
 .ew-box{background:rgba(255,255,255,.035);border:1px solid color-mix(in srgb,var(--c) 40%,rgba(255,255,255,.08));border-radius:14px;padding:12px 14px;margin-top:12px}
 .ew-box h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;text-align:center;color:#e8ecff}
@@ -63,7 +63,7 @@ form{display:flex;gap:8px;flex-wrap:wrap}form input{padding:9px 12px;border:1px 
 .q4{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.q4 div{text-align:center;padding:4px 6px;border-left:1px solid rgba(255,255,255,.1)}.q4 div:first-child{border-left:0}
 .q4 span{display:block;font-size:11px;color:#aab3cf}.q4 b{font-size:clamp(15px,3.6vw,19px)}.q4 b.na{color:#7f89a8;font-weight:600}
 .ew-sub{margin:-2px 0 8px;text-align:center;font-size:12px;color:#aab3cf}.corr{list-style:none;margin:0;padding:0}
-.corr li{display:grid;grid-template-columns:auto 46px 1fr 48px;align-items:center;gap:8px;padding:5px 0}.corr b{font-size:14px}.corr em{font-style:normal;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.corr li{display:grid;grid-template-columns:48px 58px 1fr 48px;align-items:center;gap:8px;padding:5px 0}.corr b{font-size:14px}.corr em{font-style:normal;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
 .cb{height:12px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden}.cb i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,color-mix(in srgb,var(--c) 55%,#fff0),var(--c));box-shadow:0 0 10px var(--c)}
 .etfp{margin:8px 0 0;text-align:center;font-size:12px;color:#d5dbf0;border:1px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:10px;padding:5px 8px}
 .ew-f{margin-top:12px;font-size:11px;color:#9aa4c4;text-align:center}
@@ -78,7 +78,7 @@ a.ewc:hover{transform:translateY(-2px);box-shadow:0 0 22px color-mix(in srgb,var
 .ewc-m{font-size:30px;font-weight:900;color:var(--c);text-shadow:0 0 12px color-mix(in srgb,var(--c) 70%,transparent);margin:8px 0 2px}.ewc-m small{font-size:14px;color:#e9edff;margin-left:8px;text-shadow:none;font-weight:700}
 .ewc-l{font-size:12px;color:#c3cae2}
 a.chip{text-decoration:none;color:var(--fg)}td a{color:inherit;text-decoration:none}td a:hover{color:var(--acc)}
-@media(max-width:480px){.ew{padding:14px}.q4{grid-template-columns:repeat(2,1fr);row-gap:8px}.q4 div:nth-child(3){border-left:0}.corr li{grid-template-columns:auto 40px 1fr 44px;gap:6px}}
+@media(max-width:480px){.ew{padding:14px}.q4{grid-template-columns:repeat(2,1fr);row-gap:8px}.q4 div:nth-child(3){border-left:0}.corr li{grid-template-columns:44px 54px 1fr 44px;gap:6px}}
 @media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}"""
 
 SORT_JS = """document.querySelectorAll('table.sortable th').forEach((th,i)=>{th.addEventListener('click',()=>{
@@ -295,6 +295,10 @@ def week_body(w, tref=None):
           f"<td class='n' data-v='{r['move_usd']}'>±${r['move_usd']:,.2f}</td><td class='n' data-v='{r['move_pct']}'><div class='bar'><span class='t'><i style='width:{100*r['move_pct']/mx:.0f}%'></i></span>±{r['move_pct']:.2f}%</div></td>"
           f"<td class='hide-sm'>{r['expiration']} @ {r['strike']:g}{flag}</td><td class='small hide-sm'>{r['quote_ts']}</td></tr>")
     gaps = "".join(f"<li>{g['symbol']}: {e(g['reason'])}</li>" for g in w["gaps"]) or "<li>None among the selected tickers.</li>"
+    if w.get("excluded"):
+        gaps += ("<li>US-domiciled companies only. Excluded foreign issuers: "
+                 + "; ".join(f"{e(x['symbol'])} ({e(x['reason'].split(': ',1)[-1].replace(' (Robinhood company profile)',''))})" for x in w["excluded"])
+                 + " — per Robinhood company profiles.</li>")
     end = (date.fromisoformat(w["week_of"]) + timedelta(days=4)).isoformat()
     stats = ""
     if rs:

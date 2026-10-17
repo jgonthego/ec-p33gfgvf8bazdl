@@ -19,7 +19,8 @@ Usage: python3 fetch.py 2026-10-19 "Oct 15, 2026, 12:20 AM ET"
 Earnings-watch cards (per-ticker fundamentals + correlations). Extra raw folders:
   fin/   get_financials period=quarterly limit=1 (<=20 symbols per call)
   er/    get_earnings_results (one symbol per call; also used above for calendar gaps)
-  fund/  get_equity_fundamentals (<=10 symbols per call; market cap, sector, industry)
+  fund/  get_equity_fundamentals (<=10 symbols per call) for EVERY reporter AND peer in --universe:
+         headquarters_state drives the US-only rule (see US_ONLY), plus market cap, sector, industry
   hist/  get_equity_historicals interval=day, ~4 months back (<=10 symbols per call) for every
          reporter and every symbol in PEERS (print the list with: python3 fetch.py --universe)
 main() merges these automatically when present. To add cards to an existing week JSON without
@@ -36,15 +37,15 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- "AAL":"American Airlines","ABT":"Abbott","ALLY":"Ally Financial","AMX":"América Movil","AXP":"American Express",
- "BCS":"Barclays","BE":"Bloom Energy","BX":"Blackstone","CB":"Chubb","CLF":"Cleveland-Cliffs","CMCSA":"Comcast",
- "CME":"CME Group","COF":"Capital One","CSX":"CSX","DHR":"Danaher","E":"Eni","ELV":"Elevance Health",
+ "AAL":"American Airlines","ABT":"Abbott","ALLY":"Ally Financial","AXP":"American Express",
+ "BE":"Bloom Energy","BX":"Blackstone","CLF":"Cleveland-Cliffs","CMCSA":"Comcast",
+ "CME":"CME Group","COF":"Capital One","CSX":"CSX","DHR":"Danaher","ELV":"Elevance Health",
  "FITB":"Fifth Third","GE":"GE Aerospace","GM":"General Motors","HAL":"Halliburton","HON":"Honeywell","IBM":"IBM",
  "ISRG":"Intuitive Surgical","KEY":"KeyCorp","KMI":"Kinder Morgan","LMT":"Lockheed Martin","LRCX":"Lam Research",
  "LUV":"Southwest Airlines","LVS":"Las Vegas Sands","MCO":"Moody's","META":"Meta Platforms","MMM":"3M",
  "NDAQ":"Nasdaq Inc.","NEE":"NextEra Energy","NEM":"Newmont","NFLX":"Netflix","NOC":"Northrop Grumman",
- "NOK":"Nokia","NSC":"Norfolk Southern","PG":"Procter & Gamble","PHM":"PulteGroup","PM":"Philip Morris",
- "RTX":"RTX","SAP":"SAP","SLB":"SLB","SPOT":"Spotify","STLD":"Steel Dynamics","SYF":"Synchrony","T":"AT&T",
+ "NSC":"Norfolk Southern","PG":"Procter & Gamble","PHM":"PulteGroup","PM":"Philip Morris",
+ "RTX":"RTX","SLB":"SLB","STLD":"Steel Dynamics","SYF":"Synchrony","T":"AT&T",
  "TMO":"Thermo Fisher","TSLA":"Tesla","TXN":"Texas Instruments","UAL":"United Airlines","UNP":"Union Pacific",
  "URI":"United Rentals","VLO":"Valero","WDC":"Western Digital","ZION":"Zions",
 }
@@ -54,39 +55,48 @@ _BANKS = ["FITB","KEY","ZION","RF","HBAN","CFG","MTB","TFC","USB","PNC","KRE","K
 _CARDS = ["COF","SYF","ALLY","AXP","V","MA","KRE","XLF","SPY"]
 _DEF = ["LMT","NOC","GD","RTX","LHX","BA","ITA","XLI","SPY"]
 _AIR = ["DAL","UAL","AAL","LUV","ALK","JETS","SPY"]
-_RAIL = ["UNP","CSX","NSC","CP","CNI","IYT","XLI","SPY"]
+_RAIL = ["UNP","CSX","NSC","IYT","XLI","SPY"]
 _EXCH = ["CME","ICE","CBOE","NDAQ","MCO","SPGI","MSCI","XLF","SPY"]
 _TOOLS = ["TMO","DHR","A","WAT","MTD","IQV","XLV","SPY"]
-_MED = ["ABT","MDT","BSX","SYK","ISRG","JNJ","IHI","XLV","SPY"]
+_MED = ["ABT","BSX","SYK","ISRG","JNJ","IHI","XLV","SPY"]
 _OILSVC = ["SLB","HAL","BKR","XOM","CVX","OIH","XLE","SPY"]
-_IND = ["HON","MMM","GE","EMR","ITW","ETN","XLI","SPY"]
+_IND = ["HON","MMM","GE","EMR","ITW","XLI","SPY"]
 _STEEL = ["CLF","STLD","NUE","CMC","RS","AA","FCX","XME","XLB","SPY"]
 _TEL = ["T","VZ","TMUS","CMCSA","CHTR","XLC","SPY"]
-_STREAM = ["NFLX","SPOT","DIS","ROKU","WBD","LYV","CMCSA","XLC","QQQ","SPY"]
+_STREAM = ["NFLX","DIS","ROKU","LYV","CMCSA","XLC","QQQ","SPY"]
 PEERS = {
  "CLF":_STEEL, "STLD":_STEEL, "FITB":_BANKS, "ZION":_BANKS, "KEY":_BANKS,
  "ALLY":_CARDS, "SYF":_CARDS, "COF":_CARDS, "AXP":_CARDS,
- "GE":["RTX","HON","GEV","BA","HWM","TDG","ITA","XLI","SPY"], "GM":["F","TSLA","STLA","TM","XLY","SPY"],
+ "GE":["RTX","HON","GEV","BA","HWM","TDG","ITA","XLI","SPY"], "GM":["F","TSLA","RIVN","LCID","XLY","SPY"],
  "HAL":_OILSVC, "SLB":_OILSVC, "MMM":_IND, "HON":_IND, "NOC":_DEF, "RTX":_DEF, "LMT":_DEF,
- "AMX":["TMUS","T","VZ","TEF","EWW","XLC","SPY"], "CB":["TRV","ALL","PGR","AIG","HIG","KIE","XLF","SPY"],
- "ISRG":_MED, "ABT":_MED, "NFLX":_STREAM, "SPOT":_STREAM, "UAL":_AIR, "AAL":_AIR, "LUV":_AIR,
+ "ISRG":_MED, "ABT":_MED, "NFLX":_STREAM, "UAL":_AIR, "AAL":_AIR, "LUV":_AIR,
  "CME":_EXCH, "NDAQ":_EXCH, "MCO":_EXCH, "DHR":_TOOLS, "TMO":_TOOLS,
  "ELV":["UNH","CI","HUM","CVS","CNC","MOH","XLV","SPY"], "NEE":["DUK","SO","AEP","D","XLU","SPY"],
- "PM":["MO","BTI","KO","PG","XLP","SPY"], "T":_TEL, "CMCSA":_TEL+["DIS","NFLX"],
- "CSX":_RAIL, "NSC":_RAIL, "UNP":_RAIL, "IBM":["ACN","ORCL","MSFT","HPE","CSCO","XLK","QQQ","SPY"],
- "KMI":["WMB","OKE","ET","EPD","XLE","AMLP","SPY"], "LRCX":["AMAT","KLAC","ASML","MU","SMH","QQQ","SPY"],
+ "PM":["MO","KO","PG","XLP","SPY"], "T":_TEL, "CMCSA":_TEL+["DIS","NFLX"],
+ "CSX":_RAIL, "NSC":_RAIL, "UNP":_RAIL, "IBM":["ORCL","MSFT","HPE","CSCO","XLK","QQQ","SPY"],
+ "KMI":["WMB","OKE","ET","EPD","XLE","AMLP","SPY"], "LRCX":["AMAT","KLAC","MU","SMH","QQQ","SPY"],
  "LVS":["WYNN","MGM","CZR","XLY","SPY"], "META":["GOOGL","AMZN","MSFT","SNAP","PINS","XLC","QQQ","SPY"],
- "SAP":["ORCL","CRM","MSFT","NOW","IGV","QQQ","SPY"], "TSLA":["RIVN","LCID","NVDA","GM","F","XLY","ARKK","QQQ","SPY"],
- "TXN":["ADI","MCHP","NXPI","ON","INTC","SMH","QQQ","SPY"], "URI":["CAT","DE","ETN","PWR","XLI","SPY"],
- "BCS":["HSBC","DB","UBS","ING","SAN","EUFN","XLF","SPY"], "BX":["KKR","APO","ARES","CG","BLK","XLF","SPY"],
- "NOK":["ERIC","CSCO","CIEN","XLK","QQQ","SPY"], "PG":["CL","KMB","CLX","KO","PEP","XLP","SPY"],
+ "TSLA":["RIVN","LCID","NVDA","GM","F","XLY","ARKK","QQQ","SPY"],
+ "TXN":["ADI","MCHP","ON","INTC","SMH","QQQ","SPY"], "URI":["CAT","DE","PWR","XLI","SPY"],
+ "BX":["KKR","APO","ARES","CG","BLK","XLF","SPY"], "PG":["CL","KMB","CLX","KO","PEP","XLP","SPY"],
  "PHM":["DHI","LEN","TOL","NVR","KBH","ITB","XHB","SPY"], "VLO":["MPC","PSX","PBF","DK","XLE","SPY"],
- "BE":["PLUG","FCEL","ENPH","FSLR","GEV","TAN","ICLN","SPY"], "NEM":["AEM","KGC","WPM","FNV","GDX","GLD","SPY"],
+ "BE":["PLUG","FCEL","ENPH","FSLR","GEV","TAN","ICLN","SPY"], "NEM":["RGLD","CDE","HL","GDX","GLD","SPY"],
  "WDC":["STX","MU","SNDK","NTAP","SMH","QQQ","SPY"],
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
         "ITA","JETS","IYT","OIH","AMLP","XME","XHB","ITB","EUFN","EWW","GDX","GLD","TAN","ICLN","ARKK"}
+# US-ONLY RULE (owner decision, Oct 17, 2026): publish only US-domiciled companies. A company counts as US only if its
+# Robinhood company profile (get_equity_fundamentals -> headquarters_state) is a US state or DC. No profile = not
+# verified = excluded (never assumed). Applies to reporters AND to single-stock correlation peers; US-listed ETFs
+# in ETFS stay allowed as peers. DOMICILE_OVERRIDES = {"SYM": (True|False, "reason + source")} for verified exceptions.
+US_ONLY = True
+US_STATES = {"Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia",
+ "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
+ "Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey",
+ "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island",
+ "South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"}
+DOMICILE_OVERRIDES = {}
 CORR_RETURNS = 65   # daily close-to-close returns per correlation window
 FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by Robinhood market cap
 
@@ -153,6 +163,7 @@ def main():
         method="Expected move = (ATM call mid + ATM put mid) for the first expiration on or after the report date (strictly after it for after-close or unconfirmed-time reports, since a same-day expiry settles before the release), divided by the stock's last regular-session trade price. Mid = (bid+ask)/2.",
         selection="Notable, widely held, or high-volume companies reporting this week, curated by hand.",
         rows=rows, gaps=[dict(symbol=s, reason=r) for s, r in gaps], calendar_notes=notes)
+    apply_us_only(out)
     add_cards(out)
     os.makedirs(f"{ROOT}/data", exist_ok=True)
     p = f"{ROOT}/data/week-{week}.json"; json.dump(out, open(p, "w"), indent=2)
@@ -176,6 +187,41 @@ def pearson(a, b):
     if not sa or not sb: return None
     return sum((x - ma) * (y - mb) for x, y in zip(a, b)) / (sa * sb)
 
+def profiles():
+    prof = {}
+    for j in blobs(f"{RAW}/fund/*.txt"):
+        for r in (j.get("data") or {}).get("results") or []:
+            if r: prof[r["symbol"]] = r
+    return prof
+
+def us_check(sym, prof):
+    """(is_us, reason) from Robinhood headquarters data; unknown -> (False, 'not verified')."""
+    if sym in DOMICILE_OVERRIDES: return DOMICILE_OVERRIDES[sym]
+    p = prof.get(sym)
+    if not p or not p.get("headquarters_state"): return False, "domicile not verified (no Robinhood company profile)"
+    hq = ", ".join(x for x in (p.get("headquarters_city"), p.get("headquarters_state")) if x)
+    return (p["headquarters_state"] in US_STATES), f"headquarters {hq} (Robinhood company profile)"
+
+def apply_us_only(out):
+    """Drop non-US reporters from rows/gaps and record them in out['excluded']."""
+    if not US_ONLY: return
+    prof = profiles(); excl = {x["symbol"]: x for x in out.get("excluded", [])}
+    keep = []
+    for r in out["rows"]:
+        ok, why = us_check(r["symbol"], prof)
+        if ok: keep.append(r)
+        else: excl[r["symbol"]] = dict(symbol=r["symbol"], name=r["name"], reason=f"US-only rule: {why}")
+    gaps = []
+    for g in out["gaps"]:
+        ok, why = us_check(g["symbol"], prof)
+        if ok: gaps.append(g)
+        else: excl[g["symbol"]] = dict(symbol=g["symbol"], name=TICKERS.get(g["symbol"], g["symbol"]), reason=f"US-only rule: {why}")
+    out["rows"], out["gaps"] = keep, gaps
+    out["excluded"] = sorted(excl.values(), key=lambda x: x["symbol"])
+    out["selection"] = ("Notable, widely held, or high-volume US-domiciled companies reporting this week, curated by hand "
+                        "(US = headquartered in a US state per Robinhood's company profile; foreign issuers and ADRs are excluded).")
+    for x in out["excluded"]: print("EXCLUDED", x["symbol"], x["reason"])
+
 def add_cards(out):
     """Attach fundamentals / correlations / profile to each row. Missing data stays None (rendered n/a)."""
     fin, eps, prof, closes = {}, {}, {}, {}
@@ -187,9 +233,7 @@ def add_cards(out):
         if done:
             q = max(done, key=lambda q: (q["report"]["date"] or "", q["year"], q["quarter"]))
             eps[q["symbol"]] = q
-    for j in blobs(f"{RAW}/fund/*.txt"):
-        for r in (j.get("data") or {}).get("results") or []:
-            if r: prof[r["symbol"]] = r
+    prof = profiles()
     for j in blobs(f"{RAW}/hist/*.txt"):
         for r in (j.get("data") or {}).get("results") or []:
             if r: closes[r["symbol"]] = {b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
@@ -224,6 +268,7 @@ def add_cards(out):
             for peer in PEERS.get(s, []):
                 pc = closes.get(peer)
                 if peer == s or not pc or any(d not in pc for d in days): continue
+                if US_ONLY and peer not in ETFS and not us_check(peer, prof)[0]: continue   # US-only rule for peers
                 r = pearson(rt, ret(pc))
                 if r is not None: res.append(dict(symbol=peer, r=round(r, 2), etf=peer in ETFS))
             res.sort(key=lambda x: -x["r"])
@@ -244,7 +289,7 @@ def add_cards(out):
     print("cards:", cov, "featured:", out["featured"])
 
 def cards_only(path):
-    out = json.load(open(path)); add_cards(out); json.dump(out, open(path, "w"), indent=2); print("updated", path)
+    out = json.load(open(path)); apply_us_only(out); add_cards(out); json.dump(out, open(path, "w"), indent=2); print("updated", path)
 
 def universe():
     w = sorted(glob.glob(f"{ROOT}/data/week-*.json"))
