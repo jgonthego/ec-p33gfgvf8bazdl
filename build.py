@@ -16,26 +16,56 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(ROOT, "docs")
 e = html.escape
 
-CSS = """body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:1100px;margin:0 auto;padding:16px;color:#111;background:#fafafa}
-header a{color:inherit;text-decoration:none}nav a{margin-right:12px}
-table{border-collapse:collapse;width:100%;background:#fff;font-size:14px}th,td{padding:6px 8px;border-bottom:1px solid #e5e5e5;text-align:left}
-th{cursor:pointer;background:#f0f0f0;position:sticky;top:0}th:hover{background:#e4e4e4}td.n{text-align:right;font-variant-numeric:tabular-nums}
-.flag{color:#a15c00;font-size:12px}.disc{background:#fff4e5;border:1px solid #f0c27b;padding:10px;border-radius:6px;font-size:14px}
-.sponsor{border:2px dashed #999;padding:14px;text-align:center;color:#666;margin:20px 0}
-.small{font-size:12px;color:#555}form input{padding:6px}form button{padding:6px 12px}
-@media(max-width:700px){.hide-sm{display:none}}"""
+CSS = """:root{--bg:#f6f7fb;--fg:#0f172a;--muted:#5b6475;--card:#fff;--line:#e4e7ef;--acc:#4f46e5;--acc2:#06b6d4;--bmo:#f59e0b;--amc:#6366f1;--warn-bg:#fff7e6;--warn-line:#f3c98b;--flag:#b45309;--shadow:0 1px 2px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.06)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1020;--fg:#e6e9f2;--muted:#9aa3b8;--card:#131a2e;--line:#232c45;--acc:#818cf8;--acc2:#22d3ee;--warn-bg:#2a2110;--warn-line:#6b4f1d;--flag:#fbbf24;--shadow:0 1px 2px rgba(0,0,0,.4)}}
+:root[data-theme=dark]{--bg:#0b1020;--fg:#e6e9f2;--muted:#9aa3b8;--card:#131a2e;--line:#232c45;--acc:#818cf8;--acc2:#22d3ee;--warn-bg:#2a2110;--warn-line:#6b4f1d;--flag:#fbbf24;--shadow:0 1px 2px rgba(0,0,0,.4)}
+*{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;color:var(--fg);background:var(--bg);line-height:1.5}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}a{color:var(--acc)}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:800;font-size:18px;color:var(--fg);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:inline-block}
+nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px}nav a:hover{background:var(--card);color:var(--fg)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:5px 9px;cursor:pointer}
+.hero{margin:22px 0 18px;padding:26px;border-radius:18px;color:#fff;background:linear-gradient(135deg,#4f46e5,#0891b2);box-shadow:var(--shadow)}
+.hero h2{margin:0 0 4px;font-size:clamp(22px,4vw,32px)}.hero p{margin:0;opacity:.9}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:12px}.stat b{display:block;font-size:22px}.stat span{font-size:12px;opacity:.85}
+.grid2{display:grid;grid-template-columns:3fr 2fr;gap:16px}@media(max-width:860px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);margin-bottom:16px}
+.card h3{margin:0 0 10px;font-size:16px}svg{display:block;width:100%;height:auto}svg text{fill:var(--fg);font-family:inherit}svg .mut{fill:var(--muted)}
+.legend{font-size:12px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}.sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}@media(max-width:900px){.days{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}}
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow)}.day h4{margin:0 0 8px;display:flex;justify-content:space-between}.day h4 span{font-size:12px;color:var(--muted);font-weight:500}
+.slot{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:8px 0 4px}
+.chips{display:flex;flex-wrap:wrap;gap:5px}.chip{font-size:12px;padding:3px 7px;border-radius:999px;border:1px solid var(--line);background:var(--bg);white-space:nowrap}.chip i{font-style:normal;color:var(--muted);margin-left:3px}
+.tw{overflow-x:auto;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{cursor:pointer;background:var(--card);position:sticky;top:0;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);white-space:nowrap}th:hover{color:var(--fg)}th::after{content:" ↕";opacity:.4}
+tbody tr:hover{background:color-mix(in srgb,var(--acc) 6%,transparent)}td.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{display:flex;align-items:center;gap:8px;justify-content:flex-end}.bar .t{height:6px;width:70px;background:var(--line);border-radius:3px;overflow:hidden}.bar .t i{display:block;height:100%;background:linear-gradient(90deg,var(--acc2),var(--acc))}
+.pill{font-size:11px;padding:2px 8px;border-radius:999px;font-weight:600;white-space:nowrap}.bmo{background:color-mix(in srgb,var(--bmo) 20%,transparent);color:var(--flag)}.amc{background:color-mix(in srgb,var(--amc) 20%,transparent);color:var(--acc)}
+.flag{color:var(--flag);font-size:12px}.disc{background:var(--warn-bg);border:1px solid var(--warn-line);padding:12px;border-radius:10px;font-size:14px}
+.small{font-size:12px;color:var(--muted)}h2.sec{font-size:20px;margin:26px 0 12px}
+footer{margin-top:30px;padding:20px 0 40px;border-top:1px solid var(--line)}
+form{display:flex;gap:8px;flex-wrap:wrap}form input{padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);min-width:240px}form button{padding:9px 16px;border:0;border-radius:8px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer}
+@media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}"""
 
 SORT_JS = """document.querySelectorAll('table.sortable th').forEach((th,i)=>{th.addEventListener('click',()=>{
 const t=th.closest('table'),b=t.tBodies[0],rows=[...b.rows],asc=th.dataset.asc!=='1';th.dataset.asc=asc?'1':'0';
 rows.sort((a,c)=>{const x=a.cells[i].dataset.v??a.cells[i].innerText,y=c.cells[i].dataset.v??c.cells[i].innerText;
 const nx=parseFloat(x),ny=parseFloat(y);const r=(!isNaN(nx)&&!isNaN(ny))?nx-ny:x.localeCompare(y);return asc?r:-r});
-rows.forEach(r=>b.appendChild(r))})});"""
+rows.forEach(r=>b.appendChild(r))})});
+(function(){const k='ewcs-theme',r=document.documentElement,b=document.getElementById('theme');let s=null;try{s=localStorage.getItem(k)}catch(_){}
+if(s)r.dataset.theme=s;const dark=()=>r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+const lab=()=>{if(b)b.textContent=dark()?'☀':'☾'};lab();if(b)b.addEventListener('click',()=>{r.dataset.theme=dark()?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(_){}lab()})})();"""
+
 
 DISCLAIMER = ("<p class='disc'><strong>Not financial advice.</strong> This page is for informational purposes only and "
   "does not recommend buying or selling any security. Data may be delayed, incomplete, or inaccurate, and earnings dates can change. "
   "Options-implied moves are a market-derived estimate, not a forecast. Verify all information independently.</p>")
 
-NEWS = f"""<section><h3>Get the weekly cheat sheet by email</h3>
+NEWS = f"""<section class="card"><h3>Get the weekly cheat sheet by email</h3>
 <form action="{FORMSPREE}" method="POST"><label>Email <input type="email" name="email" required></label>
 <button type="submit">Subscribe</button></form></section>"""
 
@@ -50,9 +80,10 @@ def page(title, desc, path, body, depth):
 <meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}">
 <meta name="twitter:card" content="summary">
-<style>{CSS}</style></head><body>
-<header><h1><a href="{rel}index.html">{SITE_NAME}</a></h1>
-<nav><a href="{rel}index.html">This week</a><a href="{rel}archive/index.html">Archive</a><a href="{rel}about/index.html">Method &amp; disclaimer</a></nav></header>
+<meta name="color-scheme" content="light dark"><style>{CSS}</style></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="{rel}index.html"><span class="logo" aria-hidden="true"></span>{SITE_NAME}</a>
+<nav><a href="{rel}index.html">This week</a><a href="{rel}archive/index.html">Archive</a><a href="{rel}about/index.html">Method &amp; disclaimer</a></nav>
+<button id="theme" type="button" aria-label="Toggle dark/light theme">☾</button></div></header><div class="wrap">
 {"" if LICENSE_CLEARED else "<p class='disc'><strong>Internal preview — not for publication.</strong> Data-source terms do not yet permit public display.</p>"}
 <main>{body}</main>
 <footer>
@@ -60,31 +91,101 @@ def page(title, desc, path, body, depth):
 <p class="small" style="text-align:right"><a href="mailto:{FEEDBACK}?subject=Sponsor%20Earnings%20Cheat%20Sheet">Advertise / sponsor this page</a></p>
 {NEWS if SHOW_FORM else "<!-- NEWSLETTER HOOK: set FORM_ID env var to enable signup -->"}
 <p class="small">Feedback or corrections: <a href="mailto:{FEEDBACK}?subject=Earnings%20Cheat%20Sheet%20feedback">{FEEDBACK}</a></p>
-{DISCLAIMER}</footer><script>{SORT_JS}</script></body></html>"""
+{DISCLAIMER}</footer></div><script>{SORT_JS}</script></body></html>"""
 
 def nice(d): return date.fromisoformat(d).strftime("%b %-d, %Y")
 def dow(d): return date.fromisoformat(d).strftime("%a %b %-d")
 
+TCLS = {"Before open": "bmo", "After close": "amc"}
+
+def svg_movers(rows, n=15):
+    top = sorted(rows, key=lambda r: -r["move_pct"])[:n]
+    mx = max(r["move_pct"] for r in top) or 1
+    rh, lw, W = 26, 64, 640
+    h = rh * len(top) + 10
+    out = [f"<svg viewBox='0 0 {W} {h}' role='img' aria-label='Top {len(top)} expected moves by ticker'>",
+           "<defs><linearGradient id='g1' x1='0' x2='1'><stop offset='0' stop-color='#06b6d4'/><stop offset='1' stop-color='#6366f1'/></linearGradient></defs>"]
+    for i, r in enumerate(top):
+        y = 5 + i * rh; bw = (W - lw - 90) * r["move_pct"] / mx
+        fl = " ⚑" if r["note"] else ""
+        out.append(f"<text x='0' y='{y+17}' font-size='13' font-weight='700'>{e(r['symbol'])}</text>"
+                   f"<rect x='{lw}' y='{y+4}' width='{bw:.1f}' height='16' rx='5' fill='url(#g1)'><title>{e(r['name'])}: ±{r['move_pct']:.2f}% (±${r['move_usd']:,.2f}){fl}</title></rect>"
+                   f"<text x='{lw+bw+6:.1f}' y='{y+17}' font-size='12' class='mut'>±{r['move_pct']:.2f}%{fl}</text>")
+    out.append("</svg>")
+    return "".join(out)
+
+def svg_days(rows):
+    days = sorted({r["report_date"] for r in rows})
+    cnt = {d: {t: sum(1 for r in rows if r["report_date"] == d and r["timing"] == t) for t in ("Before open", "After close", "Unconfirmed")} for d in days}
+    mx = max(sum(c.values()) for c in cnt.values()) or 1
+    W, H, base = 400, 230, 195
+    cw = W / len(days); bw = min(46, cw * .55)
+    out = [f"<svg viewBox='0 0 {W} {H}' role='img' aria-label='Report counts by day'>"]
+    for i, d in enumerate(days):
+        x = i * cw + (cw - bw) / 2; y = base
+        for t, col in (("Before open", "#f59e0b"), ("After close", "#6366f1"), ("Unconfirmed", "#94a3b8")):
+            v = cnt[d][t]
+            if not v: continue
+            hh = (base - 30) * v / mx; y -= hh
+            out.append(f"<rect x='{x:.1f}' y='{y:.1f}' width='{bw:.1f}' height='{hh:.1f}' rx='4' fill='{col}'><title>{dow(d)} {t}: {v}</title></rect>")
+        tot = sum(cnt[d].values())
+        out.append(f"<text x='{x+bw/2:.1f}' y='{y-6:.1f}' font-size='13' font-weight='700' text-anchor='middle'>{tot}</text>"
+                   f"<text x='{x+bw/2:.1f}' y='{base+20}' font-size='12' text-anchor='middle' class='mut'>{date.fromisoformat(d).strftime('%a %-d')}</text>")
+    out.append("</svg>")
+    leg = "<div class='legend'><span><i class='sw' style='background:#f59e0b'></i>Before open</span><span><i class='sw' style='background:#6366f1'></i>After close</span>"
+    if any(c["Unconfirmed"] for c in cnt.values()): leg += "<span><i class='sw' style='background:#94a3b8'></i>Unconfirmed</span>"
+    return "".join(out) + leg + "</div>"
+
+def calendar(w):
+    rows = w["rows"]; start = date.fromisoformat(w["week_of"]); cards = []
+    for k in range(5):
+        d = (start + timedelta(days=k)).isoformat(); dr = [r for r in rows if r["report_date"] == d]
+        body = ""
+        for t in ("Before open", "After close", "Unconfirmed"):
+            s = sorted((r for r in dr if r["timing"] == t), key=lambda r: -r["move_pct"])
+            if s:
+                body += f"<div class='slot'>{t}</div><div class='chips'>" + "".join(
+                    f"<span class='chip' title='{e(r['name'])}'><b>{e(r['symbol'])}</b><i>±{r['move_pct']:.1f}%{' ⚑' if r['note'] else ''}</i></span>" for r in s) + "</div>"
+        cards.append(f"<div class='day'><h4>{dow(d)}<span>{len(dr)} report{'s' if len(dr)!=1 else ''}</span></h4>{body or '<p class=small>No selected reports.</p>'}</div>")
+    return "<div class='days'>" + "".join(cards) + "</div>"
+
 def week_body(w):
+    rs = w["rows"]
+    mx = max((r["move_pct"] for r in rs), default=1) or 1
     rows = []
-    for r in w["rows"]:
+    for r in rs:
         flag = f"<div class='flag'>⚑ {e(r['note'])}</div>" if r["note"] else ""
-        rows.append(f"<tr><td><strong>{r['symbol']}</strong></td><td class='hide-sm'>{e(r['name'])}</td>"
-          f"<td data-v='{r['report_date']}{'0' if r['timing']=='Before open' else '1'}'>{dow(r['report_date'])}</td><td>{r['timing']}</td>"
+        rows.append(f"<tr><td><strong>{r['symbol']}</strong>{' <span class=flag>⚑</span>' if r['note'] else ''}</td><td class='hide-sm'>{e(r['name'])}</td>"
+          f"<td data-v='{r['report_date']}{'0' if r['timing']=='Before open' else '1'}'>{dow(r['report_date'])}</td><td><span class='pill {TCLS.get(r['timing'],'')}'>{r['timing']}</span></td>"
           f"<td class='n' data-v='{r['price']}'>${r['price']:,.2f}</td>"
-          f"<td class='n' data-v='{r['move_usd']}'>±${r['move_usd']:,.2f}</td><td class='n' data-v='{r['move_pct']}'>±{r['move_pct']:.2f}%</td>"
+          f"<td class='n' data-v='{r['move_usd']}'>±${r['move_usd']:,.2f}</td><td class='n' data-v='{r['move_pct']}'><div class='bar'><span class='t'><i style='width:{100*r['move_pct']/mx:.0f}%'></i></span>±{r['move_pct']:.2f}%</div></td>"
           f"<td class='hide-sm'>{r['expiration']} @ {r['strike']:g}{flag}</td><td class='small hide-sm'>{r['quote_ts']}</td></tr>")
     gaps = "".join(f"<li>{g['symbol']}: {e(g['reason'])}</li>" for g in w["gaps"]) or "<li>None among the selected tickers.</li>"
     end = (date.fromisoformat(w["week_of"]) + timedelta(days=4)).isoformat()
-    return f"""<h2>Earnings week of {nice(w['week_of'])} – {nice(end)}</h2>
-<p>{len(w['rows'])} notable companies scheduled to report, with the options-implied expected move. Click any column header to sort (e.g. by date or expected move %).</p>
+    stats = ""
+    if rs:
+        big = max(rs, key=lambda r: r["move_pct"])
+        pcts = sorted(r["move_pct"] for r in rs); n = len(pcts)
+        med = pcts[n//2] if n % 2 else (pcts[n//2-1] + pcts[n//2]) / 2
+        busy = max(sorted({r["report_date"] for r in rs}), key=lambda d: sum(1 for r in rs if r["report_date"] == d))
+        bc = sum(1 for r in rs if r["report_date"] == busy)
+        stats = (f"<div class='stats'><div class='stat'><b>{n}</b><span>companies reporting</span></div>"
+          f"<div class='stat'><b>{big['symbol']} ±{big['move_pct']:.2f}%</b><span>largest implied move</span></div>"
+          f"<div class='stat'><b>±{med:.2f}%</b><span>median implied move</span></div>"
+          f"<div class='stat'><b>{dow(busy)}</b><span>busiest day · {bc} reports</span></div></div>")
+    return f"""<section class="hero"><h2>Earnings week of {nice(w['week_of'])} – {nice(end)}</h2>
+<p>{len(rs)} notable companies scheduled to report, with the options-implied expected move.</p>{stats}</section>
 <p class="disc"><strong>Delayed data.</strong> Prices and option quotes may be delayed and are snapshots as of the quote time in each row; they will change before the reports.</p>
-<p class="small"><strong>Source: {w['source']}, retrieved {w['retrieved']}.</strong> Stock prices are last regular-session trades ({e(w['rows'][0]['price_ts'] if w['rows'] else '')}); option bid/ask times are shown per row. Selection: {e(w['selection'])}</p>
-<table class="sortable"><thead><tr><th>Ticker</th><th class='hide-sm'>Company</th><th>Report date</th><th>Timing</th><th>Price</th><th>Exp. move $</th><th>Exp. move %</th><th class='hide-sm'>Expiry @ ATM strike</th><th class='hide-sm'>Quote time</th></tr></thead>
-<tbody>{''.join(rows)}</tbody></table>
+<p class="small"><strong>Source: {w['source']}, retrieved {w['retrieved']}.</strong> Stock prices are last regular-session trades ({e(rs[0]['price_ts'] if rs else '')}); option bid/ask times are shown per row. Selection: {e(w['selection'])}</p>
+<div class="grid2"><div class="card"><h3>Top {min(15,len(rs))} expected moves (%)</h3>{svg_movers(rs) if rs else ''}<p class="small">⚑ = monthly expiry used; likely overstates the earnings-only move.</p></div>
+<div class="card"><h3>Reports by day</h3>{svg_days(rs) if rs else ''}</div></div>
+<h2 class="sec">Calendar</h2>{calendar(w)}
+<h2 class="sec">Full table</h2><p class="small">Click any column header to sort (e.g. by date or expected move %).</p>
+<div class="tw"><table class="sortable"><thead><tr><th>Ticker</th><th class='hide-sm'>Company</th><th>Report date</th><th>Timing</th><th>Price</th><th>Exp. move $</th><th>Exp. move %</th><th class='hide-sm'>Expiry @ ATM strike</th><th class='hide-sm'>Quote time</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>
 <p class="small">Method: {e(w['method'])} ⚑ = no weekly expiration was listed, so the nearest monthly was used and the figure likely overstates the earnings-only move.</p>
-<h3>Data notes</h3><ul>{''.join(f'<li>{e(c)}</li>' for c in w.get('calendar_notes',[]))}{gaps}</ul>
-<p class="small">Raw data: <a href="data.json">data.json</a></p>"""
+<div class="card"><h3>Data notes</h3><ul>{''.join(f'<li>{e(c)}</li>' for c in w.get('calendar_notes',[]))}{gaps}</ul>
+<p class="small">Raw data: <a href="data.json">data.json</a></p></div>"""
 
 def main():
     weeks = sorted((json.load(open(f)) for f in glob.glob(f"{ROOT}/data/week-*.json")), key=lambda w: w["week_of"])
@@ -104,9 +205,9 @@ def main():
         "/", week_body(cur).replace('href="data.json"', f'href="weeks/{cur["week_of"]}/data.json"'), 0))
     os.makedirs(f"{DOCS}/archive")
     items = "".join(f"<li><a href='../weeks/{w['week_of']}/index.html'>Week of {nice(w['week_of'])}</a> — {len(w['rows'])} companies</li>" for w in reversed(weeks))
-    open(f"{DOCS}/archive/index.html","w").write(page(f"Archive | {SITE_NAME}", "Past weekly earnings cheat sheets with expected moves.", "/archive/", f"<h2>Archive</h2><ul>{items}</ul>", 1))
+    open(f"{DOCS}/archive/index.html","w").write(page(f"Archive | {SITE_NAME}", "Past weekly earnings cheat sheets with expected moves.", "/archive/", f"<div class='card'><h2>Archive</h2><ul>{items}</ul></div>", 1))
     os.makedirs(f"{DOCS}/about")
-    about = f"<h2>Method &amp; disclaimer</h2><p>{e(cur['method'])}</p><p>Source: Robinhood market data (earnings calendar, stock quotes, option chains and quotes). Data may be delayed; dates may change. Tickers without a usable option chain are skipped.</p>{DISCLAIMER}"
+    about = f"<div class='card'><h2>Method &amp; disclaimer</h2><p>{e(cur['method'])}</p><p>Source: Robinhood market data (earnings calendar, stock quotes, option chains and quotes). Data may be delayed; dates may change. Tickers without a usable option chain are skipped.</p></div>{DISCLAIMER}"
     open(f"{DOCS}/about/index.html","w").write(page(f"Method & Disclaimer | {SITE_NAME}", "How expected moves are calculated, data sources and disclaimer.", "/about/", about, 1))
     urls += ["/archive/", "/about/"]
     open(f"{DOCS}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +

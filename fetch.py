@@ -41,7 +41,7 @@ TICKERS = {
 }
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
-CROSSCHECK_NOTES = ["Also checked: FIX and ITW; Robinhood lists their next reports on Oct 26 and Oct 27, outside this week."]
+CROSSCHECK_NOTES = ["Also checked: FIX and ITW; Robinhood lists their next reports on Oct 30 and Oct 27, outside this week."]
 
 def et(s):
     s = re.sub(r"(\.\d{6})\d*", r"\1", s).replace("Z", "+00:00")
