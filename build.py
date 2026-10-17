@@ -3,7 +3,7 @@
 import glob, json, os, html, shutil
 from datetime import date, timedelta
 
-SITE_URL = os.environ.get("BASE", "https://jgonthego.github.io/earnings-cheatsheet").rstrip("/")
+SITE_URL = os.environ.get("BASE", "https://jgonthego.github.io/ec-p33gfgvf8bazdl").rstrip("/")
 SITE_NAME = "Earnings Week Cheat Sheet"
 FORM_ID = os.environ.get("FORM_ID", "").strip()  # newsletter flag: signup hidden until a real Formspree ID is set
 FORMSPREE = f"https://formspree.io/f/{FORM_ID}"
@@ -13,7 +13,7 @@ FEEDBACK = "d.bot@mail.grokbot.com"
 # (decision of Oct 15, 2026). True = indexable pages, robots Allow, no preview banner.
 LICENSE_CLEARED = True
 # Hidden site (owner decision, Oct 17, 2026): noindex/nofollow/noarchive on every page, robots.txt Disallow, no sitemap, no canonical.
-HIDDEN = False
+HIDDEN = True
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(ROOT, "docs")
 e = html.escape

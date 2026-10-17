@@ -1,6 +1,7 @@
 # Maintenance — Earnings Week Cheat Sheet
 
-Times: ET. Public site: https://jgonthego.github.io/earnings-cheatsheet (GitHub Pages via Actions).
+Times: ET. Site (hidden, not indexed): https://jgonthego.github.io/ec-p33gfgvf8bazdl/ (GitHub Pages via Actions; repo jgonthego/ec-p33gfgvf8bazdl,
+renamed from earnings-cheatsheet on Oct 17, 2026; the old URL is intentionally dead).
 
 ## Data source decision
 Source: **Robinhood market data** (via the Robinhood MCP connector). On Oct 15, 2026 the site owner
@@ -85,5 +86,8 @@ empty, labelled sponsor slot · newsletter form via `FORM_ID` env var (currently
 - Robinhood earnings history currently starts at Q1 2025, so most names show 6 past moves.
 
 ## Notes
-- robots.txt is generated, but on a project subpath (`/earnings-cheatsheet/`) crawlers only read the domain-root robots.txt; the per-page meta tags and the sitemap still apply. Submit the sitemap in Search Console if wanted.
+- **Hidden site (owner decision, Oct 17, 2026):** `HIDDEN = True` in build.py → every page carries
+  `<meta name="robots" content="noindex,nofollow,noarchive">`, no canonical / og:url, no sitemap.xml, robots.txt = `Disallow: /`.
+  (On a project subpath crawlers only read the domain-root robots.txt, so the meta tag is what matters.) Do not submit to
+  search engines or link the URL publicly; keep the repo description, homepage and topics empty.
 - The DST offset is handled automatically (zoneinfo America/New_York).

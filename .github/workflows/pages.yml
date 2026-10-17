@@ -22,7 +22,7 @@ jobs:
       - name: Build site into docs/
         run: python3 build.py
         env:
-          BASE: https://jgonthego.github.io/earnings-cheatsheet
+          BASE: https://jgonthego.github.io/ec-p33gfgvf8bazdl
           FORM_ID: xaeqlezp
       - uses: actions/configure-pages@v5
         with:
