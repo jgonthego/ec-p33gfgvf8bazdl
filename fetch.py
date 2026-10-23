@@ -40,51 +40,48 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- "AAL":"American Airlines","ABT":"Abbott","ALLY":"Ally Financial","AXP":"American Express",
- "BE":"Bloom Energy","BX":"Blackstone","CLF":"Cleveland-Cliffs","CMCSA":"Comcast",
- "CME":"CME Group","COF":"Capital One","CSX":"CSX","DHR":"Danaher","ELV":"Elevance Health",
- "FITB":"Fifth Third","GE":"GE Aerospace","GM":"General Motors","HAL":"Halliburton","HON":"Honeywell","IBM":"IBM",
- "ISRG":"Intuitive Surgical","KEY":"KeyCorp","KMI":"Kinder Morgan","LMT":"Lockheed Martin","LRCX":"Lam Research",
- "LUV":"Southwest Airlines","LVS":"Las Vegas Sands","MCO":"Moody's","META":"Meta Platforms","MMM":"3M",
- "NDAQ":"Nasdaq Inc.","NEE":"NextEra Energy","NEM":"Newmont","NFLX":"Netflix","NOC":"Northrop Grumman",
- "NSC":"Norfolk Southern","PG":"Procter & Gamble","PHM":"PulteGroup","PM":"Philip Morris",
- "RTX":"RTX","SLB":"SLB","STLD":"Steel Dynamics","SYF":"Synchrony","T":"AT&T",
- "TMO":"Thermo Fisher","TSLA":"Tesla","TXN":"Texas Instruments","UAL":"United Airlines","UNP":"Union Pacific",
- "URI":"United Rentals","VLO":"Valero","WDC":"Western Digital","ZION":"Zions",
+ "VZ":"Verizon","CDNS":"Cadence Design","NUE":"Nucor",
+ "BA":"Boeing","UPS":"UPS","V":"Visa","KO":"Coca-Cola","PYPL":"PayPal","SOFI":"SoFi Technologies","HOOD":"Robinhood Markets",
+ "ENPH":"Enphase Energy","CNC":"Centene","SPGI":"S&P Global","FCX":"Freeport-McMoRan","RCL":"Royal Caribbean","STX":"Seagate",
+ "GLW":"Corning",
+ "MSFT":"Microsoft","GOOGL":"Alphabet","ADP":"ADP","BSX":"Boston Scientific","CMG":"Chipotle","CVNA":"Carvana","F":"Ford",
+ "TMUS":"T-Mobile US","KLAC":"KLA","NOW":"ServiceNow","EBAY":"eBay","GEV":"GE Vernova","FTNT":"Fortinet",
+ "AMZN":"Amazon","LLY":"Eli Lilly","MA":"Mastercard","MRK":"Merck","CAT":"Caterpillar","INTC":"Intel","SBUX":"Starbucks",
+ "RBLX":"Roblox","COIN":"Coinbase","MSTR":"Strategy","RIVN":"Rivian","PINS":"Pinterest","RDDT":"Reddit","GILD":"Gilead",
+ "SNDK":"Sandisk","MO":"Altria",
+ "XOM":"Exxon Mobil","CVX":"Chevron","ABBV":"AbbVie",
 }
 
 # Candidate peers for correlation (same-sector names + broad/sector ETFs). Edit as TICKERS change.
-_BANKS = ["FITB","KEY","ZION","RF","HBAN","CFG","MTB","TFC","USB","PNC","KRE","KBE","XLF","SPY"]
-_CARDS = ["COF","SYF","ALLY","AXP","V","MA","KRE","XLF","SPY"]
-_DEF = ["LMT","NOC","GD","RTX","LHX","BA","ITA","XLI","SPY"]
-_AIR = ["DAL","UAL","AAL","LUV","ALK","JETS","SPY"]
-_RAIL = ["UNP","CSX","NSC","IYT","XLI","SPY"]
-_EXCH = ["CME","ICE","CBOE","NDAQ","MCO","SPGI","MSCI","XLF","SPY"]
-_TOOLS = ["TMO","DHR","A","WAT","MTD","IQV","XLV","SPY"]
-_MED = ["ABT","BSX","SYK","ISRG","JNJ","IHI","XLV","SPY"]
-_OILSVC = ["SLB","HAL","BKR","XOM","CVX","OIH","XLE","SPY"]
-_IND = ["HON","MMM","GE","EMR","ITW","XLI","SPY"]
-_STEEL = ["CLF","STLD","NUE","CMC","RS","AA","FCX","XME","XLB","SPY"]
-_TEL = ["T","VZ","TMUS","CMCSA","CHTR","XLC","SPY"]
-_STREAM = ["NFLX","DIS","ROKU","LYV","CMCSA","XLC","QQQ","SPY"]
+_PAY = ["V","MA","PYPL","AXP","COF","XYZ","XLF","SPY"]
+_BROK = ["HOOD","SOFI","COIN","SCHW","IBKR","XLF","ARKK","QQQ","SPY"]
+_CRYPTO = ["COIN","MSTR","HOOD","MARA","RIOT","ARKK","QQQ","SPY"]
+_SEMICAP = ["KLAC","LRCX","AMAT","TER","SMH","QQQ","SPY"]
+_MEM = ["STX","WDC","SNDK","MU","NTAP","SMH","QQQ","SPY"]
+_MEGA = ["MSFT","GOOGL","AMZN","META","AAPL","ORCL","XLK","QQQ","SPY"]
+_SW = ["NOW","CRM","ADBE","WDAY","CDNS","SNPS","IGV","QQQ","SPY"]
+_PHARMA = ["LLY","MRK","ABBV","GILD","PFE","BMY","AMGN","XLV","SPY"]
+_OIL = ["XOM","CVX","COP","OXY","EOG","XLE","SPY"]
+_SOCIAL = ["PINS","RDDT","META","SNAP","GOOGL","XLC","QQQ","SPY"]
+_TEL = ["VZ","T","TMUS","CMCSA","CHTR","XLC","SPY"]
+_EV = ["RIVN","TSLA","LCID","F","GM","XLY","SPY"]
+_REST = ["CMG","SBUX","MCD","YUM","DRI","CAVA","XLY","SPY"]
+_STAPLE = ["KO","PEP","MO","PM","PG","XLP","SPY"]
 PEERS = {
- "CLF":_STEEL, "STLD":_STEEL, "FITB":_BANKS, "ZION":_BANKS, "KEY":_BANKS,
- "ALLY":_CARDS, "SYF":_CARDS, "COF":_CARDS, "AXP":_CARDS,
- "GE":["RTX","HON","GEV","BA","HWM","TDG","ITA","XLI","SPY"], "GM":["F","TSLA","RIVN","LCID","XLY","SPY"],
- "HAL":_OILSVC, "SLB":_OILSVC, "MMM":_IND, "HON":_IND, "NOC":_DEF, "RTX":_DEF, "LMT":_DEF,
- "ISRG":_MED, "ABT":_MED, "NFLX":_STREAM, "UAL":_AIR, "AAL":_AIR, "LUV":_AIR,
- "CME":_EXCH, "NDAQ":_EXCH, "MCO":_EXCH, "DHR":_TOOLS, "TMO":_TOOLS,
- "ELV":["UNH","CI","HUM","CVS","CNC","MOH","XLV","SPY"], "NEE":["DUK","SO","AEP","D","XLU","SPY"],
- "PM":["MO","KO","PG","XLP","SPY"], "T":_TEL, "CMCSA":_TEL+["DIS","NFLX"],
- "CSX":_RAIL, "NSC":_RAIL, "UNP":_RAIL, "IBM":["ORCL","MSFT","HPE","CSCO","XLK","QQQ","SPY"],
- "KMI":["WMB","OKE","ET","EPD","XLE","AMLP","SPY"], "LRCX":["AMAT","KLAC","MU","SMH","QQQ","SPY"],
- "LVS":["WYNN","MGM","CZR","XLY","SPY"], "META":["GOOGL","AMZN","MSFT","SNAP","PINS","XLC","QQQ","SPY"],
- "TSLA":["RIVN","LCID","NVDA","GM","F","XLY","ARKK","QQQ","SPY"],
- "TXN":["ADI","MCHP","ON","INTC","SMH","QQQ","SPY"], "URI":["CAT","DE","PWR","XLI","SPY"],
- "BX":["KKR","APO","ARES","CG","BLK","XLF","SPY"], "PG":["CL","KMB","CLX","KO","PEP","XLP","SPY"],
- "PHM":["DHI","LEN","TOL","NVR","KBH","ITB","XHB","SPY"], "VLO":["MPC","PSX","PBF","DK","XLE","SPY"],
- "BE":["PLUG","FCEL","ENPH","FSLR","GEV","TAN","ICLN","SPY"], "NEM":["RGLD","CDE","HL","GDX","GLD","SPY"],
- "WDC":["STX","MU","SNDK","NTAP","SMH","QQQ","SPY"],
+ "VZ":_TEL, "TMUS":_TEL, "CDNS":["SNPS","ANSS","NOW","ADBE","IGV","SMH","QQQ","SPY"],
+ "NUE":["STLD","CLF","CMC","RS","AA","XME","XLB","SPY"], "FCX":["SCCO","NEM","AA","NUE","XME","XLB","SPY"],
+ "BA":["LMT","RTX","GE","HWM","TDG","ITA","XLI","SPY"], "GEV":["GE","VRT","ETN","PWR","CEG","XLI","XLU","SPY"],
+ "UPS":["FDX","CHRW","XPO","ODFL","IYT","XLI","SPY"], "CAT":["DE","URI","PCAR","CMI","XLI","SPY"],
+ "V":_PAY, "MA":_PAY, "PYPL":_PAY, "SOFI":_BROK, "HOOD":_BROK, "COIN":_CRYPTO, "MSTR":_CRYPTO,
+ "KO":_STAPLE, "MO":_STAPLE, "ENPH":["FSLR","SEDG","RUN","NXT","TAN","ICLN","SPY"],
+ "CNC":["UNH","ELV","CI","HUM","CVS","MOH","XLV","SPY"], "SPGI":["MCO","MSCI","ICE","CME","NDAQ","XLF","SPY"],
+ "RCL":["CCL","NCLH","BKNG","EXPE","XLY","SPY"], "STX":_MEM, "SNDK":_MEM, "GLW":["APH","TEL","CIEN","ANET","XLK","SPY"],
+ "MSFT":_MEGA, "GOOGL":_MEGA, "AMZN":_MEGA, "ADP":["PAYX","PAYC","WDAY","INTU","XLI","SPY"],
+ "BSX":["SYK","ISRG","ABT","MDT","IHI","XLV","SPY"], "CMG":_REST, "SBUX":_REST, "CVNA":["KMX","AN","LAD","CARG","XLY","SPY"],
+ "F":_EV, "RIVN":_EV, "KLAC":_SEMICAP, "NOW":_SW, "EBAY":["AMZN","ETSY","W","CHWY","XLY","SPY"],
+ "FTNT":["PANW","CRWD","ZS","NET","CHKP","IGV","QQQ","SPY"], "LLY":_PHARMA, "MRK":_PHARMA, "ABBV":_PHARMA, "GILD":_PHARMA,
+ "INTC":["AMD","NVDA","TXN","QCOM","MU","SMH","QQQ","SPY"], "RBLX":["EA","TTWO","U","DKNG","XLC","QQQ","SPY"],
+ "PINS":_SOCIAL, "RDDT":_SOCIAL, "XOM":_OIL, "CVX":_OIL,
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
@@ -104,7 +101,7 @@ CORR_RETURNS = 65   # daily close-to-close returns per correlation window
 FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by Robinhood market cap
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
-CROSSCHECK_NOTES = ["Also checked: FIX and ITW; Robinhood lists their next reports on Oct 30 and Oct 27, outside this week."]
+CROSSCHECK_NOTES = ["Also checked: AAPL, AMD, MCD and QCOM; Robinhood lists their next reports on Nov 2, Nov 3, Nov 4 and Nov 4, outside this week. META and UNH show no report this week on Robinhood."]
 
 def et(s):
     s = re.sub(r"(\.\d{6})\d*", r"\1", s).replace("Z", "+00:00")
