@@ -1,0 +1,6701 @@
+{
+  "week_of": "2026-11-02",
+  "retrieved": "Oct 30, 2026, 5:59 PM ET",
+  "source": "Robinhood market data",
+  "method": "Expected move = (ATM call mid + ATM put mid) for the first expiration on or after the report date (strictly after it for after-close or unconfirmed-time reports, since a same-day expiry settles before the release), divided by the stock's last regular-session trade price. Mid = (bid+ask)/2.",
+  "selection": "Notable, widely held, or high-volume US-domiciled companies reporting this week, curated by hand (US = headquartered in a US state per Robinhood's company profile; foreign issuers and ADRs are excluded).",
+  "rows": [
+    {
+      "symbol": "IDXX",
+      "name": "IDEXX Laboratories",
+      "report_date": "2026-11-02",
+      "timing": "Before open",
+      "price": 551.12,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-20",
+      "strike": 550.0,
+      "call_bid": 25.0,
+      "call_ask": 32.9,
+      "put_bid": 24.5,
+      "put_ask": 29.7,
+      "call_mid": 28.95,
+      "put_mid": 27.1,
+      "move_usd": 56.05,
+      "move_pct": 10.17,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": true,
+      "note": "Nearest expiry 2026-11-20 is 18 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 4.27,
+        "eps_estimate": 3.94,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 43417845354.873276,
+        "sector": "Health Technology",
+        "industry": "Medical Specialties"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "ZTS",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "MTD",
+            "r": 0.3,
+            "etf": false
+          },
+          {
+            "symbol": "WAT",
+            "r": 0.25,
+            "etf": false
+          },
+          {
+            "symbol": "TMO",
+            "r": 0.15,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.49,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.02,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 2063.0,
+        "volume": 1329.0,
+        "total": 3392.0
+      },
+      "anticipated_rank": 45,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": 8.95
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-01",
+            "after": "2025-08-04",
+            "move_pct": 27.49
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-31",
+            "after": "2025-11-03",
+            "move_pct": 14.84
+          },
+          {
+            "report_date": "2026-02-02",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-30",
+            "after": "2026-02-02",
+            "move_pct": -4.6
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": -0.03
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 3.57
+          }
+        ],
+        "avg_abs": 9.91,
+        "ratio": 1.03,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 13.72
+        }
+      }
+    },
+    {
+      "symbol": "MAR",
+      "name": "Marriott",
+      "report_date": "2026-11-02",
+      "timing": "Before open",
+      "price": 399.65,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 400.0,
+      "call_bid": 8.6,
+      "call_ask": 10.0,
+      "put_bid": 7.8,
+      "put_ask": 10.6,
+      "call_mid": 9.3,
+      "put_mid": 9.2,
+      "move_usd": 18.5,
+      "move_pct": 4.63,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 7071000000.0,
+        "gross_profit": null,
+        "net_income": 766000000.0,
+        "net_margin": 10.83,
+        "eps": 3.19,
+        "eps_estimate": 3.05,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 104215249999.99998,
+        "sector": "Consumer Services",
+        "industry": "Hotels/Resorts/Cruise lines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "HLT",
+            "r": 0.81,
+            "etf": false
+          },
+          {
+            "symbol": "H",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "BKNG",
+            "r": 0.29,
+            "etf": false
+          },
+          {
+            "symbol": "EXPE",
+            "r": 0.28,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.08,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.08,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 39371.0,
+        "volume": 4163.0,
+        "total": 43534.0
+      },
+      "anticipated_rank": 42,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": 1.9
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": 0.23
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": 3.16
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-09",
+            "after": "2026-02-10",
+            "move_pct": 8.5
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 1.28
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-31",
+            "after": "2026-08-03",
+            "move_pct": -6.97
+          }
+        ],
+        "avg_abs": 3.67,
+        "ratio": 1.26,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 19.66
+        }
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 344.8,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 345.0,
+      "call_bid": 8.05,
+      "call_ask": 8.4,
+      "put_bid": 7.95,
+      "put_ask": 8.3,
+      "call_mid": 8.225,
+      "put_mid": 8.125,
+      "move_usd": 16.35,
+      "move_pct": 4.74,
+      "quote_ts": "2026-10-30 04:08 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ3 2026",
+        "period_end": "2026-06-27",
+        "revenue": 109417000000.0,
+        "gross_profit": 54770000000.0,
+        "net_income": 29789000000.0,
+        "net_margin": 27.23,
+        "eps": 2.02,
+        "eps_estimate": 1.89,
+        "eps_period": "Q3 2026",
+        "eps_report_date": "2026-07-30"
+      },
+      "profile": {
+        "market_cap": 5032080160000.0,
+        "sector": "Electronic Technology",
+        "industry": "Telecommunications Equipment"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "META",
+            "r": -0.1,
+            "etf": false
+          },
+          {
+            "symbol": "MSFT",
+            "r": -0.13,
+            "etf": false
+          },
+          {
+            "symbol": "NVDA",
+            "r": -0.22,
+            "etf": false
+          },
+          {
+            "symbol": "GOOGL",
+            "r": -0.23,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SPY",
+            "r": -0.06,
+            "etf": true
+          },
+          {
+            "symbol": "XLK",
+            "r": -0.11,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.13,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 4946678.0,
+        "volume": 1602539.0,
+        "total": 6549217.0
+      },
+      "anticipated_rank": 1,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": -3.74
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-07-31",
+            "after": "2025-08-01",
+            "move_pct": -2.5
+          },
+          {
+            "report_date": "2025-10-30",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-10-30",
+            "after": "2025-10-31",
+            "move_pct": -0.38
+          },
+          {
+            "report_date": "2026-01-29",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-01-29",
+            "after": "2026-01-30",
+            "move_pct": 0.46
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-04-30",
+            "after": "2026-05-01",
+            "move_pct": 3.24
+          },
+          {
+            "report_date": "2026-07-30",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-07-30",
+            "after": "2026-07-31",
+            "move_pct": -7.35
+          }
+        ],
+        "avg_abs": 2.95,
+        "ratio": 1.61,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 3.53
+        }
+      }
+    },
+    {
+      "symbol": "FANG",
+      "name": "Diamondback Energy",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 212.06,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-20",
+      "strike": 210.0,
+      "call_bid": 8.3,
+      "call_ask": 9.2,
+      "put_bid": 6.7,
+      "put_ask": 7.8,
+      "call_mid": 8.75,
+      "put_mid": 7.25,
+      "move_usd": 16.0,
+      "move_pct": 7.55,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": true,
+      "note": "Nearest expiry 2026-11-20 is 18 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 6.48,
+        "eps_estimate": 6.08,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 59381962849.96784,
+        "sector": "Energy Minerals",
+        "industry": "Oil & Gas Production"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "COP",
+            "r": 0.87,
+            "etf": false
+          },
+          {
+            "symbol": "EOG",
+            "r": 0.87,
+            "etf": false
+          },
+          {
+            "symbol": "OXY",
+            "r": 0.87,
+            "etf": false
+          },
+          {
+            "symbol": "CVX",
+            "r": 0.83,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLE",
+            "r": 0.85,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.25,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 59960.0,
+        "volume": 1482.0,
+        "total": 61442.0
+      },
+      "anticipated_rank": 41,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": -0.83
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": -1.42
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -1.31
+          },
+          {
+            "report_date": "2026-02-23",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-23",
+            "after": "2026-02-24",
+            "move_pct": -0.75
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": -3.51
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": -3.46
+          }
+        ],
+        "avg_abs": 1.88,
+        "ratio": 4.02,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 4.82
+        }
+      }
+    },
+    {
+      "symbol": "ON",
+      "name": "ON Semiconductor",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 71.71,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 72.0,
+      "call_bid": 3.5,
+      "call_ask": 4.1,
+      "put_bid": 3.45,
+      "put_ask": 5.0,
+      "call_mid": 3.8,
+      "put_mid": 4.225,
+      "move_usd": 8.02,
+      "move_pct": 11.19,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-07-03",
+        "revenue": 1603500000.0,
+        "gross_profit": 616300000.0,
+        "net_income": 226800000.0,
+        "net_margin": 14.14,
+        "eps": 0.74,
+        "eps_estimate": 0.71,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 27917563519.999996,
+        "sector": "Electronic Technology",
+        "industry": "Semiconductors"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "TXN",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "AMD",
+            "r": 0.54,
+            "etf": false
+          },
+          {
+            "symbol": "NVDA",
+            "r": 0.45,
+            "etf": false
+          },
+          {
+            "symbol": "MU",
+            "r": 0.43,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.55,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.51,
+            "etf": true
+          }
+        ],
+        "candidates": 10
+      },
+      "options_activity": {
+        "open_interest": 259114.0,
+        "volume": 21727.0,
+        "total": 280841.0
+      },
+      "anticipated_rank": 26,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-05",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-02",
+            "after": "2025-05-05",
+            "move_pct": -8.35
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-01",
+            "after": "2025-08-04",
+            "move_pct": -15.58
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-31",
+            "after": "2025-11-03",
+            "move_pct": 0.76
+          },
+          {
+            "report_date": "2026-02-09",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-09",
+            "after": "2026-02-10",
+            "move_pct": 3.5
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": 0.62
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 0.47
+          }
+        ],
+        "avg_abs": 4.88,
+        "ratio": 2.29,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 10.16
+        }
+      }
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 184.1,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 185.0,
+      "call_bid": 11.75,
+      "call_ask": 11.95,
+      "put_bid": 12.55,
+      "put_ask": 12.7,
+      "call_mid": 11.85,
+      "put_mid": 12.625,
+      "move_usd": 24.48,
+      "move_pct": 13.29,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1935464000.0,
+        "gross_profit": 1638594000.0,
+        "net_income": 1061890000.0,
+        "net_margin": 54.86,
+        "eps": 0.41,
+        "eps_estimate": 0.33,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 442403078469.2017,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "SNOW",
+            "r": 0.53,
+            "etf": false
+          },
+          {
+            "symbol": "DDOG",
+            "r": 0.46,
+            "etf": false
+          },
+          {
+            "symbol": "NOW",
+            "r": 0.35,
+            "etf": false
+          },
+          {
+            "symbol": "CRM",
+            "r": 0.33,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.68,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.55,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.53,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 3374293.0,
+        "volume": 575471.0,
+        "total": 3949764.0
+      },
+      "anticipated_rank": 3,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": -12.05
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": 7.85
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -7.94
+          },
+          {
+            "report_date": "2026-02-02",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-02",
+            "after": "2026-02-03",
+            "move_pct": 6.85
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": -6.93
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 29.45
+          }
+        ],
+        "avg_abs": 11.84,
+        "ratio": 1.12,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 11.45
+        }
+      }
+    },
+    {
+      "symbol": "ROKU",
+      "name": "Roku",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 155.14,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 155.0,
+      "call_bid": 2.63,
+      "call_ask": 2.97,
+      "put_bid": 2.0,
+      "put_ask": 2.38,
+      "call_mid": 2.8,
+      "put_mid": 2.19,
+      "move_usd": 4.99,
+      "move_pct": 3.22,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1354690000.0,
+        "gross_profit": 673696000.0,
+        "net_income": 164216000.0,
+        "net_margin": 12.12,
+        "eps": 1.08,
+        "eps_estimate": 0.57,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 23039696188.96,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "DIS",
+            "r": 0.56,
+            "etf": false
+          },
+          {
+            "symbol": "CMCSA",
+            "r": 0.55,
+            "etf": false
+          },
+          {
+            "symbol": "NFLX",
+            "r": 0.46,
+            "etf": false
+          },
+          {
+            "symbol": "CHTR",
+            "r": 0.38,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.45,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.11,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.01,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 71254.0,
+        "volume": 4054.0,
+        "total": 75308.0
+      },
+      "anticipated_rank": 38,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": -8.5
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-31",
+            "after": "2025-08-01",
+            "move_pct": -15.06
+          },
+          {
+            "report_date": "2025-10-30",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-30",
+            "after": "2025-10-31",
+            "move_pct": 6.1
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 8.6
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-30",
+            "after": "2026-05-01",
+            "move_pct": 6.02
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": 2.03
+          }
+        ],
+        "avg_abs": 7.72,
+        "ratio": 0.42,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 1.46
+        }
+      }
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 559.05,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 560.0,
+      "call_bid": 12.1,
+      "call_ask": 18.0,
+      "put_bid": 12.5,
+      "put_ask": 20.1,
+      "call_mid": 15.05,
+      "put_mid": 16.3,
+      "move_usd": 31.35,
+      "move_pct": 5.61,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3333900000.0,
+        "gross_profit": 2844700000.0,
+        "net_income": 1099800000.0,
+        "net_margin": 32.99,
+        "eps": 4.73,
+        "eps_estimate": 4.63,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 141697372050.0,
+        "sector": "Health Technology",
+        "industry": "Pharmaceuticals: Major"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "AMGN",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "GILD",
+            "r": 0.55,
+            "etf": false
+          },
+          {
+            "symbol": "REGN",
+            "r": 0.53,
+            "etf": false
+          },
+          {
+            "symbol": "BIIB",
+            "r": 0.49,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.78,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.08,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 38238.0,
+        "volume": 3194.0,
+        "total": 41432.0
+      },
+      "anticipated_rank": 43,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": -10.03
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": -20.6
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -1.02
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 5.69
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": -1.28
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 1.7
+          }
+        ],
+        "avg_abs": 6.72,
+        "ratio": 0.83,
+        "label": "Options pricing a smaller move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 4.58
+        }
+      }
+    },
+    {
+      "symbol": "WMB",
+      "name": "Williams Companies",
+      "report_date": "2026-11-02",
+      "timing": "After close",
+      "price": 74.36,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 74.0,
+      "call_bid": 1.95,
+      "call_ask": 2.2,
+      "put_bid": 1.35,
+      "put_ask": 3.3,
+      "call_mid": 2.075,
+      "put_mid": 2.325,
+      "move_usd": 4.4,
+      "move_pct": 5.92,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3053000000.0,
+        "gross_profit": null,
+        "net_income": 827000000.0,
+        "net_margin": 27.09,
+        "eps": 0.5,
+        "eps_estimate": 0.51,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 90961037050.0,
+        "sector": "Industrial Services",
+        "industry": "Oil & Gas Pipelines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "KMI",
+            "r": 0.78,
+            "etf": false
+          },
+          {
+            "symbol": "OKE",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "ET",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "TRGP",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "AMLP",
+            "r": 0.63,
+            "etf": true
+          },
+          {
+            "symbol": "XLE",
+            "r": 0.43,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.09,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 357959.0,
+        "volume": 33115.0,
+        "total": 391074.0
+      },
+      "anticipated_rank": 19,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": -2.44
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": -2.09
+          },
+          {
+            "report_date": "2025-11-03",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -4.27
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-09",
+            "after": "2026-02-10",
+            "move_pct": 1.46
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": 0.94
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 1.53
+          }
+        ],
+        "avg_abs": 2.12,
+        "ratio": 2.79,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 4.28
+        }
+      }
+    },
+    {
+      "symbol": "APO",
+      "name": "Apollo Global",
+      "report_date": "2026-11-03",
+      "timing": "Before open",
+      "price": 115.81,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 116.0,
+      "call_bid": 2.15,
+      "call_ask": 5.0,
+      "put_bid": 3.4,
+      "put_ask": 4.2,
+      "call_mid": 3.575,
+      "put_mid": 3.8,
+      "move_usd": 7.38,
+      "move_pct": 6.37,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 2.11,
+        "eps_estimate": 2.17,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 68390803189.04986,
+        "sector": "Finance",
+        "industry": "Investment Managers"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "KKR",
+            "r": 0.81,
+            "etf": false
+          },
+          {
+            "symbol": "ARES",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "BX",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "CG",
+            "r": 0.65,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.56,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.43,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 285528.0,
+        "volume": 8354.0,
+        "total": 293882.0
+      },
+      "anticipated_rank": 23,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-02",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": -1.83
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": 2.48
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": 5.29
+          },
+          {
+            "report_date": "2026-02-09",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-06",
+            "after": "2026-02-09",
+            "move_pct": 0.69
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": -0.59
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 2.92
+          }
+        ],
+        "avg_abs": 2.3,
+        "ratio": 2.77,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -5.9
+        }
+      }
+    },
+    {
+      "symbol": "PFE",
+      "name": "Pfizer",
+      "report_date": "2026-11-03",
+      "timing": "Before open",
+      "price": 30.5,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 30.5,
+      "call_bid": 0.53,
+      "call_ask": 0.57,
+      "put_bid": 0.71,
+      "put_ask": 0.88,
+      "call_mid": 0.55,
+      "put_mid": 0.795,
+      "move_usd": 1.34,
+      "move_pct": 4.41,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-28",
+        "revenue": 15034000000.0,
+        "gross_profit": 10942000000.0,
+        "net_income": -248000000.0,
+        "net_margin": -1.65,
+        "eps": 0.77,
+        "eps_estimate": 0.68,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 173868553409.32803,
+        "sector": "Health Technology",
+        "industry": "Pharmaceuticals: Major"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "MRK",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "BMY",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "LLY",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "ABBV",
+            "r": 0.56,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.74,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.02,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 2196748.0,
+        "volume": 145641.0,
+        "total": 2342389.0
+      },
+      "anticipated_rank": 5,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-28",
+            "after": "2025-04-29",
+            "move_pct": 3.21
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": 5.18
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -1.46
+          },
+          {
+            "report_date": "2026-02-03",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-02",
+            "after": "2026-02-03",
+            "move_pct": -3.34
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": 0.57
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 1.52
+          }
+        ],
+        "avg_abs": 2.55,
+        "ratio": 1.73,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 8.36
+        }
+      }
+    },
+    {
+      "symbol": "UPST",
+      "name": "Upstart",
+      "report_date": "2026-11-03",
+      "timing": "Before open",
+      "price": 23.04,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 23.0,
+      "call_bid": 1.44,
+      "call_ask": 1.88,
+      "put_bid": 1.41,
+      "put_ask": 1.57,
+      "call_mid": 1.66,
+      "put_mid": 1.49,
+      "move_usd": 3.15,
+      "move_pct": 13.67,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 364708000.0,
+        "gross_profit": null,
+        "net_income": 16539000.0,
+        "net_margin": 4.53,
+        "eps": 0.56,
+        "eps_estimate": 0.53,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 2241607258.5,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "SOFI",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "AFRM",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "XYZ",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "COIN",
+            "r": 0.49,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ARKK",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.57,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.4,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 262928.0,
+        "volume": 20353.0,
+        "total": 283281.0
+      },
+      "anticipated_rank": 25,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": -9.65
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -18.74
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -9.71
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-10",
+            "after": "2026-02-11",
+            "move_pct": -15.04
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": -7.92
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": -0.4
+          }
+        ],
+        "avg_abs": 10.24,
+        "ratio": 1.33,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 0.28
+        }
+      }
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 505.18,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 505.0,
+      "call_bid": 25.05,
+      "call_ask": 25.6,
+      "put_bid": 24.55,
+      "put_ask": 25.55,
+      "call_mid": 25.325,
+      "put_mid": 25.05,
+      "move_usd": 50.38,
+      "move_pct": 9.97,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-27",
+        "revenue": 11536000000.0,
+        "gross_profit": 6203000000.0,
+        "net_income": 2297000000.0,
+        "net_margin": 19.91,
+        "eps": 1.66,
+        "eps_estimate": 1.55,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 824696246400.0,
+        "sector": "Electronic Technology",
+        "industry": "Semiconductors"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "INTC",
+            "r": 0.81,
+            "etf": false
+          },
+          {
+            "symbol": "MU",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "AVGO",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "TXN",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.84,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.77,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.59,
+            "etf": true
+          }
+        ],
+        "candidates": 10
+      },
+      "options_activity": {
+        "open_interest": 3367459.0,
+        "volume": 906045.0,
+        "total": 4273504.0
+      },
+      "anticipated_rank": 2,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": 1.76
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -6.42
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": 2.51
+          },
+          {
+            "report_date": "2026-02-03",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-03",
+            "after": "2026-02-04",
+            "move_pct": -17.31
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 18.61
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": -7.04
+          }
+        ],
+        "avg_abs": 8.94,
+        "ratio": 1.12,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 3.91
+        }
+      }
+    },
+    {
+      "symbol": "AMGN",
+      "name": "Amgen",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 466.36,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 467.5,
+      "call_bid": 9.1,
+      "call_ask": 12.5,
+      "put_bid": 10.2,
+      "put_ask": 13.25,
+      "call_mid": 10.8,
+      "put_mid": 11.725,
+      "move_usd": 22.52,
+      "move_pct": 4.83,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 10054000000.0,
+        "gross_profit": 7243000000.0,
+        "net_income": 2375000000.0,
+        "net_margin": 23.62,
+        "eps": 6.29,
+        "eps_estimate": 5.6,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 252129148898.2161,
+        "sector": "Health Technology",
+        "industry": "Biotechnology"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "VRTX",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "GILD",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "BIIB",
+            "r": 0.58,
+            "etf": false
+          },
+          {
+            "symbol": "REGN",
+            "r": 0.52,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.75,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.12,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 120504.0,
+        "volume": 16900.0,
+        "total": 137404.0
+      },
+      "anticipated_rank": 34,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": -0.9
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -5.14
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": 7.81
+          },
+          {
+            "report_date": "2026-02-03",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-03",
+            "after": "2026-02-04",
+            "move_pct": 8.15
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-30",
+            "after": "2026-05-01",
+            "move_pct": -4.75
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": 4.57
+          }
+        ],
+        "avg_abs": 5.22,
+        "ratio": 0.93,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 21.31
+        }
+      }
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 168.86,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 170.0,
+      "call_bid": 7.8,
+      "call_ask": 8.7,
+      "put_bid": 8.95,
+      "put_ask": 10.0,
+      "call_mid": 8.25,
+      "put_mid": 9.475,
+      "move_usd": 17.73,
+      "move_pct": 10.5,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3035700000.0,
+        "gross_profit": 1910300000.0,
+        "net_income": 1212900000.0,
+        "net_margin": 39.95,
+        "eps": 1.02,
+        "eps_estimate": 0.86,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 212970386930.36868,
+        "sector": "Electronic Technology",
+        "industry": "Computer Peripherals"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CIEN",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "DELL",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "CSCO",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "SMCI",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.67,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.56,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 313669.0,
+        "volume": 29733.0,
+        "total": 343402.0
+      },
+      "anticipated_rank": 21,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": -4.76
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": 17.49
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -8.55
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 4.79
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": -13.61
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": 3.57
+          }
+        ],
+        "avg_abs": 8.79,
+        "ratio": 1.19,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -7.67
+        }
+      }
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 148.18,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 148.0,
+      "call_bid": 2.7,
+      "call_ask": 8.6,
+      "put_bid": 1.85,
+      "put_ask": 5.9,
+      "call_mid": 5.65,
+      "put_mid": 3.875,
+      "move_usd": 9.53,
+      "move_pct": 6.43,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 7352000000.0,
+        "gross_profit": null,
+        "net_income": 1950000000.0,
+        "net_margin": 26.52,
+        "eps": 2.54,
+        "eps_estimate": 2.44,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 111339636580.0,
+        "sector": "Consumer Services",
+        "industry": "Other Consumer Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "EXPE",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "ABNB",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "H",
+            "r": 0.46,
+            "etf": false
+          },
+          {
+            "symbol": "HLT",
+            "r": 0.4,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.38,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.03,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 483058.0,
+        "volume": 11319.0,
+        "total": 494377.0
+      },
+      "anticipated_rank": 14,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-29",
+            "after": "2025-04-30",
+            "move_pct": 3.87
+          },
+          {
+            "report_date": "2025-07-29",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-29",
+            "after": "2025-07-30",
+            "move_pct": 0.4
+          },
+          {
+            "report_date": "2025-10-28",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-28",
+            "after": "2025-10-29",
+            "move_pct": -0.87
+          },
+          {
+            "report_date": "2026-02-18",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-18",
+            "after": "2026-02-19",
+            "move_pct": -6.15
+          },
+          {
+            "report_date": "2026-04-28",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-04-28",
+            "after": "2026-04-29",
+            "move_pct": 0.35
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": 6.56
+          }
+        ],
+        "avg_abs": 3.03,
+        "ratio": 2.12,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -11.78
+        }
+      }
+    },
+    {
+      "symbol": "DUOL",
+      "name": "Duolingo",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 131.35,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 131.0,
+      "call_bid": 7.0,
+      "call_ask": 11.1,
+      "put_bid": 7.1,
+      "put_ask": 10.1,
+      "call_mid": 9.05,
+      "put_mid": 8.6,
+      "move_usd": 17.65,
+      "move_pct": 13.44,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 298454000.0,
+        "gross_profit": 216740000.0,
+        "net_income": 33158000.0,
+        "net_margin": 11.11,
+        "eps": 0.66,
+        "eps_estimate": 1.35,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 6145342841.18926,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "APP",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "TOST",
+            "r": 0.3,
+            "etf": false
+          },
+          {
+            "symbol": "RBLX",
+            "r": 0.28,
+            "etf": false
+          },
+          {
+            "symbol": "U",
+            "r": 0.02,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.37,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.07,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.01,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 67849.0,
+        "volume": 2549.0,
+        "total": 70398.0
+      },
+      "anticipated_rank": 39,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": 21.61
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": 13.75
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": -25.49
+          },
+          {
+            "report_date": "2026-02-26",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-26",
+            "after": "2026-02-27",
+            "move_pct": -14.01
+          },
+          {
+            "report_date": "2026-05-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-04",
+            "after": "2026-05-05",
+            "move_pct": -5.62
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -9.41
+          }
+        ],
+        "avg_abs": 14.98,
+        "ratio": 0.9,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -7.28
+        }
+      }
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 32.95,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 33.0,
+      "call_bid": 2.29,
+      "call_ask": 2.36,
+      "put_bid": 2.33,
+      "put_ask": 2.39,
+      "call_mid": 2.325,
+      "put_mid": 2.36,
+      "move_usd": 4.69,
+      "move_pct": 14.22,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ4 2026",
+        "period_end": "2026-06-30",
+        "revenue": 11119777000.0,
+        "gross_profit": 1942631000.0,
+        "net_income": 1178217000.0,
+        "net_margin": 10.6,
+        "eps": 1.7,
+        "eps_estimate": 0.88,
+        "eps_period": "Q4 2026",
+        "eps_report_date": "2026-08-11"
+      },
+      "profile": {
+        "market_cap": 21647009582.603836,
+        "sector": "Electronic Technology",
+        "industry": "Computer Processing Hardware"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "DELL",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "CIEN",
+            "r": 0.62,
+            "etf": false
+          },
+          {
+            "symbol": "ANET",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "NVDA",
+            "r": 0.56,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SMH",
+            "r": 0.72,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.72,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.64,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 2435785.0,
+        "volume": 399110.0,
+        "total": 2834895.0
+      },
+      "anticipated_rank": 4,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": -1.4
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -18.29
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -11.33
+          },
+          {
+            "report_date": "2026-02-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-02-03",
+            "after": "2026-02-04",
+            "move_pct": 13.78
+          },
+          {
+            "report_date": "2026-05-05",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 24.54
+          },
+          {
+            "report_date": "2026-08-11",
+            "timing": "pm",
+            "quarter": "Q4 2026",
+            "base": "2026-08-11",
+            "after": "2026-08-12",
+            "move_pct": 19.02
+          }
+        ],
+        "avg_abs": 14.73,
+        "ratio": 0.97,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -14.67
+        }
+      }
+    },
+    {
+      "symbol": "TOST",
+      "name": "Toast",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 31.67,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 31.5,
+      "call_bid": 1.71,
+      "call_ask": 1.95,
+      "put_bid": 1.56,
+      "put_ask": 1.85,
+      "call_mid": 1.83,
+      "put_mid": 1.705,
+      "move_usd": 3.54,
+      "move_pct": 11.16,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1908000000.0,
+        "gross_profit": 516000000.0,
+        "net_income": 154000000.0,
+        "net_margin": 8.07,
+        "eps": 0.26,
+        "eps_estimate": 0.3,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 18400270000.0,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "APP",
+            "r": 0.33,
+            "etf": false
+          },
+          {
+            "symbol": "DUOL",
+            "r": 0.3,
+            "etf": false
+          },
+          {
+            "symbol": "RBLX",
+            "r": 0.29,
+            "etf": false
+          },
+          {
+            "symbol": "U",
+            "r": 0.28,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.26,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.25,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.06,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 353789.0,
+        "volume": 9129.0,
+        "total": 362918.0
+      },
+      "anticipated_rank": 20,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 11.43
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -3.71
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": 9.48
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 4.55
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": -14.74
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": 2.93
+          }
+        ],
+        "avg_abs": 7.81,
+        "ratio": 1.43,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 2.77
+        }
+      }
+    },
+    {
+      "symbol": "XYZ",
+      "name": "Block",
+      "report_date": "2026-11-03",
+      "timing": "After close",
+      "price": 76.27,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 76.0,
+      "call_bid": 3.9,
+      "call_ask": 4.55,
+      "put_bid": 3.7,
+      "put_ask": 4.0,
+      "call_mid": 4.225,
+      "put_mid": 3.85,
+      "move_usd": 8.07,
+      "move_pct": 10.59,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 6617687000.0,
+        "gross_profit": 3166081000.0,
+        "net_income": 88517000.0,
+        "net_margin": 1.34,
+        "eps": 1.02,
+        "eps_estimate": 0.79,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 45822784722.00385,
+        "sector": "Commercial Services",
+        "industry": "Miscellaneous Commercial Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "AFRM",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "UPST",
+            "r": 0.72,
+            "etf": false
+          },
+          {
+            "symbol": "SOFI",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "COIN",
+            "r": 0.45,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLF",
+            "r": 0.54,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.5,
+            "etf": true
+          },
+          {
+            "symbol": "ARKK",
+            "r": 0.48,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 449142.0,
+        "volume": 35411.0,
+        "total": 484553.0
+      },
+      "anticipated_rank": 15,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": -20.43
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-07",
+            "after": "2025-08-08",
+            "move_pct": -4.5
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": -7.73
+          },
+          {
+            "report_date": "2026-02-26",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-26",
+            "after": "2026-02-27",
+            "move_pct": 16.82
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": 6.72
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -6.15
+          }
+        ],
+        "avg_abs": 10.39,
+        "ratio": 1.02,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 0.63
+        }
+      }
+    },
+    {
+      "symbol": "CVS",
+      "name": "CVS Health",
+      "report_date": "2026-11-04",
+      "timing": "Before open",
+      "price": 90.24,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 90.0,
+      "call_bid": 3.3,
+      "call_ask": 3.55,
+      "put_bid": 2.98,
+      "put_ask": 3.15,
+      "call_mid": 3.425,
+      "put_mid": 3.065,
+      "move_usd": 6.49,
+      "move_pct": 7.19,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 106096000000.0,
+        "gross_profit": 47234000000.0,
+        "net_income": 2979000000.0,
+        "net_margin": 2.81,
+        "eps": 2.58,
+        "eps_estimate": 1.84,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 115414283294.58652,
+        "sector": "Retail Trade",
+        "industry": "Drugstore Chains"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CI",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "UNH",
+            "r": 0.49,
+            "etf": false
+          },
+          {
+            "symbol": "CNC",
+            "r": 0.38,
+            "etf": false
+          },
+          {
+            "symbol": "ELV",
+            "r": 0.34,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.21,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.08,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 277848.0,
+        "volume": 7381.0,
+        "total": 285229.0
+      },
+      "anticipated_rank": 24,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": 4.11
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": -0.32
+          },
+          {
+            "report_date": "2025-10-29",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-28",
+            "after": "2025-10-29",
+            "move_pct": -1.95
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-09",
+            "after": "2026-02-10",
+            "move_pct": -0.09
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 7.65
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": -5.08
+          }
+        ],
+        "avg_abs": 3.2,
+        "ratio": 2.25,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 0.07
+        }
+      }
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog",
+      "report_date": "2026-11-04",
+      "timing": "Before open",
+      "price": 235.35,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 235.0,
+      "call_bid": 16.8,
+      "call_ask": 19.55,
+      "put_bid": 16.9,
+      "put_ask": 17.9,
+      "call_mid": 18.175,
+      "put_mid": 17.4,
+      "move_usd": 35.58,
+      "move_pct": 15.12,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1121454000.0,
+        "gross_profit": 881341000.0,
+        "net_income": 44558000.0,
+        "net_margin": 3.97,
+        "eps": 0.65,
+        "eps_estimate": 0.49,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 84508397743.5,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "NET",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "CRWD",
+            "r": 0.57,
+            "etf": false
+          },
+          {
+            "symbol": "MDB",
+            "r": 0.51,
+            "etf": false
+          },
+          {
+            "symbol": "ZS",
+            "r": 0.49,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.64,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.47,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.4,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 201114.0,
+        "volume": 25232.0,
+        "total": 226346.0
+      },
+      "anticipated_rank": 29,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": 0.34
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -0.42
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 23.13
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-09",
+            "after": "2026-02-10",
+            "move_pct": 13.74
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": 31.33
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -19.03
+          }
+        ],
+        "avg_abs": 14.66,
+        "ratio": 1.03,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 12.64
+        }
+      }
+    },
+    {
+      "symbol": "KHC",
+      "name": "Kraft Heinz",
+      "report_date": "2026-11-04",
+      "timing": "Before open",
+      "price": 24.32,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 24.5,
+      "call_bid": 0.49,
+      "call_ask": 0.59,
+      "put_bid": 0.57,
+      "put_ask": 0.69,
+      "call_mid": 0.54,
+      "put_mid": 0.63,
+      "move_usd": 1.17,
+      "move_pct": 4.81,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-27",
+        "revenue": 6262000000.0,
+        "gross_profit": 2028000000.0,
+        "net_income": -5460000000.0,
+        "net_margin": -87.19,
+        "eps": 0.56,
+        "eps_estimate": 0.53,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 28839233472.80336,
+        "sector": "Consumer Non-Durables",
+        "industry": "Food: Major Diversified"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "GIS",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "MDLZ",
+            "r": 0.63,
+            "etf": false
+          },
+          {
+            "symbol": "PEP",
+            "r": 0.56,
+            "etf": false
+          },
+          {
+            "symbol": "KO",
+            "r": 0.47,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLP",
+            "r": 0.62,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.15,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 430179.0,
+        "volume": 16968.0,
+        "total": 447147.0
+      },
+      "anticipated_rank": 17,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-28",
+            "after": "2025-04-29",
+            "move_pct": 0.21
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-29",
+            "after": "2025-07-30",
+            "move_pct": -0.25
+          },
+          {
+            "report_date": "2025-10-29",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-28",
+            "after": "2025-10-29",
+            "move_pct": -4.47
+          },
+          {
+            "report_date": "2026-02-11",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-10",
+            "after": "2026-02-11",
+            "move_pct": 0.36
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 2.35
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": -3.42
+          }
+        ],
+        "avg_abs": 1.84,
+        "ratio": 2.61,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -3.36
+        }
+      }
+    },
+    {
+      "symbol": "MCD",
+      "name": "McDonald's",
+      "report_date": "2026-11-04",
+      "timing": "Before open",
+      "price": 258.18,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 257.5,
+      "call_bid": 5.05,
+      "call_ask": 5.7,
+      "put_bid": 4.3,
+      "put_ask": 4.85,
+      "call_mid": 5.375,
+      "put_mid": 4.575,
+      "move_usd": 9.95,
+      "move_pct": 3.85,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 7099000000.0,
+        "gross_profit": 6419000000.0,
+        "net_income": 2362000000.0,
+        "net_margin": 33.27,
+        "eps": 3.38,
+        "eps_estimate": 3.34,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-04"
+      },
+      "profile": {
+        "market_cap": 182699011560.0,
+        "sector": "Consumer Services",
+        "industry": "Restaurants"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "YUM",
+            "r": 0.53,
+            "etf": false
+          },
+          {
+            "symbol": "SBUX",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "DRI",
+            "r": 0.46,
+            "etf": false
+          },
+          {
+            "symbol": "CAVA",
+            "r": 0.31,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.35,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.07,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 394690.0,
+        "volume": 42525.0,
+        "total": 437215.0
+      },
+      "anticipated_rank": 18,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": -1.88
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": 2.98
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": 2.16
+          },
+          {
+            "report_date": "2026-02-11",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-11",
+            "after": "2026-02-12",
+            "move_pct": 2.74
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": -0.14
+          },
+          {
+            "report_date": "2026-08-04",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 1.17
+          }
+        ],
+        "avg_abs": 1.84,
+        "ratio": 2.09,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 3.58
+        }
+      }
+    },
+    {
+      "symbol": "UBER",
+      "name": "Uber",
+      "report_date": "2026-11-04",
+      "timing": "Before open",
+      "price": 65.23,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 65.0,
+      "call_bid": 2.67,
+      "call_ask": 2.82,
+      "put_bid": 2.44,
+      "put_ask": 2.58,
+      "call_mid": 2.745,
+      "put_mid": 2.51,
+      "move_usd": 5.25,
+      "move_pct": 8.06,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 14191000000.0,
+        "gross_profit": null,
+        "net_income": 2394000000.0,
+        "net_margin": 16.87,
+        "eps": 0.81,
+        "eps_estimate": 0.83,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 133246413358.97093,
+        "sector": "Transportation",
+        "industry": "Other Transportation"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "LYFT",
+            "r": 0.68,
+            "etf": false
+          },
+          {
+            "symbol": "ABNB",
+            "r": 0.6,
+            "etf": false
+          },
+          {
+            "symbol": "DASH",
+            "r": 0.47,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.42,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.16,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.01,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 1558123.0,
+        "volume": 85651.0,
+        "total": 1643774.0
+      },
+      "anticipated_rank": 6,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": -2.54
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -0.19
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -5.06
+          },
+          {
+            "report_date": "2026-02-04",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-03",
+            "after": "2026-02-04",
+            "move_pct": -5.15
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-05",
+            "after": "2026-05-06",
+            "move_pct": 8.53
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-04",
+            "after": "2026-08-05",
+            "move_pct": -5.29
+          }
+        ],
+        "avg_abs": 4.46,
+        "ratio": 1.81,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -7.24
+        }
+      }
+    },
+    {
+      "symbol": "APP",
+      "name": "AppLovin",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 228.49,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 227.5,
+      "call_bid": 17.9,
+      "call_ask": 25.5,
+      "put_bid": 15.7,
+      "put_ask": 20.5,
+      "call_mid": 21.7,
+      "put_mid": 18.1,
+      "move_usd": 39.8,
+      "move_pct": 17.42,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1923686000.0,
+        "gross_profit": 1697885000.0,
+        "net_income": 1266538000.0,
+        "net_margin": 65.84,
+        "eps": 3.76,
+        "eps_estimate": 3.75,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 76464406990.0,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "TTD",
+            "r": 0.27,
+            "etf": false
+          },
+          {
+            "symbol": "GOOGL",
+            "r": 0.25,
+            "etf": false
+          },
+          {
+            "symbol": "META",
+            "r": 0.23,
+            "etf": false
+          },
+          {
+            "symbol": "U",
+            "r": -0.13,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.38,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.35,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.31,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 385538.0,
+        "volume": 67525.0,
+        "total": 453063.0
+      },
+      "anticipated_rank": 16,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-07",
+            "after": "2025-05-08",
+            "move_pct": 11.88
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": 11.97
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 0.7
+          },
+          {
+            "report_date": "2026-02-11",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-11",
+            "after": "2026-02-12",
+            "move_pct": -19.68
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": 6.41
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -19.66
+          }
+        ],
+        "avg_abs": 11.72,
+        "ratio": 1.49,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -20.74
+        }
+      }
+    },
+    {
+      "symbol": "CAVA",
+      "name": "CAVA Group",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 58.75,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 59.0,
+      "call_bid": 3.2,
+      "call_ask": 3.75,
+      "put_bid": 3.6,
+      "put_ask": 4.3,
+      "call_mid": 3.475,
+      "put_mid": 3.95,
+      "move_usd": 7.43,
+      "move_pct": 12.64,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-07-12",
+        "revenue": 368436000.0,
+        "gross_profit": null,
+        "net_income": 23017000.0,
+        "net_margin": 6.25,
+        "eps": 0.19,
+        "eps_estimate": 0.18,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-11"
+      },
+      "profile": {
+        "market_cap": 6862364250.0,
+        "sector": "Consumer Services",
+        "industry": "Restaurants"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CMG",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "YUM",
+            "r": 0.44,
+            "etf": false
+          },
+          {
+            "symbol": "DRI",
+            "r": 0.44,
+            "etf": false
+          },
+          {
+            "symbol": "SBUX",
+            "r": 0.33,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.28,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.14,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 150310.0,
+        "volume": 7387.0,
+        "total": 157697.0
+      },
+      "anticipated_rank": 32,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-15",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-15",
+            "after": "2025-05-16",
+            "move_pct": -2.27
+          },
+          {
+            "report_date": "2025-08-12",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-12",
+            "after": "2025-08-13",
+            "move_pct": -16.63
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -2.57
+          },
+          {
+            "report_date": "2026-02-24",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-24",
+            "after": "2026-02-25",
+            "move_pct": 26.36
+          },
+          {
+            "report_date": "2026-05-19",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-19",
+            "after": "2026-05-20",
+            "move_pct": 3.08
+          },
+          {
+            "report_date": "2026-08-11",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-11",
+            "after": "2026-08-12",
+            "move_pct": 14.24
+          }
+        ],
+        "avg_abs": 10.86,
+        "ratio": 1.16,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 15.62
+        }
+      }
+    },
+    {
+      "symbol": "EXPE",
+      "name": "Expedia",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 286.06,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 285.0,
+      "call_bid": 14.4,
+      "call_ask": 17.3,
+      "put_bid": 13.6,
+      "put_ask": 16.4,
+      "call_mid": 15.85,
+      "put_mid": 15.0,
+      "move_usd": 30.85,
+      "move_pct": 10.78,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 4315000000.0,
+        "gross_profit": null,
+        "net_income": 878000000.0,
+        "net_margin": 20.35,
+        "eps": 5.76,
+        "eps_estimate": 5.06,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 34332635140.0,
+        "sector": "Consumer Services",
+        "industry": "Other Consumer Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "BKNG",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "ABNB",
+            "r": 0.49,
+            "etf": false
+          },
+          {
+            "symbol": "H",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "HLT",
+            "r": 0.45,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.38,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.07,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 63290.0,
+        "volume": 1996.0,
+        "total": 65286.0
+      },
+      "anticipated_rank": 40,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": -7.3
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-07",
+            "after": "2025-08-08",
+            "move_pct": 4.08
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": 17.55
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": -6.41
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": -9.02
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -4.09
+          }
+        ],
+        "avg_abs": 8.08,
+        "ratio": 1.33,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -0.64
+        }
+      }
+    },
+    {
+      "symbol": "MCK",
+      "name": "McKesson",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 995.82,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-20",
+      "strike": 1000.0,
+      "call_bid": 36.9,
+      "call_ask": 42.8,
+      "put_bid": 39.1,
+      "put_ask": 45.7,
+      "call_mid": 39.85,
+      "put_mid": 42.4,
+      "move_usd": 82.25,
+      "move_pct": 8.26,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": true,
+      "note": "Nearest expiry 2026-11-20 is 16 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ1 2027",
+        "period_end": "2026-06-30",
+        "revenue": 105380000000.0,
+        "gross_profit": 3685000000.0,
+        "net_income": 614000000.0,
+        "net_margin": 0.58,
+        "eps": 9.93,
+        "eps_estimate": 9.62,
+        "eps_period": "Q1 2027",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 116102433336.4877,
+        "sector": "Distribution Services",
+        "industry": "Medical Distributors"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "COR",
+            "r": 0.79,
+            "etf": false
+          },
+          {
+            "symbol": "CAH",
+            "r": 0.65,
+            "etf": false
+          },
+          {
+            "symbol": "CVS",
+            "r": 0.08,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.34,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.13,
+            "etf": true
+          }
+        ],
+        "candidates": 5
+      },
+      "options_activity": {
+        "open_interest": 16855.0,
+        "volume": 725.0,
+        "total": 17580.0
+      },
+      "anticipated_rank": 44,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 0.47
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -5.76
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 1.7
+          },
+          {
+            "report_date": "2026-02-04",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-02-04",
+            "after": "2026-02-05",
+            "move_pct": 16.52
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q4 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": -2.47
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q1 2027",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -0.67
+          }
+        ],
+        "avg_abs": 4.6,
+        "ratio": 1.8,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 11.52
+        }
+      }
+    },
+    {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 164.88,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 165.0,
+      "call_bid": 7.55,
+      "call_ask": 8.45,
+      "put_bid": 8.1,
+      "put_ask": 8.55,
+      "call_mid": 8.0,
+      "put_mid": 8.325,
+      "move_usd": 16.32,
+      "move_pct": 9.9,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ3 2026",
+        "period_end": "2026-06-28",
+        "revenue": 9947000000.0,
+        "gross_profit": 5277000000.0,
+        "net_income": 2002000000.0,
+        "net_margin": 20.13,
+        "eps": 2.21,
+        "eps_estimate": 2.09,
+        "eps_period": "Q3 2026",
+        "eps_report_date": "2026-07-29"
+      },
+      "profile": {
+        "market_cap": 176065459200.0,
+        "sector": "Electronic Technology",
+        "industry": "Semiconductors"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "AMD",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "INTC",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "TXN",
+            "r": 0.42,
+            "etf": false
+          },
+          {
+            "symbol": "ON",
+            "r": 0.4,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "QQQ",
+            "r": 0.49,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.48,
+            "etf": true
+          },
+          {
+            "symbol": "SMH",
+            "r": 0.43,
+            "etf": true
+          }
+        ],
+        "candidates": 10
+      },
+      "options_activity": {
+        "open_interest": 882517.0,
+        "volume": 123878.0,
+        "total": 1006395.0
+      },
+      "anticipated_rank": 10,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-30",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": -8.92
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-07-30",
+            "after": "2025-07-31",
+            "move_pct": -7.73
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": -3.63
+          },
+          {
+            "report_date": "2026-02-04",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-02-04",
+            "after": "2026-02-05",
+            "move_pct": -8.46
+          },
+          {
+            "report_date": "2026-04-29",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-04-29",
+            "after": "2026-04-30",
+            "move_pct": 15.12
+          },
+          {
+            "report_date": "2026-07-29",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-07-29",
+            "after": "2026-07-30",
+            "move_pct": -2.62
+          }
+        ],
+        "avg_abs": 7.75,
+        "ratio": 1.28,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -1.75
+        }
+      }
+    },
+    {
+      "symbol": "SNAP",
+      "name": "Snap",
+      "report_date": "2026-11-04",
+      "timing": "After close",
+      "price": 5.34,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 5.5,
+      "call_bid": 0.32,
+      "call_ask": 0.37,
+      "put_bid": 0.46,
+      "put_ask": 0.5,
+      "call_mid": 0.345,
+      "put_mid": 0.48,
+      "move_usd": 0.82,
+      "move_pct": 15.45,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1598993000.0,
+        "gross_profit": 931108000.0,
+        "net_income": -163960000.0,
+        "net_margin": -10.25,
+        "eps": -0.1,
+        "eps_estimate": -0.11,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-03"
+      },
+      "profile": {
+        "market_cap": 9031009244.22,
+        "sector": "Technology Services",
+        "industry": "Packaged Software"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "PINS",
+            "r": 0.6,
+            "etf": false
+          },
+          {
+            "symbol": "RDDT",
+            "r": 0.53,
+            "etf": false
+          },
+          {
+            "symbol": "GOOGL",
+            "r": 0.41,
+            "etf": false
+          },
+          {
+            "symbol": "META",
+            "r": 0.29,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.54,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.45,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.36,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 1377414.0,
+        "volume": 74235.0,
+        "total": 1451649.0
+      },
+      "anticipated_rank": 7,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-29",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-04-29",
+            "after": "2025-04-30",
+            "move_pct": -12.43
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-05",
+            "after": "2025-08-06",
+            "move_pct": -17.15
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 9.73
+          },
+          {
+            "report_date": "2026-02-04",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-04",
+            "after": "2026-02-05",
+            "move_pct": -13.37
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": -2.13
+          },
+          {
+            "report_date": "2026-08-03",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-03",
+            "after": "2026-08-04",
+            "move_pct": 14.88
+          }
+        ],
+        "avg_abs": 11.62,
+        "ratio": 1.33,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 0.53
+        }
+      }
+    },
+    {
+      "symbol": "COP",
+      "name": "ConocoPhillips",
+      "report_date": "2026-11-05",
+      "timing": "Before open",
+      "price": 154.04,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 155.0,
+      "call_bid": 3.0,
+      "call_ask": 3.45,
+      "put_bid": 3.8,
+      "put_ask": 4.55,
+      "call_mid": 3.225,
+      "put_mid": 4.175,
+      "move_usd": 7.4,
+      "move_pct": 4.8,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 19161000000.0,
+        "gross_profit": 12449000000.0,
+        "net_income": 3931000000.0,
+        "net_margin": 20.52,
+        "eps": 3.24,
+        "eps_estimate": 2.88,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 185054413600.0,
+        "sector": "Energy Minerals",
+        "industry": "Oil & Gas Production"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "EOG",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "FANG",
+            "r": 0.87,
+            "etf": false
+          },
+          {
+            "symbol": "OXY",
+            "r": 0.86,
+            "etf": false
+          },
+          {
+            "symbol": "XOM",
+            "r": 0.83,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLE",
+            "r": 0.87,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.34,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 283459.0,
+        "volume": 12749.0,
+        "total": 296208.0
+      },
+      "anticipated_rank": 22,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-07",
+            "after": "2025-05-08",
+            "move_pct": 1.27
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -0.55
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": -2.33
+          },
+          {
+            "report_date": "2026-02-05",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-04",
+            "after": "2026-02-05",
+            "move_pct": -2.43
+          },
+          {
+            "report_date": "2026-04-30",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-29",
+            "after": "2026-04-30",
+            "move_pct": -1.93
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": 1.5
+          }
+        ],
+        "avg_abs": 1.67,
+        "ratio": 2.87,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 12.64
+        }
+      }
+    },
+    {
+      "symbol": "ZTS",
+      "name": "Zoetis",
+      "report_date": "2026-11-05",
+      "timing": "Before open",
+      "price": 79.71,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-20",
+      "strike": 80.0,
+      "call_bid": 3.4,
+      "call_ask": 4.3,
+      "put_bid": 3.9,
+      "put_ask": 4.6,
+      "call_mid": 3.85,
+      "put_mid": 4.25,
+      "move_usd": 8.1,
+      "move_pct": 10.16,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": true,
+      "note": "Nearest expiry 2026-11-20 is 15 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": null,
+        "period_end": null,
+        "revenue": null,
+        "gross_profit": null,
+        "net_income": null,
+        "net_margin": null,
+        "eps": 1.87,
+        "eps_estimate": 1.86,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 32938085039.999996,
+        "sector": "Health Technology",
+        "industry": "Pharmaceuticals: Major"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "IDXX",
+            "r": 0.59,
+            "etf": false
+          },
+          {
+            "symbol": "MTD",
+            "r": 0.22,
+            "etf": false
+          },
+          {
+            "symbol": "TMO",
+            "r": 0.06,
+            "etf": false
+          },
+          {
+            "symbol": "WAT",
+            "r": 0.04,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.51,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.09,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 145926.0,
+        "volume": 1610.0,
+        "total": 147536.0
+      },
+      "anticipated_rank": 33,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-06",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-05",
+            "after": "2025-05-06",
+            "move_pct": -5.18
+          },
+          {
+            "report_date": "2025-08-05",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": -3.75
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-03",
+            "after": "2025-11-04",
+            "move_pct": -13.78
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-11",
+            "after": "2026-02-12",
+            "move_pct": -2.35
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": -21.5
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": 3.87
+          }
+        ],
+        "avg_abs": 8.4,
+        "ratio": 1.21,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 7.92
+        }
+      }
+    },
+    {
+      "symbol": "ABNB",
+      "name": "Airbnb",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 164.36,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 165.0,
+      "call_bid": 6.3,
+      "call_ask": 6.75,
+      "put_bid": 5.2,
+      "put_ask": 7.4,
+      "call_mid": 6.525,
+      "put_mid": 6.3,
+      "move_usd": 12.83,
+      "move_pct": 7.8,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 3608000000.0,
+        "gross_profit": 2975000000.0,
+        "net_income": 816000000.0,
+        "net_margin": 22.62,
+        "eps": 1.37,
+        "eps_estimate": 1.24,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 98416407161.39839,
+        "sector": "Consumer Services",
+        "industry": "Hotels/Resorts/Cruise lines"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "BKNG",
+            "r": 0.64,
+            "etf": false
+          },
+          {
+            "symbol": "EXPE",
+            "r": 0.49,
+            "etf": false
+          },
+          {
+            "symbol": "H",
+            "r": 0.09,
+            "etf": false
+          },
+          {
+            "symbol": "HLT",
+            "r": 0.06,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.43,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.18,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 205702.0,
+        "volume": 6061.0,
+        "total": 211763.0
+      },
+      "anticipated_rank": 30,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-01",
+            "after": "2025-05-02",
+            "move_pct": 1.01
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -8.02
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": 0.29
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 4.65
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": 0.73
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": 17.43
+          }
+        ],
+        "avg_abs": 5.36,
+        "ratio": 1.46,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 0.31
+        }
+      }
+    },
+    {
+      "symbol": "AFRM",
+      "name": "Affirm",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 73.51,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 74.0,
+      "call_bid": 3.95,
+      "call_ask": 4.6,
+      "put_bid": 4.2,
+      "put_ask": 5.3,
+      "call_mid": 4.275,
+      "put_mid": 4.75,
+      "move_usd": 9.03,
+      "move_pct": 12.28,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ4 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1165961000.0,
+        "gross_profit": null,
+        "net_income": 1616613000.0,
+        "net_margin": 138.65,
+        "eps": 0.48,
+        "eps_estimate": 0.72,
+        "eps_period": "Q4 2026",
+        "eps_report_date": "2026-08-27"
+      },
+      "profile": {
+        "market_cap": 24921195971.352222,
+        "sector": "Finance",
+        "industry": "Finance/Rental/Leasing"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "XYZ",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "UPST",
+            "r": 0.76,
+            "etf": false
+          },
+          {
+            "symbol": "SOFI",
+            "r": 0.71,
+            "etf": false
+          },
+          {
+            "symbol": "COIN",
+            "r": 0.39,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SPY",
+            "r": 0.53,
+            "etf": true
+          },
+          {
+            "symbol": "ARKK",
+            "r": 0.51,
+            "etf": true
+          },
+          {
+            "symbol": "XLF",
+            "r": 0.47,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 239818.0,
+        "volume": 22627.0,
+        "total": 262445.0
+      },
+      "anticipated_rank": 27,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": -14.47
+          },
+          {
+            "report_date": "2025-08-28",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2025-08-28",
+            "after": "2025-08-29",
+            "move_pct": 10.59
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": 11.61
+          },
+          {
+            "report_date": "2026-02-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-02-05",
+            "after": "2026-02-06",
+            "move_pct": -4.02
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q3 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": -4.97
+          },
+          {
+            "report_date": "2026-08-27",
+            "timing": "pm",
+            "quarter": "Q4 2026",
+            "base": "2026-08-27",
+            "after": "2026-08-28",
+            "move_pct": 0.35
+          }
+        ],
+        "avg_abs": 7.67,
+        "ratio": 1.6,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 6.49
+        }
+      }
+    },
+    {
+      "symbol": "AXON",
+      "name": "Axon Enterprise",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 428.19,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 427.5,
+      "call_bid": 27.7,
+      "call_ask": 33.6,
+      "put_bid": 26.9,
+      "put_ask": 34.0,
+      "call_mid": 30.65,
+      "put_mid": 30.45,
+      "move_usd": 61.1,
+      "move_pct": 14.27,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 904389000.0,
+        "gross_profit": 546447000.0,
+        "net_income": 29427000.0,
+        "net_margin": 3.25,
+        "eps": 1.88,
+        "eps_estimate": 1.52,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 34785046025.35383,
+        "sector": "Electronic Technology",
+        "industry": "Aerospace & Defense"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "PLTR",
+            "r": 0.47,
+            "etf": false
+          },
+          {
+            "symbol": "TDG",
+            "r": 0.19,
+            "etf": false
+          },
+          {
+            "symbol": "LMT",
+            "r": 0.14,
+            "etf": false
+          },
+          {
+            "symbol": "MSI",
+            "r": -0.19,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ITA",
+            "r": 0.44,
+            "etf": true
+          },
+          {
+            "symbol": "XLI",
+            "r": 0.38,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.34,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 73780.0,
+        "volume": 2382.0,
+        "total": 76162.0
+      },
+      "anticipated_rank": 37,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-07",
+            "after": "2025-05-08",
+            "move_pct": 14.13
+          },
+          {
+            "report_date": "2025-08-04",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-04",
+            "after": "2025-08-05",
+            "move_pct": 16.41
+          },
+          {
+            "report_date": "2025-11-04",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -9.43
+          },
+          {
+            "report_date": "2026-02-24",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-24",
+            "after": "2026-02-25",
+            "move_pct": 17.55
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": 10.63
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -14.28
+          }
+        ],
+        "avg_abs": 13.74,
+        "ratio": 1.04,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -3.41
+        }
+      }
+    },
+    {
+      "symbol": "DKNG",
+      "name": "DraftKings",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 20.93,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 21.0,
+      "call_bid": 1.0,
+      "call_ask": 1.12,
+      "put_bid": 1.05,
+      "put_ask": 1.19,
+      "call_mid": 1.06,
+      "put_mid": 1.12,
+      "move_usd": 2.18,
+      "move_pct": 10.42,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1443235000.0,
+        "gross_profit": 551453000.0,
+        "net_income": -67610000.0,
+        "net_margin": -4.68,
+        "eps": 0.09,
+        "eps_estimate": 0.28,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 9758445060.0,
+        "sector": "Consumer Services",
+        "industry": "Movies/Entertainment"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "PENN",
+            "r": 0.5,
+            "etf": false
+          },
+          {
+            "symbol": "WYNN",
+            "r": 0.4,
+            "etf": false
+          },
+          {
+            "symbol": "LVS",
+            "r": 0.39,
+            "etf": false
+          },
+          {
+            "symbol": "MGM",
+            "r": 0.25,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.34,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.18,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 988733.0,
+        "volume": 30537.0,
+        "total": 1019270.0
+      },
+      "anticipated_rank": 9,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 2.49
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -0.35
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": 8.65
+          },
+          {
+            "report_date": "2026-02-12",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": -13.51
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": 1.19
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": 8.39
+          }
+        ],
+        "avg_abs": 5.76,
+        "ratio": 1.81,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -7.79
+        }
+      }
+    },
+    {
+      "symbol": "IONQ",
+      "name": "IonQ",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 30.05,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 30.0,
+      "call_bid": 1.71,
+      "call_ask": 1.85,
+      "put_bid": 1.62,
+      "put_ask": 1.75,
+      "call_mid": 1.78,
+      "put_mid": 1.685,
+      "move_usd": 3.46,
+      "move_pct": 11.53,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 80050000.0,
+        "gross_profit": null,
+        "net_income": -1867742000.0,
+        "net_margin": -2333.22,
+        "eps": -0.33,
+        "eps_estimate": -0.6,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-05"
+      },
+      "profile": {
+        "market_cap": 12901563360.0,
+        "sector": "Electronic Technology",
+        "industry": "Computer Processing Hardware"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "RGTI",
+            "r": 0.92,
+            "etf": false
+          },
+          {
+            "symbol": "QUBT",
+            "r": 0.89,
+            "etf": false
+          },
+          {
+            "symbol": "QBTS",
+            "r": 0.87,
+            "etf": false
+          },
+          {
+            "symbol": "IBM",
+            "r": 0.22,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "ARKK",
+            "r": 0.7,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.68,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.62,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 720169.0,
+        "volume": 94524.0,
+        "total": 814693.0
+      },
+      "anticipated_rank": 11,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-07",
+            "after": "2025-05-08",
+            "move_pct": 9.27
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": -1.79
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 3.65
+          },
+          {
+            "report_date": "2026-02-25",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-25",
+            "after": "2026-02-26",
+            "move_pct": 21.7
+          },
+          {
+            "report_date": "2026-05-06",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": -9.3
+          },
+          {
+            "report_date": "2026-08-05",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-05",
+            "after": "2026-08-06",
+            "move_pct": -0.53
+          }
+        ],
+        "avg_abs": 7.71,
+        "ratio": 1.5,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -21.37
+        }
+      }
+    },
+    {
+      "symbol": "LYFT",
+      "name": "Lyft",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 16.18,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 16.0,
+      "call_bid": 0.93,
+      "call_ask": 1.07,
+      "put_bid": 0.84,
+      "put_ask": 0.97,
+      "call_mid": 1.0,
+      "put_mid": 0.905,
+      "move_usd": 1.91,
+      "move_pct": 11.78,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 1843544000.0,
+        "gross_profit": 917123000.0,
+        "net_income": 50294000.0,
+        "net_margin": 2.73,
+        "eps": 0.13,
+        "eps_estimate": 0.15,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 6122888741.378737,
+        "sector": "Transportation",
+        "industry": "Other Transportation"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "UBER",
+            "r": 0.68,
+            "etf": false
+          },
+          {
+            "symbol": "ABNB",
+            "r": 0.61,
+            "etf": false
+          },
+          {
+            "symbol": "DASH",
+            "r": 0.41,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLY",
+            "r": 0.54,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.27,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.06,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 613144.0,
+        "volume": 28743.0,
+        "total": 641887.0
+      },
+      "anticipated_rank": 12,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 28.08
+          },
+          {
+            "report_date": "2025-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": 1.57
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 5.83
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-10",
+            "after": "2026-02-11",
+            "move_pct": -16.97
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": 1.34
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": 7.12
+          }
+        ],
+        "avg_abs": 10.15,
+        "ratio": 1.16,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 5.87
+        }
+      }
+    },
+    {
+      "symbol": "MNST",
+      "name": "Monster Beverage",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 47.36,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-20",
+      "strike": 47.0,
+      "call_bid": 1.85,
+      "call_ask": 2.35,
+      "put_bid": 1.6,
+      "put_ask": 1.85,
+      "call_mid": 2.1,
+      "put_mid": 1.725,
+      "move_usd": 3.83,
+      "move_pct": 8.08,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": true,
+      "note": "Nearest expiry 2026-11-20 is 15 days after report (no weekly listed); figure includes non-earnings time value.",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 2537473000.0,
+        "gross_profit": 1419634000.0,
+        "net_income": 584540000.0,
+        "net_margin": 23.04,
+        "eps": 0.3,
+        "eps_estimate": 0.29,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 92780689104.6386,
+        "sector": "Consumer Non-Durables",
+        "industry": "Beverages: Non-Alcoholic"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "KO",
+            "r": 0.6,
+            "etf": false
+          },
+          {
+            "symbol": "KDP",
+            "r": 0.52,
+            "etf": false
+          },
+          {
+            "symbol": "PEP",
+            "r": 0.42,
+            "etf": false
+          },
+          {
+            "symbol": "MDLZ",
+            "r": 0.37,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLP",
+            "r": 0.54,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": -0.11,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 81455.0,
+        "volume": 1407.0,
+        "total": 82862.0
+      },
+      "anticipated_rank": 36,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 1.43
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-08-07",
+            "after": "2025-08-08",
+            "move_pct": 6.4
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-11-06",
+            "after": "2025-11-07",
+            "move_pct": 5.16
+          },
+          {
+            "report_date": "2026-02-26",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-26",
+            "after": "2026-02-27",
+            "move_pct": -1.57
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": 13.58
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": -4.04
+          }
+        ],
+        "avg_abs": 5.36,
+        "ratio": 1.51,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 4.13
+        }
+      }
+    },
+    {
+      "symbol": "NET",
+      "name": "Cloudflare",
+      "report_date": "2026-11-05",
+      "timing": "After close",
+      "price": 280.51,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 280.0,
+      "call_bid": 21.15,
+      "call_ask": 22.4,
+      "put_bid": 19.7,
+      "put_ask": 21.8,
+      "call_mid": 21.775,
+      "put_mid": 20.75,
+      "move_usd": 42.52,
+      "move_pct": 15.16,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 696061000.0,
+        "gross_profit": 499517000.0,
+        "net_income": -169981000.0,
+        "net_margin": -24.42,
+        "eps": 0.29,
+        "eps_estimate": 0.21,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-06"
+      },
+      "profile": {
+        "market_cap": 99883983969.4,
+        "sector": "Technology Services",
+        "industry": "Information Technology Services"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CRWD",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "ZS",
+            "r": 0.73,
+            "etf": false
+          },
+          {
+            "symbol": "DDOG",
+            "r": 0.7,
+            "etf": false
+          },
+          {
+            "symbol": "SNOW",
+            "r": 0.58,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "IGV",
+            "r": 0.74,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": 0.54,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.46,
+            "etf": true
+          }
+        ],
+        "candidates": 8
+      },
+      "options_activity": {
+        "open_interest": 220547.0,
+        "volume": 29230.0,
+        "total": 249777.0
+      },
+      "anticipated_rank": 28,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-08",
+            "timing": "pm",
+            "quarter": "Q1 2025",
+            "base": "2025-05-08",
+            "after": "2025-05-09",
+            "move_pct": 6.46
+          },
+          {
+            "report_date": "2025-07-31",
+            "timing": "pm",
+            "quarter": "Q2 2025",
+            "base": "2025-07-31",
+            "after": "2025-08-01",
+            "move_pct": -3.65
+          },
+          {
+            "report_date": "2025-10-30",
+            "timing": "pm",
+            "quarter": "Q3 2025",
+            "base": "2025-10-30",
+            "after": "2025-10-31",
+            "move_pct": 13.84
+          },
+          {
+            "report_date": "2026-02-10",
+            "timing": "pm",
+            "quarter": "Q4 2025",
+            "base": "2026-02-10",
+            "after": "2026-02-11",
+            "move_pct": 5.24
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "pm",
+            "quarter": "Q1 2026",
+            "base": "2026-05-07",
+            "after": "2026-05-08",
+            "move_pct": -23.62
+          },
+          {
+            "report_date": "2026-08-06",
+            "timing": "pm",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": 5.57
+          }
+        ],
+        "avg_abs": 9.73,
+        "ratio": 1.56,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -7.08
+        }
+      }
+    },
+    {
+      "symbol": "CHTR",
+      "name": "Charter Communications",
+      "report_date": "2026-11-06",
+      "timing": "Before open",
+      "price": 111.5,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 111.0,
+      "call_bid": 4.8,
+      "call_ask": 10.0,
+      "put_bid": 5.2,
+      "put_ask": 8.0,
+      "call_mid": 7.4,
+      "put_mid": 6.6,
+      "move_usd": 14.0,
+      "move_pct": 12.56,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 13526000000.0,
+        "gross_profit": null,
+        "net_income": 1292000000.0,
+        "net_margin": 9.55,
+        "eps": 10.66,
+        "eps_estimate": 10.19,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-24"
+      },
+      "profile": {
+        "market_cap": 19637689258.03671,
+        "sector": "Consumer Services",
+        "industry": "Cable/Satellite TV"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CMCSA",
+            "r": 0.74,
+            "etf": false
+          },
+          {
+            "symbol": "NFLX",
+            "r": 0.45,
+            "etf": false
+          },
+          {
+            "symbol": "DIS",
+            "r": 0.43,
+            "etf": false
+          },
+          {
+            "symbol": "ROKU",
+            "r": 0.38,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLC",
+            "r": 0.39,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.03,
+            "etf": true
+          },
+          {
+            "symbol": "QQQ",
+            "r": -0.16,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 174878.0,
+        "volume": 3555.0,
+        "total": 178433.0
+      },
+      "anticipated_rank": 31,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-25",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-24",
+            "after": "2025-04-25",
+            "move_pct": 11.43
+          },
+          {
+            "report_date": "2025-07-25",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-24",
+            "after": "2025-07-25",
+            "move_pct": -18.49
+          },
+          {
+            "report_date": "2025-10-31",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-10-30",
+            "after": "2025-10-31",
+            "move_pct": 1.26
+          },
+          {
+            "report_date": "2026-01-30",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-01-29",
+            "after": "2026-01-30",
+            "move_pct": 7.62
+          },
+          {
+            "report_date": "2026-04-24",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-23",
+            "after": "2026-04-24",
+            "move_pct": -25.5
+          },
+          {
+            "report_date": "2026-07-24",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-23",
+            "after": "2026-07-24",
+            "move_pct": -2.52
+          }
+        ],
+        "avg_abs": 11.14,
+        "ratio": 1.13,
+        "label": "Options pricing a move in line with recent reports",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -18.27
+        }
+      }
+    },
+    {
+      "symbol": "HUM",
+      "name": "Humana",
+      "report_date": "2026-11-06",
+      "timing": "Before open",
+      "price": 414.71,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 415.0,
+      "call_bid": 18.2,
+      "call_ask": 24.0,
+      "put_bid": 17.9,
+      "put_ask": 23.6,
+      "call_mid": 21.1,
+      "put_mid": 20.75,
+      "move_usd": 41.85,
+      "move_pct": 10.09,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 40867000000.0,
+        "gross_profit": null,
+        "net_income": 694000000.0,
+        "net_margin": 1.7,
+        "eps": 7.61,
+        "eps_estimate": 6.81,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-29"
+      },
+      "profile": {
+        "market_cap": 49798505490.60301,
+        "sector": "Health Services",
+        "industry": "Managed Health Care"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "UNH",
+            "r": 0.52,
+            "etf": false
+          },
+          {
+            "symbol": "ELV",
+            "r": 0.48,
+            "etf": false
+          },
+          {
+            "symbol": "CNC",
+            "r": 0.38,
+            "etf": false
+          },
+          {
+            "symbol": "CI",
+            "r": 0.33,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.25,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.23,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 110364.0,
+        "volume": 3545.0,
+        "total": 113909.0
+      },
+      "anticipated_rank": 35,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-04-30",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-29",
+            "after": "2025-04-30",
+            "move_pct": 1.11
+          },
+          {
+            "report_date": "2025-07-30",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-29",
+            "after": "2025-07-30",
+            "move_pct": 12.4
+          },
+          {
+            "report_date": "2025-11-05",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-04",
+            "after": "2025-11-05",
+            "move_pct": -6.01
+          },
+          {
+            "report_date": "2026-02-11",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-10",
+            "after": "2026-02-11",
+            "move_pct": -3.25
+          },
+          {
+            "report_date": "2026-04-29",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-28",
+            "after": "2026-04-29",
+            "move_pct": 5.83
+          },
+          {
+            "report_date": "2026-07-29",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-28",
+            "after": "2026-07-29",
+            "move_pct": -5.99
+          }
+        ],
+        "avg_abs": 5.77,
+        "ratio": 1.75,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 8.59
+        }
+      }
+    },
+    {
+      "symbol": "MRNA",
+      "name": "Moderna",
+      "report_date": "2026-11-06",
+      "timing": "Before open",
+      "price": 221.75,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 222.5,
+      "call_bid": 11.4,
+      "call_ask": 11.75,
+      "put_bid": 12.0,
+      "put_ask": 12.6,
+      "call_mid": 11.575,
+      "put_mid": 12.3,
+      "move_usd": 23.88,
+      "move_pct": 10.77,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 145000000.0,
+        "gross_profit": 52000000.0,
+        "net_income": -782000000.0,
+        "net_margin": -539.31,
+        "eps": -1.97,
+        "eps_estimate": -2.07,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-07-31"
+      },
+      "profile": {
+        "market_cap": 88530583000.0,
+        "sector": "Health Technology",
+        "industry": "Biotechnology"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "VRTX",
+            "r": 0.4,
+            "etf": false
+          },
+          {
+            "symbol": "BIIB",
+            "r": 0.34,
+            "etf": false
+          },
+          {
+            "symbol": "AMGN",
+            "r": 0.3,
+            "etf": false
+          },
+          {
+            "symbol": "GILD",
+            "r": 0.3,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "XLV",
+            "r": 0.47,
+            "etf": true
+          },
+          {
+            "symbol": "SPY",
+            "r": 0.14,
+            "etf": true
+          }
+        ],
+        "candidates": 7
+      },
+      "options_activity": {
+        "open_interest": 907891.0,
+        "volume": 147080.0,
+        "total": 1054971.0
+      },
+      "anticipated_rank": 8,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-01",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-04-30",
+            "after": "2025-05-01",
+            "move_pct": -5.29
+          },
+          {
+            "report_date": "2025-08-01",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-07-31",
+            "after": "2025-08-01",
+            "move_pct": -6.61
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": 3.27
+          },
+          {
+            "report_date": "2026-02-13",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-12",
+            "after": "2026-02-13",
+            "move_pct": 5.29
+          },
+          {
+            "report_date": "2026-05-01",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-04-30",
+            "after": "2026-05-01",
+            "move_pct": -1.24
+          },
+          {
+            "report_date": "2026-07-31",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-07-30",
+            "after": "2026-07-31",
+            "move_pct": -5.35
+          }
+        ],
+        "avg_abs": 4.51,
+        "ratio": 2.39,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": 40.92
+        }
+      }
+    },
+    {
+      "symbol": "VST",
+      "name": "Vistra",
+      "report_date": "2026-11-06",
+      "timing": "Before open",
+      "price": 138.41,
+      "price_ts": "2026-10-30 03:59 PM ET",
+      "expiration": "2026-11-06",
+      "strike": 138.0,
+      "call_bid": 5.5,
+      "call_ask": 6.05,
+      "put_bid": 5.15,
+      "put_ask": 5.6,
+      "call_mid": 5.775,
+      "put_mid": 5.375,
+      "move_usd": 11.15,
+      "move_pct": 8.06,
+      "quote_ts": "2026-10-30 03:59 PM ET",
+      "long_dated": false,
+      "note": "",
+      "fundamentals": {
+        "period": "FQ2 2026",
+        "period_end": "2026-06-30",
+        "revenue": 4017000000.0,
+        "gross_profit": null,
+        "net_income": 305000000.0,
+        "net_margin": 7.59,
+        "eps": 0.908,
+        "eps_estimate": 2.21,
+        "eps_period": "Q2 2026",
+        "eps_report_date": "2026-08-07"
+      },
+      "profile": {
+        "market_cap": 46454596575.026566,
+        "sector": "Utilities",
+        "industry": "Electric Utilities"
+      },
+      "correlations": {
+        "n_returns": 65,
+        "start": "2026-07-30",
+        "end": "2026-10-29",
+        "base": "2026-07-29",
+        "stocks": [
+          {
+            "symbol": "CEG",
+            "r": 0.83,
+            "etf": false
+          },
+          {
+            "symbol": "TLN",
+            "r": 0.8,
+            "etf": false
+          },
+          {
+            "symbol": "NRG",
+            "r": 0.77,
+            "etf": false
+          },
+          {
+            "symbol": "GEV",
+            "r": 0.59,
+            "etf": false
+          }
+        ],
+        "etfs": [
+          {
+            "symbol": "SPY",
+            "r": 0.38,
+            "etf": true
+          },
+          {
+            "symbol": "XLU",
+            "r": 0.33,
+            "etf": true
+          }
+        ],
+        "candidates": 6
+      },
+      "options_activity": {
+        "open_interest": 508578.0,
+        "volume": 39597.0,
+        "total": 548175.0
+      },
+      "anticipated_rank": 13,
+      "past_moves": {
+        "moves": [
+          {
+            "report_date": "2025-05-07",
+            "timing": "am",
+            "quarter": "Q1 2025",
+            "base": "2025-05-06",
+            "after": "2025-05-07",
+            "move_pct": -3.66
+          },
+          {
+            "report_date": "2025-08-07",
+            "timing": "am",
+            "quarter": "Q2 2025",
+            "base": "2025-08-06",
+            "after": "2025-08-07",
+            "move_pct": 2.36
+          },
+          {
+            "report_date": "2025-11-06",
+            "timing": "am",
+            "quarter": "Q3 2025",
+            "base": "2025-11-05",
+            "after": "2025-11-06",
+            "move_pct": -2.52
+          },
+          {
+            "report_date": "2026-02-26",
+            "timing": "am",
+            "quarter": "Q4 2025",
+            "base": "2026-02-25",
+            "after": "2026-02-26",
+            "move_pct": 0.83
+          },
+          {
+            "report_date": "2026-05-07",
+            "timing": "am",
+            "quarter": "Q1 2026",
+            "base": "2026-05-06",
+            "after": "2026-05-07",
+            "move_pct": -2.74
+          },
+          {
+            "report_date": "2026-08-07",
+            "timing": "am",
+            "quarter": "Q2 2026",
+            "base": "2026-08-06",
+            "after": "2026-08-07",
+            "move_pct": -0.56
+          }
+        ],
+        "avg_abs": 2.11,
+        "ratio": 3.82,
+        "label": "Options pricing a bigger move than usual",
+        "pre_change": {
+          "start": "2026-09-17",
+          "end": "2026-10-29",
+          "sessions": 30,
+          "change_pct": -1.82
+        }
+      }
+    }
+  ],
+  "gaps": [],
+  "calendar_notes": [],
+  "excluded": [
+    {
+      "symbol": "EA",
+      "name": "Electronic Arts",
+      "reason": "US-only rule: domicile not verified (no Robinhood company profile)"
+    },
+    {
+      "symbol": "WBD",
+      "name": "Warner Bros. Discovery",
+      "reason": "US-only rule: domicile not verified (no Robinhood company profile)"
+    }
+  ],
+  "featured": [
+    "AAPL",
+    "AMD"
+  ],
+  "featured_basis": "two largest reporters by Robinhood market cap",
+  "cards_method": "Latest quarter: Robinhood quarterly financials (revenue, net income, net margin) and the most recent reported 'actual' EPS from Robinhood earnings results (may be an adjusted, non-GAAP figure). Correlated stocks: Pearson correlation of 65 daily close-to-close returns (split-adjusted regular-session closes from Robinhood) against a hand-picked candidate list of same-sector stocks and ETFs; top 4 stocks and top 3 ETFs shown. Correlation is not causation and says nothing about the earnings reaction.",
+  "anticipated_method": "Ranked by options activity: total open interest across all listed expirations plus the latest session's total options volume (contracts), from Robinhood market data retrieved Oct 30, 2026, 5:59 PM ET. A proxy for trader attention, not a forecast; names with missing data are listed last.",
+  "past_moves_method": "Past earnings moves: close of the last session before the report to the close of the first session after it (before-open reports: prior close -> report-day close; after-close reports: report-day close -> next close), using Robinhood earnings-results dates/timing and split-adjusted daily closes; up to the last 8 reported quarters. Ratio = this week's implied move / average absolute past move (shown when at least 4 past reports are available; >=1.15 bigger, <=0.85 smaller than usual). Non-directional; not a prediction or advice."
+}

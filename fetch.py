@@ -40,48 +40,50 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- "VZ":"Verizon","CDNS":"Cadence Design","NUE":"Nucor",
- "BA":"Boeing","UPS":"UPS","V":"Visa","KO":"Coca-Cola","PYPL":"PayPal","SOFI":"SoFi Technologies","HOOD":"Robinhood Markets",
- "ENPH":"Enphase Energy","CNC":"Centene","SPGI":"S&P Global","FCX":"Freeport-McMoRan","RCL":"Royal Caribbean","STX":"Seagate",
- "GLW":"Corning",
- "MSFT":"Microsoft","GOOGL":"Alphabet","ADP":"ADP","BSX":"Boston Scientific","CMG":"Chipotle","CVNA":"Carvana","F":"Ford",
- "TMUS":"T-Mobile US","KLAC":"KLA","NOW":"ServiceNow","EBAY":"eBay","GEV":"GE Vernova","FTNT":"Fortinet",
- "AMZN":"Amazon","LLY":"Eli Lilly","MA":"Mastercard","MRK":"Merck","CAT":"Caterpillar","INTC":"Intel","SBUX":"Starbucks",
- "RBLX":"Roblox","COIN":"Coinbase","MSTR":"Strategy","RIVN":"Rivian","PINS":"Pinterest","RDDT":"Reddit","GILD":"Gilead",
- "SNDK":"Sandisk","MO":"Altria",
- "XOM":"Exxon Mobil","CVX":"Chevron","ABBV":"AbbVie",
+ "AAPL":"Apple","PLTR":"Palantir","VRTX":"Vertex Pharmaceuticals","ON":"ON Semiconductor","ROKU":"Roku","MAR":"Marriott",
+ "WMB":"Williams Companies","FANG":"Diamondback Energy","IDXX":"IDEXX Laboratories",
+ "AMD":"AMD","PFE":"Pfizer","AMGN":"Amgen","ANET":"Arista Networks","SMCI":"Super Micro Computer","XYZ":"Block",
+ "BKNG":"Booking Holdings","APO":"Apollo Global","UPST":"Upstart","DUOL":"Duolingo","TOST":"Toast","EA":"Electronic Arts",
+ "QCOM":"Qualcomm","UBER":"Uber","APP":"AppLovin","MCD":"McDonald's","CVS":"CVS Health","SNAP":"Snap","DDOG":"Datadog",
+ "EXPE":"Expedia","MCK":"McKesson","KHC":"Kraft Heinz","CAVA":"CAVA Group",
+ "ABNB":"Airbnb","NET":"Cloudflare","AFRM":"Affirm","DKNG":"DraftKings","LYFT":"Lyft","MNST":"Monster Beverage",
+ "COP":"ConocoPhillips","ZTS":"Zoetis","AXON":"Axon Enterprise","IONQ":"IonQ","WBD":"Warner Bros. Discovery",
+ "MRNA":"Moderna","VST":"Vistra","HUM":"Humana","CHTR":"Charter Communications",
 }
 
 # Candidate peers for correlation (same-sector names + broad/sector ETFs). Edit as TICKERS change.
-_PAY = ["V","MA","PYPL","AXP","COF","XYZ","XLF","SPY"]
-_BROK = ["HOOD","SOFI","COIN","SCHW","IBKR","XLF","ARKK","QQQ","SPY"]
-_CRYPTO = ["COIN","MSTR","HOOD","MARA","RIOT","ARKK","QQQ","SPY"]
-_SEMICAP = ["KLAC","LRCX","AMAT","TER","SMH","QQQ","SPY"]
-_MEM = ["STX","WDC","SNDK","MU","NTAP","SMH","QQQ","SPY"]
-_MEGA = ["MSFT","GOOGL","AMZN","META","AAPL","ORCL","XLK","QQQ","SPY"]
-_SW = ["NOW","CRM","ADBE","WDAY","CDNS","SNPS","IGV","QQQ","SPY"]
-_PHARMA = ["LLY","MRK","ABBV","GILD","PFE","BMY","AMGN","XLV","SPY"]
-_OIL = ["XOM","CVX","COP","OXY","EOG","XLE","SPY"]
-_SOCIAL = ["PINS","RDDT","META","SNAP","GOOGL","XLC","QQQ","SPY"]
-_TEL = ["VZ","T","TMUS","CMCSA","CHTR","XLC","SPY"]
-_EV = ["RIVN","TSLA","LCID","F","GM","XLY","SPY"]
-_REST = ["CMG","SBUX","MCD","YUM","DRI","CAVA","XLY","SPY"]
-_STAPLE = ["KO","PEP","MO","PM","PG","XLP","SPY"]
+_MEGA = ["AAPL","MSFT","GOOGL","AMZN","META","NVDA","XLK","QQQ","SPY"]
+_SEMI = ["AMD","NVDA","INTC","QCOM","MU","AVGO","TXN","ON","SMH","QQQ","SPY"]
+_NETW = ["ANET","SMCI","CSCO","DELL","CIEN","NVDA","SMH","QQQ","SPY"]
+_BIO = ["VRTX","AMGN","GILD","REGN","BIIB","MRNA","XLV","SPY"]
+_PHARMA = ["PFE","LLY","MRK","ABBV","BMY","ZTS","XLV","SPY"]
+_MEDIA = ["ROKU","NFLX","DIS","WBD","CHTR","CMCSA","XLC","QQQ","SPY"]
+_TRAVEL = ["MAR","HLT","H","BKNG","EXPE","ABNB","XLY","SPY"]
+_OIL = ["XOM","CVX","COP","FANG","EOG","OXY","XLE","SPY"]
+_MID = ["WMB","KMI","OKE","ET","TRGP","AMLP","XLE","SPY"]
+_FINTECH = ["XYZ","AFRM","UPST","PYPL","SOFI","COIN","XLF","ARKK","SPY"]
+_ALT = ["APO","KKR","BX","ARES","CG","XLF","SPY"]
+_CLOUD = ["DDOG","NET","SNOW","MDB","CRWD","ZS","IGV","QQQ","SPY"]
+_SW = ["PLTR","SNOW","DDOG","NOW","CRM","IGV","QQQ","SPY"]
+_APPS = ["DUOL","TOST","APP","U","RBLX","IGV","QQQ","SPY"]
+_GAMING = ["DKNG","PENN","MGM","CZR","LVS","WYNN","XLY","SPY"]
+_RIDE = ["UBER","LYFT","DASH","ABNB","XLY","QQQ","SPY"]
+_ADTECH = ["APP","TTD","META","GOOGL","U","XLC","QQQ","SPY"]
+_SOCIAL = ["SNAP","PINS","RDDT","META","GOOGL","XLC","QQQ","SPY"]
+_REST = ["MCD","CMG","SBUX","YUM","DRI","CAVA","XLY","SPY"]
+_MANAGED = ["UNH","ELV","CI","HUM","CVS","CNC","XLV","SPY"]
+_DIST = ["MCK","COR","CAH","CVS","XLV","SPY"]
+_STAPLE = ["KHC","MNST","KO","PEP","GIS","KDP","MDLZ","XLP","SPY"]
+_ANIMAL = ["IDXX","ZTS","MTD","WAT","TMO","XLV","SPY"]
+_POWER = ["VST","CEG","NRG","TLN","GEV","XLU","SPY"]
 PEERS = {
- "VZ":_TEL, "TMUS":_TEL, "CDNS":["SNPS","ANSS","NOW","ADBE","IGV","SMH","QQQ","SPY"],
- "NUE":["STLD","CLF","CMC","RS","AA","XME","XLB","SPY"], "FCX":["SCCO","NEM","AA","NUE","XME","XLB","SPY"],
- "BA":["LMT","RTX","GE","HWM","TDG","ITA","XLI","SPY"], "GEV":["GE","VRT","ETN","PWR","CEG","XLI","XLU","SPY"],
- "UPS":["FDX","CHRW","XPO","ODFL","IYT","XLI","SPY"], "CAT":["DE","URI","PCAR","CMI","XLI","SPY"],
- "V":_PAY, "MA":_PAY, "PYPL":_PAY, "SOFI":_BROK, "HOOD":_BROK, "COIN":_CRYPTO, "MSTR":_CRYPTO,
- "KO":_STAPLE, "MO":_STAPLE, "ENPH":["FSLR","SEDG","RUN","NXT","TAN","ICLN","SPY"],
- "CNC":["UNH","ELV","CI","HUM","CVS","MOH","XLV","SPY"], "SPGI":["MCO","MSCI","ICE","CME","NDAQ","XLF","SPY"],
- "RCL":["CCL","NCLH","BKNG","EXPE","XLY","SPY"], "STX":_MEM, "SNDK":_MEM, "GLW":["APH","TEL","CIEN","ANET","XLK","SPY"],
- "MSFT":_MEGA, "GOOGL":_MEGA, "AMZN":_MEGA, "ADP":["PAYX","PAYC","WDAY","INTU","XLI","SPY"],
- "BSX":["SYK","ISRG","ABT","MDT","IHI","XLV","SPY"], "CMG":_REST, "SBUX":_REST, "CVNA":["KMX","AN","LAD","CARG","XLY","SPY"],
- "F":_EV, "RIVN":_EV, "KLAC":_SEMICAP, "NOW":_SW, "EBAY":["AMZN","ETSY","W","CHWY","XLY","SPY"],
- "FTNT":["PANW","CRWD","ZS","NET","CHKP","IGV","QQQ","SPY"], "LLY":_PHARMA, "MRK":_PHARMA, "ABBV":_PHARMA, "GILD":_PHARMA,
- "INTC":["AMD","NVDA","TXN","QCOM","MU","SMH","QQQ","SPY"], "RBLX":["EA","TTWO","U","DKNG","XLC","QQQ","SPY"],
- "PINS":_SOCIAL, "RDDT":_SOCIAL, "XOM":_OIL, "CVX":_OIL,
+ "AAPL":_MEGA, "PLTR":_SW, "VRTX":_BIO, "AMGN":_BIO, "MRNA":_BIO, "PFE":_PHARMA, "ZTS":_ANIMAL, "IDXX":_ANIMAL,
+ "ON":_SEMI, "AMD":_SEMI, "QCOM":_SEMI, "ANET":_NETW, "SMCI":_NETW, "ROKU":_MEDIA, "WBD":_MEDIA, "CHTR":_MEDIA,
+ "MAR":_TRAVEL, "BKNG":_TRAVEL, "EXPE":_TRAVEL, "ABNB":_TRAVEL, "FANG":_OIL, "COP":_OIL, "WMB":_MID,
+ "XYZ":_FINTECH, "AFRM":_FINTECH, "UPST":_FINTECH, "APO":_ALT, "DDOG":_CLOUD, "NET":_CLOUD, "DUOL":_APPS, "TOST":_APPS,
+ "EA":["TTWO","RBLX","U","DKNG","XLC","QQQ","SPY"], "DKNG":_GAMING, "UBER":_RIDE, "LYFT":_RIDE, "APP":_ADTECH,
+ "SNAP":_SOCIAL, "MCD":_REST, "CAVA":_REST, "CVS":_MANAGED, "HUM":_MANAGED, "MCK":_DIST, "KHC":_STAPLE, "MNST":_STAPLE,
+ "AXON":["MSI","LMT","PLTR","TDG","ITA","XLI","SPY"], "IONQ":["RGTI","QBTS","QUBT","IBM","ARKK","QQQ","SPY"], "VST":_POWER,
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
@@ -101,7 +103,7 @@ CORR_RETURNS = 65   # daily close-to-close returns per correlation window
 FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by Robinhood market cap
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
-CROSSCHECK_NOTES = ["Also checked: AAPL, AMD, MCD and QCOM; Robinhood lists their next reports on Nov 2, Nov 3, Nov 4 and Nov 4, outside this week. META and UNH show no report this week on Robinhood."]
+CROSSCHECK_NOTES = []
 
 def et(s):
     s = re.sub(r"(\.\d{6})\d*", r"\1", s).replace("Z", "+00:00")
