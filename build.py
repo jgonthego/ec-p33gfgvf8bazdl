@@ -96,19 +96,53 @@ b.up{color:#4ade80}b.dn{color:#fb7185}
 .sech{display:flex;align-items:baseline;gap:10px;margin:26px 0 10px}.sech h2{margin:0;font-size:20px}.sech span{color:var(--muted);font-size:13px}
 @media(max-width:480px){.past li{grid-template-columns:96px 1fr 50px;font-size:12px}}td a{color:inherit;text-decoration:none}td a:hover{color:var(--acc)}
 @media(max-width:480px){.ew{padding:14px}.q4{grid-template-columns:repeat(2,1fr);row-gap:8px}.q4 div:nth-child(3){border-left:0}.corr li{grid-template-columns:44px 54px 1fr 44px;gap:6px}}
-@media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}"""
+@media(max-width:700px){.hide-sm{display:none}.hero{padding:18px}.bar .t{width:40px}th,td{padding:8px 6px}}
+.ec-filters{margin:20px 0 10px;display:flex;flex-direction:column;gap:10px}
+.ec-search{position:relative;max-width:420px;width:100%}
+.ec-search input{width:100%;box-sizing:border-box;padding:10px 40px 10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px;min-width:0}
+.ec-clear{position:absolute;right:4px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:4px 10px;border-radius:8px}
+.ec-clear:hover{color:var(--fg);background:var(--bg)}
+.ec-days{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.ec-days button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.ec-days button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.ec-empty{margin:4px 0 0;padding:14px;text-align:center;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:12px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:400px){.ec-days button{padding:6px 10px;font-size:12px}}"""
 
 SORT_JS = """document.querySelectorAll('table.sortable th').forEach((th,i)=>{th.addEventListener('click',()=>{
 const t=th.closest('table'),b=t.tBodies[0],rows=[...b.rows],asc=th.dataset.asc!=='1';th.dataset.asc=asc?'1':'0';
 rows.sort((a,c)=>{const x=a.cells[i].dataset.v??a.cells[i].innerText,y=c.cells[i].dataset.v??c.cells[i].innerText;
 const nx=parseFloat(x),ny=parseFloat(y);const r=(!isNaN(nx)&&!isNaN(ny))?nx-ny:x.localeCompare(y);return asc?r:-r});
 rows.forEach(r=>b.appendChild(r))})});
-document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{const g=document.getElementById('ewg');if(!g)return;
-const k=b.dataset.sort;[...g.children].sort((x,y)=>(+x.dataset[k])-(+y.dataset[k])).forEach(c=>g.appendChild(c));
-b.parentNode.querySelectorAll('button').forEach(o=>o.classList.toggle('on',o===b));g.classList.toggle('ranked',k==='rank')}));
+document.querySelectorAll('.tabs button[data-sort]').forEach(b=>b.addEventListener('click',()=>{const g=document.getElementById('ewg');if(!g)return;
+const k=b.dataset.sort;if(!k)return;[...g.children].sort((x,y)=>(+x.dataset[k])-(+y.dataset[k])).forEach(c=>g.appendChild(c));
+b.parentNode.querySelectorAll('button[data-sort]').forEach(o=>o.classList.toggle('on',o===b));g.classList.toggle('ranked',k==='rank')}));
 (function(){const k='ewcs-theme',r=document.documentElement,b=document.getElementById('theme');let s=null;try{s=localStorage.getItem(k)}catch(_){}
 if(s)r.dataset.theme=s;const dark=()=>r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
-const lab=()=>{if(b)b.textContent=dark()?'☀':'☾'};lab();if(b)b.addEventListener('click',()=>{r.dataset.theme=dark()?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(_){}lab()})})();"""
+const lab=()=>{if(b)b.textContent=dark()?'☀':'☾'};lab();if(b)b.addEventListener('click',()=>{r.dataset.theme=dark()?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(_){}lab()})})();
+(function(){const box=document.getElementById('ec-filters');if(!box)return;
+const qEl=document.getElementById('ec-q'),clr=document.getElementById('ec-clear'),empty=document.getElementById('ec-empty');
+const dayBtns=[...box.querySelectorAll('.ec-days button[data-day]')];
+const cards=[...document.querySelectorAll('#ewg .ewc')];
+const rows=[...document.querySelectorAll('table.sortable tbody tr[data-symbol]')];
+const DAYS=new Set(['all','mon','tue','wed','thu','fri']);
+function read(){const u=new URL(location.href);let day=(u.searchParams.get('day')||'').toLowerCase(),q=u.searchParams.get('q')||'';
+if(location.hash.length>1){const h=new URLSearchParams(location.hash.replace(/^#/,''));if(h.has('day'))day=(h.get('day')||'').toLowerCase();if(h.has('q'))q=h.get('q')||'';}
+if(!DAYS.has(day))day='all';return{day,q};}
+function write(day,q){const u=new URL(location.href);if(day&&day!=='all')u.searchParams.set('day',day);else u.searchParams.delete('day');
+if(q)u.searchParams.set('q',q);else u.searchParams.delete('q');history.replaceState(null,'',u.pathname+u.search);}
+function apply(day,q,push){const qq=(q||'').trim().toLowerCase();day=DAYS.has(day)?day:'all';
+dayBtns.forEach(b=>b.classList.toggle('on',b.dataset.day===day));
+if(qEl&&qEl.value!==q)qEl.value=q||'';if(clr)clr.hidden=!qq;
+let n=0;const match=el=>{const okDay=day==='all'||el.dataset.day===day;const hay=((el.dataset.symbol||'')+' '+(el.dataset.name||'')).toLowerCase();
+const okQ=!qq||hay.includes(qq);const show=okDay&&okQ;el.style.display=show?'':'none';if(show)n++;};
+cards.forEach(match);rows.forEach(match);if(empty)empty.hidden=n!==0;if(push!==false)write(day,qq);}
+let st=read();apply(st.day,st.q,false);if(st.day!=='all'||st.q)write(st.day,st.q);
+if(qEl){qEl.addEventListener('input',()=>apply(dayBtns.find(b=>b.classList.contains('on'))?.dataset.day||'all',qEl.value));
+qEl.addEventListener('keydown',ev=>{if(ev.key==='Escape'){qEl.value='';apply(dayBtns.find(b=>b.classList.contains('on'))?.dataset.day||'all','')}});}
+if(clr)clr.addEventListener('click',()=>{if(qEl)qEl.value='';apply(dayBtns.find(b=>b.classList.contains('on'))?.dataset.day||'all','');qEl&&qEl.focus()});
+dayBtns.forEach(b=>b.addEventListener('click',()=>apply(b.dataset.day,qEl?qEl.value:'')));
+window.addEventListener('popstate',()=>{st=read();apply(st.day,st.q,false)});})();"""
 
 
 DISCLAIMER = ("<p class='disc'><strong>Not financial advice.</strong> This page is for informational purposes only and "
@@ -306,7 +340,9 @@ def mini_card(r, href, show_rank=False):
     inner = rk + (f"<div class='ewc-h'>{tbadge(r['symbol'],'tk sm')}<div><b>{e(r['name'])}</b><span>{e(when(r))}</span></div></div>"
              f"<div class='ewc-m'>±{r['move_pct']:.1f}%<small>±${r['move_usd']:,.2f}{' ⚑' if r['note'] else ''}</small></div>"
              f"<div class='ewc-l'>Range ${lo:,.2f} – ${hi:,.2f}</div><div class='ewc-l'>{e(q)}</div><div class='ewc-l'>{tc}</div>{al}{pl}")
-    da = f"data-i='{r.get('_i',0)}' data-rank='{r.get('anticipated_rank') or 999}'"
+    day = date.fromisoformat(r["report_date"]).strftime("%a").lower()
+    da = (f"data-i='{r.get('_i',0)}' data-rank='{r.get('anticipated_rank') or 999}' "
+          f"data-symbol='{e(r['symbol']).lower()}' data-name='{e(r['name']).lower()}' data-day='{day}'")
     return (f"<a class='ewc' {da} style='--c:{bcolor(r['symbol'])}' href='{href}'>{inner}</a>" if href
             else f"<div class='ewc' {da} style='--c:{bcolor(r['symbol'])}'>{inner}</div>")
 
@@ -393,6 +429,22 @@ def sectors_body(w):
             f"<p class='small'>{len(w['rows'])} companies grouped by Robinhood's sector classification. Within each sector, cards are ordered by most-anticipated rank (options activity; #n on each card).</p></div>"
             f"<div class='card'><h3>Sector summary</h3>{sector_svg(groups)}</div><div class='chips'>{nav}</div>{secs}")
 
+def filter_bar(w):
+    rs = w["rows"]
+    counts = {k: 0 for k in ("mon", "tue", "wed", "thu", "fri")}
+    for r in rs:
+        k = date.fromisoformat(r["report_date"]).strftime("%a").lower()
+        if k in counts: counts[k] += 1
+    chips = [f'<button type="button" class="on" data-day="all">All ({len(rs)})</button>']
+    for k, label in (("mon", "Mon"), ("tue", "Tue"), ("wed", "Wed"), ("thu", "Thu"), ("fri", "Fri")):
+        chips.append(f'<button type="button" data-day="{k}">{label} ({counts[k]})</button>')
+    return (f'<div class="ec-filters" id="ec-filters" role="search">'
+            f'<div class="ec-search"><label class="visually-hidden" for="ec-q">Search ticker or company</label>'
+            f'<input type="search" id="ec-q" placeholder="Search ticker or company…" autocomplete="off" enterkeyhint="search">'
+            f'<button type="button" id="ec-clear" class="ec-clear" hidden aria-label="Clear search">×</button></div>'
+            f'<div class="ec-days" role="group" aria-label="Filter by day">{"".join(chips)}</div>'
+            f'<p class="ec-empty" id="ec-empty" hidden>No matches</p></div>')
+
 def week_body(w, tref=None):
     rs = w["rows"]
     mx = max((r["move_pct"] for r in rs), default=1) or 1
@@ -401,7 +453,8 @@ def week_body(w, tref=None):
     for r in rs:
         flag = f"<div class='flag'>⚑ {e(r['note'])}</div>" if r["note"] else ""
         tk = f"<a href='{tref}{r['symbol']}.html'>{r['symbol']}</a>" if link else r["symbol"]
-        rows.append(f"<tr><td><strong>{tk}</strong>{' <span class=flag>⚑</span>' if r['note'] else ''}</td><td class='hide-sm'>{e(r['name'])}</td>"
+        day = date.fromisoformat(r["report_date"]).strftime("%a").lower()
+        rows.append(f"<tr data-symbol='{e(r['symbol']).lower()}' data-name='{e(r['name']).lower()}' data-day='{day}'><td><strong>{tk}</strong>{' <span class=flag>⚑</span>' if r['note'] else ''}</td><td class='hide-sm'>{e(r['name'])}</td>"
           f"<td data-v='{r['report_date']}{'0' if r['timing']=='Before open' else '1'}'>{dow(r['report_date'])}</td><td><span class='pill {TCLS.get(r['timing'],'')}'>{r['timing']}</span></td>"
           f"<td class='n' data-v='{r['price']}'>${r['price']:,.2f}</td>"
           f"<td class='n' data-v='{r['move_usd']}'>±${r['move_usd']:,.2f}</td><td class='n' data-v='{r['move_pct']}'><div class='bar'><span class='t'><i style='width:{100*r['move_pct']/mx:.0f}%'></i></span>±{r['move_pct']:.2f}%</div></td>"
@@ -429,6 +482,7 @@ def week_body(w, tref=None):
 <p class="small"><strong>Source: {w['source']}, retrieved {w['retrieved']}.</strong> Stock prices are last regular-session trades ({e(rs[0]['price_ts'] if rs else '')}); option bid/ask times are shown per row. Selection: {e(w['selection'])}</p>
 <div class="grid2"><div class="card"><h3>Top {min(15,len(rs))} expected moves (%)</h3>{svg_movers(rs) if rs else ''}<p class="small">⚑ = monthly expiry used; likely overstates the earnings-only move.</p></div>
 <div class="card"><h3>Reports by day</h3>{svg_days(rs) if rs else ''}</div></div>
+{filter_bar(w)}
 {cards_section(w, tref)}
 <h2 class="sec">Calendar</h2>{calendar(w)}
 <h2 class="sec">Full table</h2><p class="small">Click any column header to sort (e.g. by date or expected move %).</p>
