@@ -125,6 +125,10 @@ const qEl=document.getElementById('ec-q'),clr=document.getElementById('ec-clear'
 const dayBtns=[...box.querySelectorAll('.ec-days button[data-day]')];
 const cards=[...document.querySelectorAll('#ewg .ewc')];
 const rows=[...document.querySelectorAll('table.sortable tbody tr[data-symbol]')];
+const featWrap=document.getElementById('ec-featured');
+const featCards=[...document.querySelectorAll('#ec-featured .ec-feat')];
+const featTitle=document.getElementById('ec-featured-title');
+const featVs=featWrap?featWrap.querySelector('.vs'):null;
 const DAYS=new Set(['all','mon','tue','wed','thu','fri']);
 function read(){const u=new URL(location.href);let day=(u.searchParams.get('day')||'').toLowerCase(),q=u.searchParams.get('q')||'';
 if(location.hash.length>1){const h=new URLSearchParams(location.hash.replace(/^#/,''));if(h.has('day'))day=(h.get('day')||'').toLowerCase();if(h.has('q'))q=h.get('q')||'';}
@@ -135,8 +139,13 @@ function apply(day,q,push){const qq=(q||'').trim().toLowerCase();day=DAYS.has(da
 dayBtns.forEach(b=>b.classList.toggle('on',b.dataset.day===day));
 if(qEl&&qEl.value!==q)qEl.value=q||'';if(clr)clr.hidden=!qq;
 let n=0;const match=el=>{const okDay=day==='all'||el.dataset.day===day;const hay=((el.dataset.symbol||'')+' '+(el.dataset.name||'')).toLowerCase();
-const okQ=!qq||hay.includes(qq);const show=okDay&&okQ;el.style.display=show?'':'none';if(show)n++;};
-cards.forEach(match);rows.forEach(match);if(empty)empty.hidden=n!==0;if(push!==false)write(day,qq);}
+const okQ=!qq||hay.includes(qq);const show=okDay&&okQ;el.style.display=show?'':'none';return show;};
+cards.forEach(el=>{if(match(el))n++});rows.forEach(el=>{if(match(el))n++});
+let fn=0;featCards.forEach(el=>{if(match(el))fn++});
+if(featWrap)featWrap.style.display=fn===0?'none':'';
+if(featTitle)featTitle.style.display=fn===2?'':'none';
+if(featVs)featVs.style.gridTemplateColumns=fn===1?'1fr':'';
+if(empty)empty.hidden=n!==0;if(push!==false)write(day,qq);}
 let st=read();apply(st.day,st.q,false);if(st.day!=='all'||st.q)write(st.day,st.q);
 if(qEl){qEl.addEventListener('input',()=>apply(dayBtns.find(b=>b.classList.contains('on'))?.dataset.day||'all',qEl.value));
 qEl.addEventListener('keydown',ev=>{if(ev.key==='Escape'){qEl.value='';apply(dayBtns.find(b=>b.classList.contains('on'))?.dataset.day||'all','')}});}
@@ -164,7 +173,7 @@ def page(title, desc, path, body, depth):
 <meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">{"" if HIDDEN else f'<meta property="og:url" content="{url}">'}
 <meta name="twitter:card" content="summary">
-<meta name="color-scheme" content="light dark"><style>{CSS}</style></head><body>
+<meta name="color-scheme" content="light dark"><link rel="icon" href="data:,"><style>{CSS}</style></head><body>
 <header class="top"><div class="wrap"><a class="brand" href="{rel}index.html"><span class="logo" aria-hidden="true"></span>{SITE_NAME}</a>
 <nav><a href="{rel}index.html">This week</a><a href="{rel}anticipated.html">Most anticipated</a><a href="{rel}sectors.html">By sector</a><a href="{rel}archive/index.html">Archive</a><a href="{rel}about/index.html">Method &amp; disclaimer</a></nav>
 <button id="theme" type="button" aria-label="Toggle dark/light theme">☾</button></div></header><div class="wrap">
@@ -356,9 +365,17 @@ def cards_section(w, tref):
     out = ""
     if len(feat) == 2:
         a, b = feat
-        out += (f"<h2 class='sec'>Featured matchup</h2><div class='vs-t'><span style='color:{bcolor(a['symbol'])}'>{e(a['name'].upper())}</span> <i>vs</i> "
+        def _feat_card(r):
+            day = date.fromisoformat(r["report_date"]).strftime("%a").lower()
+            return big_card(r, w, "h3").replace(
+                '<article class="ew"',
+                (f'<article class="ew ec-feat" data-symbol="{e(r["symbol"]).lower()}" '
+                 f'data-name="{e(r["name"]).lower()}" data-day="{day}"'),
+                1)
+        out += (f"<div id='ec-featured'><h2 class='sec'>Featured matchup</h2>"
+                f"<div class='vs-t' id='ec-featured-title'><span style='color:{bcolor(a['symbol'])}'>{e(a['name'].upper())}</span> <i>vs</i> "
                 f"<span style='color:{bcolor(b['symbol'])}'>{e(b['name'].upper())}</span><small>Earnings watch · {e(w.get('featured_basis',''))}</small></div>"
-                f"<div class='vs'>{big_card(a, w, 'h3')}{big_card(b, w, 'h3')}</div>")
+                f"<div class='vs'>{_feat_card(a)}{_feat_card(b)}</div></div>")
     for i, r in enumerate(w["rows"]): r["_i"] = i
     root = tref[:-2] if tref else None   # "t/" -> "", "../../t/" -> "../../"
     tabs = ""
