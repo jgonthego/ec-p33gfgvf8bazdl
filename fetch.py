@@ -40,50 +40,79 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- "AAPL":"Apple","PLTR":"Palantir","VRTX":"Vertex Pharmaceuticals","ON":"ON Semiconductor","ROKU":"Roku","MAR":"Marriott",
- "WMB":"Williams Companies","FANG":"Diamondback Energy","IDXX":"IDEXX Laboratories",
- "AMD":"AMD","PFE":"Pfizer","AMGN":"Amgen","ANET":"Arista Networks","SMCI":"Super Micro Computer","XYZ":"Block",
- "BKNG":"Booking Holdings","APO":"Apollo Global","UPST":"Upstart","DUOL":"Duolingo","TOST":"Toast","EA":"Electronic Arts",
- "QCOM":"Qualcomm","UBER":"Uber","APP":"AppLovin","MCD":"McDonald's","CVS":"CVS Health","SNAP":"Snap","DDOG":"Datadog",
- "EXPE":"Expedia","MCK":"McKesson","KHC":"Kraft Heinz","CAVA":"CAVA Group",
- "ABNB":"Airbnb","NET":"Cloudflare","AFRM":"Affirm","DKNG":"DraftKings","LYFT":"Lyft","MNST":"Monster Beverage",
- "COP":"ConocoPhillips","ZTS":"Zoetis","AXON":"Axon Enterprise","IONQ":"IonQ","WBD":"Warner Bros. Discovery",
- "MRNA":"Moderna","VST":"Vistra","HUM":"Humana","CHTR":"Charter Communications",
+ # Mon Nov 9
+ "CEG":"Constellation Energy","KKR":"KKR","FERG":"Ferguson","OXY":"Occidental Petroleum",
+ "TTWO":"Take-Two Interactive","SKYD":"Skydance","NRG":"NRG Energy","RKLB":"Rocket Lab",
+ "ROIV":"Roivant Sciences","SGI":"Somnigroup","AMG":"Affiliated Managers","ASTS":"AST SpaceMobile",
+ "ZETA":"Zeta Global","LINE":"Lineage","RDNT":"RadNet","IONS":"Ionis Pharmaceuticals",
+ "IMVT":"Immunovant","PRAX":"Praxis Precision Medicines","TGTX":"TG Therapeutics",
+ "SANM":"Sanmina","GSHD":"Goosehead Insurance","CECO":"CECO Environmental","FRVO":"Fervo Energy",
+ "RBA":"RB Global","GCMG":"GCM Grosvenor",
+ # Tue Nov 10
+ "TDG":"TransDigm","CRWV":"CoreWeave","VG":"Venture Global","QBTS":"D-Wave Quantum",
+ "RGTI":"Rigetti Computing","MRCY":"Mercury Systems","REZI":"Resideo Technologies",
+ "SRRK":"Scholar Rock","LQDA":"Liquidia","ALH":"Alliance Laundry","ATRO":"Astronics","SBH":"Sally Beauty",
+ # Wed Nov 11
+ "CTVA":"Corteva","TTEK":"Tetra Tech","RUM":"Rumble","ENS":"EnerSys","DGII":"Digi International",
+ # Thu Nov 12
+ "CSCO":"Cisco","AMAT":"Applied Materials","CBRS":"Cerebras Systems","YETI":"YETI Holdings",
+ "FLO":"Flowers Foods","ARWR":"Arrowhead Pharmaceuticals","QXO":"QXO","TWST":"Twist Bioscience",
+ "LUNR":"Intuitive Machines","AVAH":"Aveanna Healthcare","ONDS":"Ondas Holdings","FIGR":"Figure Technology",
+ "EPC":"Edgewell Personal Care","EYE":"National Vision","WWW":"Wolverine World Wide","SPB":"Spectrum Brands",
 }
 
 # Candidate peers for correlation (same-sector names + broad/sector ETFs). Edit as TICKERS change.
 _MEGA = ["AAPL","MSFT","GOOGL","AMZN","META","NVDA","XLK","QQQ","SPY"]
-_SEMI = ["AMD","NVDA","INTC","QCOM","MU","AVGO","TXN","ON","SMH","QQQ","SPY"]
-_NETW = ["ANET","SMCI","CSCO","DELL","CIEN","NVDA","SMH","QQQ","SPY"]
-_BIO = ["VRTX","AMGN","GILD","REGN","BIIB","MRNA","XLV","SPY"]
-_PHARMA = ["PFE","LLY","MRK","ABBV","BMY","ZTS","XLV","SPY"]
-_MEDIA = ["ROKU","NFLX","DIS","WBD","CHTR","CMCSA","XLC","QQQ","SPY"]
-_TRAVEL = ["MAR","HLT","H","BKNG","EXPE","ABNB","XLY","SPY"]
-_OIL = ["XOM","CVX","COP","FANG","EOG","OXY","XLE","SPY"]
-_MID = ["WMB","KMI","OKE","ET","TRGP","AMLP","XLE","SPY"]
-_FINTECH = ["XYZ","AFRM","UPST","PYPL","SOFI","COIN","XLF","ARKK","SPY"]
-_ALT = ["APO","KKR","BX","ARES","CG","XLF","SPY"]
-_CLOUD = ["DDOG","NET","SNOW","MDB","CRWD","ZS","IGV","QQQ","SPY"]
-_SW = ["PLTR","SNOW","DDOG","NOW","CRM","IGV","QQQ","SPY"]
-_APPS = ["DUOL","TOST","APP","U","RBLX","IGV","QQQ","SPY"]
-_GAMING = ["DKNG","PENN","MGM","CZR","LVS","WYNN","XLY","SPY"]
-_RIDE = ["UBER","LYFT","DASH","ABNB","XLY","QQQ","SPY"]
-_ADTECH = ["APP","TTD","META","GOOGL","U","XLC","QQQ","SPY"]
-_SOCIAL = ["SNAP","PINS","RDDT","META","GOOGL","XLC","QQQ","SPY"]
-_REST = ["MCD","CMG","SBUX","YUM","DRI","CAVA","XLY","SPY"]
-_MANAGED = ["UNH","ELV","CI","HUM","CVS","CNC","XLV","SPY"]
-_DIST = ["MCK","COR","CAH","CVS","XLV","SPY"]
-_STAPLE = ["KHC","MNST","KO","PEP","GIS","KDP","MDLZ","XLP","SPY"]
-_ANIMAL = ["IDXX","ZTS","MTD","WAT","TMO","XLV","SPY"]
-_POWER = ["VST","CEG","NRG","TLN","GEV","XLU","SPY"]
+_SEMI = ["AMD","NVDA","INTC","QCOM","MU","AVGO","TXN","AMAT","SMH","QQQ","SPY"]
+_NETW = ["CSCO","ANET","CIEN","JNPR","FFIV","SMH","QQQ","SPY"]
+_BIO = ["IONS","IMVT","PRAX","TGTX","SRRK","ARWR","LQDA","GILD","REGN","XLV","SPY"]
+_PHARMA = ["PFE","LLY","MRK","ABBV","BMY","ROIV","XLV","SPY"]
+_OIL = ["XOM","CVX","COP","OXY","FANG","EOG","XLE","SPY"]
+_POWER = ["CEG","NRG","VST","TLN","GEV","XLU","SPY"]
+_ALT = ["KKR","APO","BX","ARES","CG","AMG","GCMG","XLF","SPY"]
+_DIST = ["FERG","WSO","GWW","FAST","MSM","XLI","SPY"]
+_GAMING = ["TTWO","EA","RBLX","U","DKNG","XLC","QQQ","SPY"]
+_MEDIA = ["SKYD","DIS","NFLX","CMCSA","CHTR","XLC","QQQ","SPY"]
+_SPACE = ["RKLB","ASTS","LUNR","BA","LMT","ITA","SPY"]
+_SLEEP = ["SGI","TPX","WSM","SNBR","XLY","SPY"]
+_ADTECH = ["ZETA","APP","TTD","META","GOOGL","XLC","QQQ","SPY"]
+_COLD = ["LINE","COLD","PLD","PSA","IYR","SPY"]
+_DIAG = ["RDNT","DGX","LH","TMO","XLV","SPY"]
+_INS = ["GSHD","PGR","ALL","TRV","CB","KIE","SPY"]
+_ENVISRV = ["CECO","FRVO","WLDN","CLH","XLI","SPY"]
+_AUCT = ["RBA","CPRT","KAR","CTAS","XLI","SPY"]
+_AERO = ["TDG","HWM","HEI","BA","LMT","ATRO","MRCY","ITA","SPY"]
+_AICLOUD = ["CRWV","NBIS","MSFT","AMZN","GOOGL","NVDA","QQQ","SPY"]
+_LNG = ["VG","LNG","GLNG","FLNG","XLE","SPY"]
+_QUANT = ["QBTS","RGTI","IONQ","QUBT","IBM","ARKK","QQQ","SPY"]
+_HOME = ["REZI","JCI","CARR","TT","XLI","SPY"]
+_AG = ["CTVA","ADM","BG","CF","MOS","XLB","SPY"]
+_ENG = ["TTEK","ACM","J","PWR","XLI","SPY"]
+_SOCIAL = ["RUM","SNAP","PINS","RDDT","META","XLC","QQQ","SPY"]
+_BATT = ["ENS","TSLA","ALB","LCID","XLI","SPY"]
+_IOT = ["DGII","ONDS","SWKS","QRVO","XLK","QQQ","SPY"]
+_CONSUMER = ["YETI","WWW","DECK","NKE","UAA","XLY","SPY"]
+_STAPLE = ["FLO","KHC","GIS","CAG","CPB","XLP","SPY"]
+_SOFT = ["QXO","FIGR","NOW","CRM","IGV","QQQ","SPY"]
+_BIOTOOL = ["TWST","ILMN","TMO","DHR","XLV","SPY"]
+_HEALTHSRV = ["AVAH","ENSG","ACHC","HCA","XLV","SPY"]
+_PERSONAL = ["EPC","EL","CL","PG","XLP","SPY"]
+_VISION = ["EYE","COO","NWL","XLY","SPY"]
+_BRANDS = ["SPB","NWL","CLX","CHD","XLP","SPY"]
+_BEAUTY = ["SBH","ULTA","EL","COTY","XLY","SPY"]
+_LAUNDRY = ["ALH","WSM","TPX","XLY","SPY"]
+_CHIPAI = ["CBRS","NVDA","AMD","AVGO","SMH","QQQ","SPY"]
 PEERS = {
- "AAPL":_MEGA, "PLTR":_SW, "VRTX":_BIO, "AMGN":_BIO, "MRNA":_BIO, "PFE":_PHARMA, "ZTS":_ANIMAL, "IDXX":_ANIMAL,
- "ON":_SEMI, "AMD":_SEMI, "QCOM":_SEMI, "ANET":_NETW, "SMCI":_NETW, "ROKU":_MEDIA, "WBD":_MEDIA, "CHTR":_MEDIA,
- "MAR":_TRAVEL, "BKNG":_TRAVEL, "EXPE":_TRAVEL, "ABNB":_TRAVEL, "FANG":_OIL, "COP":_OIL, "WMB":_MID,
- "XYZ":_FINTECH, "AFRM":_FINTECH, "UPST":_FINTECH, "APO":_ALT, "DDOG":_CLOUD, "NET":_CLOUD, "DUOL":_APPS, "TOST":_APPS,
- "EA":["TTWO","RBLX","U","DKNG","XLC","QQQ","SPY"], "DKNG":_GAMING, "UBER":_RIDE, "LYFT":_RIDE, "APP":_ADTECH,
- "SNAP":_SOCIAL, "MCD":_REST, "CAVA":_REST, "CVS":_MANAGED, "HUM":_MANAGED, "MCK":_DIST, "KHC":_STAPLE, "MNST":_STAPLE,
- "AXON":["MSI","LMT","PLTR","TDG","ITA","XLI","SPY"], "IONQ":["RGTI","QBTS","QUBT","IBM","ARKK","QQQ","SPY"], "VST":_POWER,
+ "CEG":_POWER, "NRG":_POWER, "KKR":_ALT, "AMG":_ALT, "GCMG":_ALT, "FERG":_DIST, "OXY":_OIL,
+ "TTWO":_GAMING, "SKYD":_MEDIA, "RKLB":_SPACE, "ASTS":_SPACE, "LUNR":_SPACE, "ROIV":_PHARMA,
+ "SGI":_SLEEP, "ZETA":_ADTECH, "LINE":_COLD, "RDNT":_DIAG, "IONS":_BIO, "IMVT":_BIO, "PRAX":_BIO,
+ "TGTX":_BIO, "SRRK":_BIO, "ARWR":_BIO, "LQDA":_BIO, "SANM":["FLEX","JBL","CLS","PLXS","XLI","SPY"],
+ "GSHD":_INS, "CECO":_ENVISRV, "FRVO":_ENVISRV, "RBA":_AUCT, "TDG":_AERO, "ATRO":_AERO, "MRCY":_AERO,
+ "CRWV":_AICLOUD, "CBRS":_CHIPAI, "VG":_LNG, "QBTS":_QUANT, "RGTI":_QUANT, "REZI":_HOME,
+ "ALH":_LAUNDRY, "SBH":_BEAUTY, "CTVA":_AG, "TTEK":_ENG, "RUM":_SOCIAL, "ENS":_BATT, "DGII":_IOT,
+ "ONDS":_IOT, "CSCO":_NETW, "AMAT":_SEMI, "YETI":_CONSUMER, "WWW":_CONSUMER, "FLO":_STAPLE,
+ "QXO":_SOFT, "FIGR":_SOFT, "TWST":_BIOTOOL, "AVAH":_HEALTHSRV, "EPC":_PERSONAL,
+ "EYE":_VISION, "SPB":_BRANDS,
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
@@ -103,7 +132,9 @@ CORR_RETURNS = 65   # daily close-to-close returns per correlation window
 FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by Robinhood market cap
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
-CROSSCHECK_NOTES = []
+CROSSCHECK_NOTES = [
+ "Mon Nov 9 and Thu Nov 12 Robinhood high-market-cap calendars were truncated; missing names (FERG, NRG, RKLB, ROIV, SGI, AMG, LINE, ZETA, and others) were filled via per-ticker get_earnings_results. Cross-checked against public calendars for gaps only — published figures are Robinhood data.",
+]
 
 def et(s):
     s = re.sub(r"(\.\d{6})\d*", r"\1", s).replace("Z", "+00:00")
@@ -238,8 +269,8 @@ def add_cards(out):
     prof = profiles()
     for j in blobs(f"{RAW}/hist/*.txt"):
         for r in (j.get("data") or {}).get("results") or []:
-            if r: closes[r["symbol"]] = {b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
-                                         if not b.get("interpolated") and b.get("close_price")}
+            if r: closes.setdefault(r["symbol"], {}).update({b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
+                                         if not b.get("interpolated") and b.get("close_price")})
     if not (fin or eps or prof or closes): return
     # Common session calendar: dates with a real (non-interpolated) bar for >=90% of symbols. This drops a
     # partially published latest day so every pair is measured over the same 65 returns.
@@ -323,8 +354,8 @@ def add_history(out):
     closes = {}
     for j in blobs(f"{RAW}/hist_long/*.txt"):
         for r in (j.get("data") or {}).get("results") or []:
-            if r: closes[r["symbol"]] = {b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
-                                         if not b.get("interpolated") and b.get("close_price")}
+            if r: closes.setdefault(r["symbol"], {}).update({b["begins_at"][:10]: float(b["close_price"]) for b in r.get("bars") or []
+                                         if not b.get("interpolated") and b.get("close_price")})
     if not closes: return
     cnt = {}
     for c in closes.values():
