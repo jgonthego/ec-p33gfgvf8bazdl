@@ -40,79 +40,78 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- # Mon Nov 9
- "CEG":"Constellation Energy","KKR":"KKR","FERG":"Ferguson","OXY":"Occidental Petroleum",
- "TTWO":"Take-Two Interactive","SKYD":"Skydance","NRG":"NRG Energy","RKLB":"Rocket Lab",
- "ROIV":"Roivant Sciences","SGI":"Somnigroup","AMG":"Affiliated Managers","ASTS":"AST SpaceMobile",
- "ZETA":"Zeta Global","LINE":"Lineage","RDNT":"RadNet","IONS":"Ionis Pharmaceuticals",
- "IMVT":"Immunovant","PRAX":"Praxis Precision Medicines","TGTX":"TG Therapeutics",
- "SANM":"Sanmina","GSHD":"Goosehead Insurance","CECO":"CECO Environmental","FRVO":"Fervo Energy",
- "RBA":"RB Global","GCMG":"GCM Grosvenor",
- # Tue Nov 10
- "TDG":"TransDigm","CRWV":"CoreWeave","VG":"Venture Global","QBTS":"D-Wave Quantum",
- "RGTI":"Rigetti Computing","MRCY":"Mercury Systems","REZI":"Resideo Technologies",
- "SRRK":"Scholar Rock","LQDA":"Liquidia","ALH":"Alliance Laundry","ATRO":"Astronics","SBH":"Sally Beauty",
- # Wed Nov 11
- "CTVA":"Corteva","TTEK":"Tetra Tech","RUM":"Rumble","ENS":"EnerSys","DGII":"Digi International",
- # Thu Nov 12
- "CSCO":"Cisco","AMAT":"Applied Materials","CBRS":"Cerebras Systems","YETI":"YETI Holdings",
- "FLO":"Flowers Foods","ARWR":"Arrowhead Pharmaceuticals","QXO":"QXO","TWST":"Twist Bioscience",
- "LUNR":"Intuitive Machines","AVAH":"Aveanna Healthcare","ONDS":"Ondas Holdings","FIGR":"Figure Technology",
- "EPC":"Edgewell Personal Care","EYE":"National Vision","WWW":"Wolverine World Wide","SPB":"Spectrum Brands",
+ # Mon Nov 16
+ "TSN":"Tyson Foods","ARMK":"Aramark","ACM":"AECOM","POWL":"Powell Industries",
+ "INFQ":"Infleqtion","OMER":"Omeros","BXDC":"Blackstone Digital Infrastructure",
+ # Tue Nov 17
+ "HD":"Home Depot","DIS":"Disney","NVDA":"Nvidia","SR":"Spire","GFF":"Griffon",
+ "ENR":"Energizer","OCSL":"Oaktree Specialty Lending","DLB":"Dolby",
+ "GBDC":"Golub Capital BDC","LZB":"La-Z-Boy","MFP":"Midera Food Processing",
+ # Wed Nov 18
+ "TJX":"TJX","LOW":"Lowe's","TGT":"Target","PANW":"Palo Alto Networks",
+ "P":"Everpure","NJR":"New Jersey Resources","JJSF":"J&J Snack Foods",
+ "WWD":"Woodward","UGI":"UGI","KLIC":"Kulicke & Soffa","SNEX":"StoneX",
+ "UTI":"Universal Technical Institute","BRBR":"BellRing Brands",
+ # Thu Nov 19
+ "WMT":"Walmart","INTU":"Intuit","KEYS":"Keysight","ROST":"Ross Stores",
+ "WSM":"Williams-Sonoma","WMG":"Warner Music","ESTC":"Elastic","GAP":"Gap",
+ "ESE":"ESCO Technologies","ROAD":"Construction Partners","VVV":"Valvoline",
+ "BBWI":"Bath & Body Works","HP":"Helmerich & Payne","POST":"Post Holdings",
+ "MMS":"Maximus","LQDT":"Liquidity Services","BULL":"Webull",
+ # Fri Nov 20
+ "BJ":"BJ's Wholesale","BKE":"Buckle",
 }
 
 # Candidate peers for correlation (same-sector names + broad/sector ETFs). Edit as TICKERS change.
 _MEGA = ["AAPL","MSFT","GOOGL","AMZN","META","NVDA","XLK","QQQ","SPY"]
 _SEMI = ["AMD","NVDA","INTC","QCOM","MU","AVGO","TXN","AMAT","SMH","QQQ","SPY"]
-_NETW = ["CSCO","ANET","CIEN","JNPR","FFIV","SMH","QQQ","SPY"]
-_BIO = ["IONS","IMVT","PRAX","TGTX","SRRK","ARWR","LQDA","GILD","REGN","XLV","SPY"]
-_PHARMA = ["PFE","LLY","MRK","ABBV","BMY","ROIV","XLV","SPY"]
-_OIL = ["XOM","CVX","COP","OXY","FANG","EOG","XLE","SPY"]
-_POWER = ["CEG","NRG","VST","TLN","GEV","XLU","SPY"]
-_ALT = ["KKR","APO","BX","ARES","CG","AMG","GCMG","XLF","SPY"]
-_DIST = ["FERG","WSO","GWW","FAST","MSM","XLI","SPY"]
-_GAMING = ["TTWO","EA","RBLX","U","DKNG","XLC","QQQ","SPY"]
-_MEDIA = ["SKYD","DIS","NFLX","CMCSA","CHTR","XLC","QQQ","SPY"]
-_SPACE = ["RKLB","ASTS","LUNR","BA","LMT","ITA","SPY"]
-_SLEEP = ["SGI","TPX","WSM","SNBR","XLY","SPY"]
-_ADTECH = ["ZETA","APP","TTD","META","GOOGL","XLC","QQQ","SPY"]
-_COLD = ["LINE","COLD","PLD","PSA","IYR","SPY"]
-_DIAG = ["RDNT","DGX","LH","TMO","XLV","SPY"]
-_INS = ["GSHD","PGR","ALL","TRV","CB","KIE","SPY"]
-_ENVISRV = ["CECO","FRVO","WLDN","CLH","XLI","SPY"]
-_AUCT = ["RBA","CPRT","KAR","CTAS","XLI","SPY"]
-_AERO = ["TDG","HWM","HEI","BA","LMT","ATRO","MRCY","ITA","SPY"]
-_AICLOUD = ["CRWV","NBIS","MSFT","AMZN","GOOGL","NVDA","QQQ","SPY"]
-_LNG = ["VG","LNG","GLNG","FLNG","XLE","SPY"]
-_QUANT = ["QBTS","RGTI","IONQ","QUBT","IBM","ARKK","QQQ","SPY"]
-_HOME = ["REZI","JCI","CARR","TT","XLI","SPY"]
-_AG = ["CTVA","ADM","BG","CF","MOS","XLB","SPY"]
-_ENG = ["TTEK","ACM","J","PWR","XLI","SPY"]
-_SOCIAL = ["RUM","SNAP","PINS","RDDT","META","XLC","QQQ","SPY"]
-_BATT = ["ENS","TSLA","ALB","LCID","XLI","SPY"]
-_IOT = ["DGII","ONDS","SWKS","QRVO","XLK","QQQ","SPY"]
-_CONSUMER = ["YETI","WWW","DECK","NKE","UAA","XLY","SPY"]
-_STAPLE = ["FLO","KHC","GIS","CAG","CPB","XLP","SPY"]
-_SOFT = ["QXO","FIGR","NOW","CRM","IGV","QQQ","SPY"]
-_BIOTOOL = ["TWST","ILMN","TMO","DHR","XLV","SPY"]
-_HEALTHSRV = ["AVAH","ENSG","ACHC","HCA","XLV","SPY"]
-_PERSONAL = ["EPC","EL","CL","PG","XLP","SPY"]
-_VISION = ["EYE","COO","NWL","XLY","SPY"]
-_BRANDS = ["SPB","NWL","CLX","CHD","XLP","SPY"]
-_BEAUTY = ["SBH","ULTA","EL","COTY","XLY","SPY"]
-_LAUNDRY = ["ALH","WSM","TPX","XLY","SPY"]
-_CHIPAI = ["CBRS","NVDA","AMD","AVGO","SMH","QQQ","SPY"]
+_RETAIL = ["WMT","TGT","COST","HD","LOW","TJX","ROST","XLY","SPY"]
+_HOMEIMP = ["HD","LOW","FND","TSCO","XHB","ITB","SPY"]
+_APPAREL = ["TJX","ROST","GAP","BKE","ANF","URBN","XLY","SPY"]
+_SPECIAL = ["TGT","BBWI","WSM","BJ","COST","XLY","SPY"]
+_MEDIA = ["DIS","NFLX","CMCSA","WBD","PARA","XLC","QQQ","SPY"]
+_MUSIC = ["WMG","SPOT","LYV","SONO","XLC","SPY"]
+_CYBER = ["PANW","CRWD","FTNT","ZS","NET","CIBR","QQQ","SPY"]
+_SOFT = ["INTU","MSFT","ADBE","CRM","NOW","IGV","QQQ","SPY"]
+_DATA = ["ESTC","DDOG","SNOW","MDB","DT","IGV","QQQ","SPY"]
+_TEST = ["KEYS","A","TER","KLAC","SMH","QQQ","SPY"]
+_FOOD = ["TSN","HRL","PPC","CAG","KHC","XLP","SPY"]
+_SNACK = ["JJSF","POST","HSY","MDLZ","KHC","XLP","SPY"]
+_BEV = ["BRBR","MNST","KO","PEP","XLP","SPY"]
+_FOODSVC = ["ARMK","SYY","CMG","SBUX","XLY","SPY"]
+_ENG = ["ACM","J","PWR","ROAD","FLR","XLI","SPY"]
+_ELEC = ["POWL","HUBB","VRT","AME","XLI","SPY"]
+_QUANT = ["INFQ","IONQ","RGTI","QBTS","ARKK","QQQ","SPY"]
+_BIO = ["OMER","GILD","REGN","AMGN","XLV","SPY"]
+_REIT = ["BXDC","AMT","EQIX","DLR","IYR","SPY"]
+_UTIL = ["SR","NJR","UGI","ATO","XLU","SPY"]
+_BUILD = ["GFF","MAS","OC","BLDR","XHB","SPY"]
+_HOUSE = ["ENR","PG","CL","CHD","XLP","SPY"]
+_BDC = ["OCSL","GBDC","ARCC","MAIN","XLF","SPY"]
+_AUDIO = ["DLB","MSFT","AAPL","SONO","QQQ","SPY"]
+_HOME = ["LZB","WSM","TPX","SGI","XLY","SPY"]
+_MACH = ["MFP","ITW","PH","ROK","XLI","SPY"]
+_AERO = ["WWD","GD","HWM","TDG","ITA","SPY"]
+_SEMIEQ = ["KLIC","AMAT","LRCX","KLAC","SMH","QQQ","SPY"]
+_BROKER = ["SNEX","BULL","SCHW","IBKR","XLF","SPY"]
+_EDU = ["UTI","LOPE","ATGE","XLY","SPY"]
+_LUBE = ["VVV","PSX","VLO","XOM","XLE","SPY"]
+_OILSVC = ["HP","HAL","BKR","SLB","OIH","SPY"]
+_GOV = ["MMS","BAH","CACI","XLI","SPY"]
+_ECOMM = ["LQDT","EBAY","AMZN","ETSY","XLY","SPY"]
+_INSTR = ["ESE","KEYS","A","TDY","XLI","SPY"]
+_CLUB = ["BJ","COST","WMT","TGT","XLY","SPY"]
+_PERIPH = ["P","NVDA","AMD","DELL","SMH","QQQ","SPY"]
 PEERS = {
- "CEG":_POWER, "NRG":_POWER, "KKR":_ALT, "AMG":_ALT, "GCMG":_ALT, "FERG":_DIST, "OXY":_OIL,
- "TTWO":_GAMING, "SKYD":_MEDIA, "RKLB":_SPACE, "ASTS":_SPACE, "LUNR":_SPACE, "ROIV":_PHARMA,
- "SGI":_SLEEP, "ZETA":_ADTECH, "LINE":_COLD, "RDNT":_DIAG, "IONS":_BIO, "IMVT":_BIO, "PRAX":_BIO,
- "TGTX":_BIO, "SRRK":_BIO, "ARWR":_BIO, "LQDA":_BIO, "SANM":["FLEX","JBL","CLS","PLXS","XLI","SPY"],
- "GSHD":_INS, "CECO":_ENVISRV, "FRVO":_ENVISRV, "RBA":_AUCT, "TDG":_AERO, "ATRO":_AERO, "MRCY":_AERO,
- "CRWV":_AICLOUD, "CBRS":_CHIPAI, "VG":_LNG, "QBTS":_QUANT, "RGTI":_QUANT, "REZI":_HOME,
- "ALH":_LAUNDRY, "SBH":_BEAUTY, "CTVA":_AG, "TTEK":_ENG, "RUM":_SOCIAL, "ENS":_BATT, "DGII":_IOT,
- "ONDS":_IOT, "CSCO":_NETW, "AMAT":_SEMI, "YETI":_CONSUMER, "WWW":_CONSUMER, "FLO":_STAPLE,
- "QXO":_SOFT, "FIGR":_SOFT, "TWST":_BIOTOOL, "AVAH":_HEALTHSRV, "EPC":_PERSONAL,
- "EYE":_VISION, "SPB":_BRANDS,
+ "TSN":_FOOD, "ARMK":_FOODSVC, "ACM":_ENG, "POWL":_ELEC, "INFQ":_QUANT, "OMER":_BIO,
+ "BXDC":_REIT, "HD":_HOMEIMP, "DIS":_MEDIA, "NVDA":_SEMI, "SR":_UTIL, "GFF":_BUILD,
+ "ENR":_HOUSE, "OCSL":_BDC, "DLB":_AUDIO, "GBDC":_BDC, "LZB":_HOME, "MFP":_MACH,
+ "TJX":_APPAREL, "LOW":_HOMEIMP, "TGT":_SPECIAL, "PANW":_CYBER, "P":_PERIPH,
+ "NJR":_UTIL, "JJSF":_SNACK, "WWD":_AERO, "UGI":_UTIL, "KLIC":_SEMIEQ, "SNEX":_BROKER,
+ "UTI":_EDU, "BRBR":_BEV, "WMT":_RETAIL, "INTU":_SOFT, "KEYS":_TEST, "ROST":_APPAREL,
+ "WSM":_HOME, "WMG":_MUSIC, "ESTC":_DATA, "GAP":_APPAREL, "ESE":_INSTR, "ROAD":_ENG,
+ "VVV":_LUBE, "BBWI":_SPECIAL, "HP":_OILSVC, "POST":_SNACK, "MMS":_GOV, "LQDT":_ECOMM,
+ "BULL":_BROKER, "BJ":_CLUB, "BKE":_APPAREL,
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
@@ -133,7 +132,7 @@ FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
 CROSSCHECK_NOTES = [
- "Mon Nov 9 and Thu Nov 12 Robinhood high-market-cap calendars were truncated; missing names (FERG, NRG, RKLB, ROIV, SGI, AMG, LINE, ZETA, and others) were filled via per-ticker get_earnings_results. Cross-checked against public calendars for gaps only — published figures are Robinhood data.",
+ "Public calendars listed CPRT this week; Robinhood get_earnings_results shows its next report on 2026-11-27 (unverified), so it was not included. TCOM and BHP also appeared on public calendars but were not in Robinhood's high-market-cap calendar for this week. WSM is Thursday Nov 19 before the open on Robinhood (some public calendars listed Wednesday). ATKR and HI were on Robinhood's calendar but returned no usable company profile (HI was inactive on Robinhood), so they were omitted. Cross-checked against public calendars for gaps only — published figures are Robinhood data.",
 ]
 
 def et(s):
