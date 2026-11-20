@@ -40,82 +40,48 @@ MAX_STRIKE_DIST, LONG_GAP_DAYS = 0.05, 8
 
 # Curated notable / high-volume names (edit weekly). Name shown on page.
 TICKERS = {
- # Mon Nov 16
- "TSN":"Tyson Foods","ARMK":"Aramark","ACM":"AECOM","POWL":"Powell Industries",
- "INFQ":"Infleqtion","OMER":"Omeros","BXDC":"Blackstone Digital Infrastructure",
- # Tue Nov 17
- "HD":"Home Depot","DIS":"Disney","NVDA":"Nvidia","SR":"Spire","GFF":"Griffon",
- "ENR":"Energizer","OCSL":"Oaktree Specialty Lending","DLB":"Dolby",
- "GBDC":"Golub Capital BDC","LZB":"La-Z-Boy","MFP":"Midera Food Processing",
- # Wed Nov 18
- "TJX":"TJX","LOW":"Lowe's","TGT":"Target","PANW":"Palo Alto Networks",
- "P":"Everpure","NJR":"New Jersey Resources","JJSF":"J&J Snack Foods",
- "WWD":"Woodward","UGI":"UGI","KLIC":"Kulicke & Soffa","SNEX":"StoneX",
- "UTI":"Universal Technical Institute","BRBR":"BellRing Brands",
- # Thu Nov 19
- "WMT":"Walmart","INTU":"Intuit","KEYS":"Keysight","ROST":"Ross Stores",
- "WSM":"Williams-Sonoma","WMG":"Warner Music","ESTC":"Elastic","GAP":"Gap",
- "ESE":"ESCO Technologies","ROAD":"Construction Partners","VVV":"Valvoline",
- "BBWI":"Bath & Body Works","HP":"Helmerich & Payne","POST":"Post Holdings",
- "MMS":"Maximus","LQDT":"Liquidity Services","BULL":"Webull",
- # Fri Nov 20
- "BJ":"BJ's Wholesale","BKE":"Buckle",
+ # Mon Nov 23
+ "A":"Agilent","HPE":"Hewlett Packard Enterprise","ZM":"Zoom Communications","J":"Jacobs Solutions",
+ "SYM":"Symbotic","AMTM":"Amentum","SMTC":"Semtech","CENT":"Central Garden & Pet",
+ # Tue Nov 24
+ "HPQ":"HP Inc.","ADI":"Analog Devices","NTNX":"Nutanix","WDAY":"Workday","DLTR":"Dollar Tree",
+ "SJM":"J.M. Smucker","DELL":"Dell Technologies","ADSK":"Autodesk","ANF":"Abercrombie & Fitch",
+ "DY":"Dycom Industries","DKS":"Dick's Sporting Goods","BURL":"Burlington Stores","BBY":"Best Buy",
+ "URBN":"Urban Outfitters","KSS":"Kohl's","AMBA":"Ambarella","CLSK":"CleanSpark","MDT":"Medtronic",
+ # Wed Nov 25
+ "DE":"Deere",
 }
 
 # Candidate peers for correlation (same-sector names + broad/sector ETFs). Edit as TICKERS change.
-_MEGA = ["AAPL","MSFT","GOOGL","AMZN","META","NVDA","XLK","QQQ","SPY"]
-_SEMI = ["AMD","NVDA","INTC","QCOM","MU","AVGO","TXN","AMAT","SMH","QQQ","SPY"]
-_RETAIL = ["WMT","TGT","COST","HD","LOW","TJX","ROST","XLY","SPY"]
-_HOMEIMP = ["HD","LOW","FND","TSCO","XHB","ITB","SPY"]
-_APPAREL = ["TJX","ROST","GAP","BKE","ANF","URBN","XLY","SPY"]
-_SPECIAL = ["TGT","BBWI","WSM","BJ","COST","XLY","SPY"]
-_MEDIA = ["DIS","NFLX","CMCSA","WBD","PARA","XLC","QQQ","SPY"]
-_MUSIC = ["WMG","SPOT","LYV","SONO","XLC","SPY"]
-_CYBER = ["PANW","CRWD","FTNT","ZS","NET","CIBR","QQQ","SPY"]
-_SOFT = ["INTU","MSFT","ADBE","CRM","NOW","IGV","QQQ","SPY"]
-_DATA = ["ESTC","DDOG","SNOW","MDB","DT","IGV","QQQ","SPY"]
-_TEST = ["KEYS","A","TER","KLAC","SMH","QQQ","SPY"]
-_FOOD = ["TSN","HRL","PPC","CAG","KHC","XLP","SPY"]
-_SNACK = ["JJSF","POST","HSY","MDLZ","KHC","XLP","SPY"]
-_BEV = ["BRBR","MNST","KO","PEP","XLP","SPY"]
-_FOODSVC = ["ARMK","SYY","CMG","SBUX","XLY","SPY"]
-_ENG = ["ACM","J","PWR","ROAD","FLR","XLI","SPY"]
-_ELEC = ["POWL","HUBB","VRT","AME","XLI","SPY"]
-_QUANT = ["INFQ","IONQ","RGTI","QBTS","ARKK","QQQ","SPY"]
-_BIO = ["OMER","GILD","REGN","AMGN","XLV","SPY"]
-_REIT = ["BXDC","AMT","EQIX","DLR","IYR","SPY"]
-_UTIL = ["SR","NJR","UGI","ATO","XLU","SPY"]
-_BUILD = ["GFF","MAS","OC","BLDR","XHB","SPY"]
-_HOUSE = ["ENR","PG","CL","CHD","XLP","SPY"]
-_BDC = ["OCSL","GBDC","ARCC","MAIN","XLF","SPY"]
-_AUDIO = ["DLB","MSFT","AAPL","SONO","QQQ","SPY"]
-_HOME = ["LZB","WSM","TPX","SGI","XLY","SPY"]
-_MACH = ["MFP","ITW","PH","ROK","XLI","SPY"]
-_AERO = ["WWD","GD","HWM","TDG","ITA","SPY"]
-_SEMIEQ = ["KLIC","AMAT","LRCX","KLAC","SMH","QQQ","SPY"]
-_BROKER = ["SNEX","BULL","SCHW","IBKR","XLF","SPY"]
-_EDU = ["UTI","LOPE","ATGE","XLY","SPY"]
-_LUBE = ["VVV","PSX","VLO","XOM","XLE","SPY"]
-_OILSVC = ["HP","HAL","BKR","SLB","OIH","SPY"]
-_GOV = ["MMS","BAH","CACI","XLI","SPY"]
-_ECOMM = ["LQDT","EBAY","AMZN","ETSY","XLY","SPY"]
-_INSTR = ["ESE","KEYS","A","TDY","XLI","SPY"]
-_CLUB = ["BJ","COST","WMT","TGT","XLY","SPY"]
-_PERIPH = ["P","NVDA","AMD","DELL","SMH","QQQ","SPY"]
 PEERS = {
- "TSN":_FOOD, "ARMK":_FOODSVC, "ACM":_ENG, "POWL":_ELEC, "INFQ":_QUANT, "OMER":_BIO,
- "BXDC":_REIT, "HD":_HOMEIMP, "DIS":_MEDIA, "NVDA":_SEMI, "SR":_UTIL, "GFF":_BUILD,
- "ENR":_HOUSE, "OCSL":_BDC, "DLB":_AUDIO, "GBDC":_BDC, "LZB":_HOME, "MFP":_MACH,
- "TJX":_APPAREL, "LOW":_HOMEIMP, "TGT":_SPECIAL, "PANW":_CYBER, "P":_PERIPH,
- "NJR":_UTIL, "JJSF":_SNACK, "WWD":_AERO, "UGI":_UTIL, "KLIC":_SEMIEQ, "SNEX":_BROKER,
- "UTI":_EDU, "BRBR":_BEV, "WMT":_RETAIL, "INTU":_SOFT, "KEYS":_TEST, "ROST":_APPAREL,
- "WSM":_HOME, "WMG":_MUSIC, "ESTC":_DATA, "GAP":_APPAREL, "ESE":_INSTR, "ROAD":_ENG,
- "VVV":_LUBE, "BBWI":_SPECIAL, "HP":_OILSVC, "POST":_SNACK, "MMS":_GOV, "LQDT":_ECOMM,
- "BULL":_BROKER, "BJ":_CLUB, "BKE":_APPAREL,
+ "A":["TMO","DHR","WAT","MTD","XLV","SPY"],"HPE":["CSCO","DELL","HPQ","NTAP","ANET","QQQ","SPY"],
+ "ZM":["MSFT","TEAM","DOCU","RNG","IGV","QQQ","SPY"],"J":["ACM","PWR","KBR","FLR","XLI","SPY"],
+ "SYM":["ROK","TER","ZBRA","EMR","XLI","SPY"],"AMTM":["LDOS","BAH","CACI","SAIC","XLI","SPY"],
+ "SMTC":["MCHP","ON","TXN","SWKS","SMH","QQQ","SPY"],"CENT":["SMG","CLX","CHD","SPB","XLP","SPY"],
+ "HPQ":["DELL","HPE","AAPL","XRX","QQQ","SPY"],"ADI":["TXN","MCHP","ON","QCOM","SMH","QQQ","SPY"],
+ "NTNX":["MSFT","NTAP","PSTG","ORCL","IGV","QQQ","SPY"],"WDAY":["CRM","NOW","ADBE","ADP","IGV","QQQ","SPY"],
+ "ADSK":["ADBE","PTC","CRM","NOW","IGV","QQQ","SPY"],"DLTR":["DG","WMT","TGT","COST","XLY","SPY"],
+ "SJM":["CAG","GIS","KHC","HSY","XLP","SPY"],"DELL":["HPQ","HPE","SMCI","NTAP","QQQ","SPY"],
+ "ANF":["AEO","URBN","GAP","TJX","ROST","XLY","SPY"],"DY":["PWR","MTZ","EME","ACM","XLI","SPY"],
+ "DKS":["ASO","TSCO","NKE","LULU","XLY","SPY"],"BURL":["ROST","TJX","ANF","KSS","XLY","SPY"],
+ "BBY":["AMZN","WMT","TGT","GME","XLY","SPY"],"URBN":["AEO","ANF","GAP","TJX","ROST","XLY","SPY"],
+ "KSS":["M","TGT","WMT","BURL","XLY","SPY"],"AMBA":["QCOM","MCHP","ON","NVDA","SMH","QQQ","SPY"],
+ "CLSK":["MARA","RIOT","COIN","HUT","QQQ","SPY"],"MDT":["ABT","SYK","BSX","JNJ","XLV","SPY"],
+ "DE":["CAT","AGCO","PCAR","CMI","XLI","SPY"],
 }
 
 ETFS = {"SPY","QQQ","IWM","DIA","XLF","KRE","KBE","KIE","XLI","XLE","XLV","XLK","XLY","XLP","XLU","XLB","XLC","SMH","IGV","IHI",
         "ITA","JETS","IYT","OIH","AMLP","XME","XHB","ITB","EUFN","EWW","GDX","GLD","TAN","ICLN","ARKK"}
+# Nov 20, 2026: the Robinhood connector truncates tool results at ~20 KB (about 100 daily bars), so the correlation
+# universe is limited to US-listed ETFs plus other reporters in the same industry group.
+_X = {"HPE":["HPQ","DELL","NTNX","QQQ"],"HPQ":["HPE","DELL","QQQ"],"DELL":["HPQ","HPE","NTNX","QQQ"],"NTNX":["HPE","DELL","WDAY","IGV","QQQ"],
+      "ZM":["WDAY","ADSK","NTNX","IGV","QQQ"],"WDAY":["ZM","ADSK","NTNX","IGV","QQQ"],"ADSK":["WDAY","ZM","NTNX","IGV","QQQ"],
+      "ADI":["SMTC","AMBA","SMH","QQQ"],"SMTC":["ADI","AMBA","SMH","QQQ"],"AMBA":["ADI","SMTC","SMH","QQQ"],
+      "ANF":["URBN","BURL","KSS","DKS","XLY"],"URBN":["ANF","BURL","KSS","DKS","XLY"],"BURL":["ANF","URBN","KSS","DLTR","XLY"],
+      "KSS":["BURL","ANF","URBN","DLTR","XLY"],"DKS":["ANF","URBN","BBY","XLY"],"BBY":["DKS","DLTR","KSS","XLY"],"DLTR":["BURL","KSS","BBY","XLP","XLY"],
+      "J":["DY","AMTM","XLI"],"DY":["J","XLI"],"AMTM":["J","XLI"],"SYM":["XLI","QQQ"],"DE":["XLI"],"A":["MDT","XLV"],"MDT":["A","XLV"],
+      "CENT":["SJM","XLP"],"SJM":["CENT","XLP"],"CLSK":["QQQ"]}
+PEERS = {s: sorted(set([p for p in PEERS.get(s, []) if p in ETFS or p in TICKERS]) | set(_X.get(s, [])) | {"SPY"} - {s}) for s in TICKERS}
 # US-ONLY RULE (owner decision, Oct 17, 2026): publish only US-domiciled companies. A company counts as US only if its
 # Robinhood company profile (get_equity_fundamentals -> headquarters_state) is a US state or DC. No profile = not
 # verified = excluded (never assumed). Applies to reporters AND to single-stock correlation peers; US-listed ETFs
@@ -127,12 +93,12 @@ US_STATES = {"Alabama","Alaska","Arizona","Arkansas","California","Colorado","Co
  "New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island",
  "South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"}
 DOMICILE_OVERRIDES = {}
-CORR_RETURNS = 65   # daily close-to-close returns per correlation window
+CORR_RETURNS = 40   # daily close-to-close returns per correlation window
 FEATURED = []       # e.g. ["NFLX","TSLA"]; empty = the two largest reporters by Robinhood market cap
 
 # Cross-check notes (checked against a public calendar for missing names; only Robinhood data is published).
 CROSSCHECK_NOTES = [
- "Public calendars listed CPRT this week; Robinhood get_earnings_results shows its next report on 2026-11-27 (unverified), so it was not included. TCOM and BHP also appeared on public calendars but were not in Robinhood's high-market-cap calendar for this week. WSM is Thursday Nov 19 before the open on Robinhood (some public calendars listed Wednesday). ATKR and HI were on Robinhood's calendar but returned no usable company profile (HI was inactive on Robinhood), so they were omitted. Cross-checked against public calendars for gaps only — published figures are Robinhood data.",
+ "Cross-checked against Nasdaq's public calendar for gaps only (published figures are Robinhood data). Nasdaq also listed non-US or small names (for example TCOM, BHP, DAC, DRVN, PD, GDRX, FLNC, CMP) that were not in Robinhood's high-market-cap calendar for this week, so they are not included. Thanksgiving week is light: Robinhood's high-market-cap calendar returned no reports for Thursday Nov 26 (US markets closed) or Friday Nov 27 (early 1:00 PM ET close).",
 ]
 
 def et(s):

@@ -91,3 +91,11 @@ empty, labelled sponsor slot · newsletter form via `FORM_ID` env var (currently
   (On a project subpath crawlers only read the domain-root robots.txt, so the meta tag is what matters.) Do not submit to
   search engines or link the URL publicly; keep the repo description, homepage and topics empty.
 - The DST offset is handled automatically (zoneinfo America/New_York).
+
+## Connector size limits (learned Nov 20, 2026)
+- The Robinhood connector truncates a tool result once its JSON passes roughly 9–10 KB (saved raw files then lose data). Keep each call small:
+  `get_equity_fundamentals` ≤5 symbols; `get_equity_historicals` ≤ ~45 daily bars per call (one symbol for a ~2-month window).
+- Nov 20 refresh: correlation window = 40 sessions (`CORR_RETURNS`), peers limited to US ETFs plus other reporters in the same group
+  (see `_X` in fetch.py). Past earnings moves use short per-quarter windows around each report date (several reporters per call, saved in `data/raw/hist_long/`)
+  plus a recent ~44-bar window per reporter. Raw files must hold only the first JSON block; `/workspace/tools/norm.py <dir>` trims truncated/duplicated blocks.
+- `preview_scan` has no `FILTER_TYPE_SYMBOL`: use an expression filter `symbol` + `ANY_OF` and columns `{"display_name":"Options OI","expression":"optionsTotalOpenInterest"}`, `{"display_name":"Options volume","expression":"optionsTotalDayVolume"}`.
